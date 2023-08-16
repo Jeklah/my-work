@@ -13,9 +13,13 @@ class SimpleMeta(type):
 
 class SimpleClass(metaclass=SimpleMeta):
     __metaclass__ = SimpleMeta
-    def foo(self): pass
+
+    def foo(self):
+        pass
+
     @staticmethod
-    def bat(): pass
+    def bat():
+        pass
 
 
 def main():
