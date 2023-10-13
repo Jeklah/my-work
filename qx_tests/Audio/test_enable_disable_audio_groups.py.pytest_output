@@ -1,0 +1,7 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-7.4.0, pluggy-1.2.0 -- /home/arthur/projects/autolib/autolib/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/arthur/projects/qx_sw/tests
+configfile: pytest.ini
+plugins: timestamper-0.0.9, timeout-2.1.0
+collecting ... 

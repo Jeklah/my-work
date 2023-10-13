@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="2" hostname="ab-VM" name="test_system" skipped="0" tests="48" time="25953.220" timestamp="2023-05-16T09:43:08.162001"><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[1.5-1280x720p25-YCbCr:422:10-1.5G_Rec.709]" time="40.174"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[1.5-1280x720p29.97-YCbCr:422:10-1.5G_Rec.709]" time="23.353"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[1.5-1280x720p30-YCbCr:422:10-1.5G_Rec.709]" time="25.865"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[1.5-1280x720p50-YCbCr:422:10-1.5G_Rec.709]" time="21.553"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[1.5-1280x720p59.94-YCbCr:422:10-1.5G_Rec.709]" time="25.815"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[1.5-1280x720p60-YCbCr:422:10-1.5G_Rec.709]" time="30.166"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[1.5-1920x1080p23.98-YCbCr:422:10-1.5G_Rec.709]" time="22.964"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[1.5-1920x1080p24-YCbCr:422:10-1.5G_Rec.709]" time="22.774"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[1.5-1920x1080p25-YCbCr:422:10-1.5G_Rec.709]" time="25.745"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[1.5-1920x1080p29.97-YCbCr:422:10-1.5G_Rec.709]" time="22.225"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[1.5-1920x1080p30-YCbCr:422:10-1.5G_Rec.709]" time="21.056"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[1.5-2048x1080p23.98-YCbCr:422:10-1.5G_Rec.709]" time="30.572"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[1.5-2048x1080p24-YCbCr:422:10-1.5G_Rec.709]" time="23.456"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[1.5-2048x1080p25-YCbCr:422:10-1.5G_Rec.709]" time="22.733"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[1.5-2048x1080p29.97-YCbCr:422:10-1.5G_Rec.709]" time="21.396"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[1.5-2048x1080p30-YCbCr:422:10-1.5G_Rec.709]" time="22.658"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-1920x1080p50-YCbCr:422:10-3G_A_Rec.709]" time="27.298"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-1920x1080p50-YCbCr:422:10-3G_B_Rec.709]" time="35.266"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-1920x1080p50-YCbCr:422:10-DL_1.5G_Rec.709]" time="34.366"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-1920x1080p59.94-YCbCr:422:10-3G_A_Rec.709]" time="39.679"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-1920x1080p59.94-YCbCr:422:10-3G_B_Rec.709]" time="32.959"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-1920x1080p59.94-YCbCr:422:10-DL_1.5G_Rec.709]" time="29.838"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-1920x1080p60-YCbCr:422:10-3G_A_Rec.709]" time="25.761"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-1920x1080p60-YCbCr:422:10-3G_B_Rec.709]" time="32.996"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-1920x1080p60-YCbCr:422:10-DL_1.5G_Rec.709]" time="23.170"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-2048x1080p47.95-YCbCr:422:10-3G_A_Rec.709]" time="23.647"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-2048x1080p47.95-YCbCr:422:10-3G_B_Rec.709]" time="34.223"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-2048x1080p47.95-YCbCr:422:10-DL_1.5G_Rec.709]" time="27.325"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-2048x1080p48-YCbCr:422:10-3G_A_Rec.709]" time="25.765"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-2048x1080p48-YCbCr:422:10-3G_B_Rec.709]" time="34.509"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-2048x1080p48-YCbCr:422:10-DL_1.5G_Rec.709]" time="23.758"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-2048x1080p50-YCbCr:422:10-3G_A_Rec.709]" time="67.647"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-2048x1080p50-YCbCr:422:10-3G_B_Rec.709]" time="34.338"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-2048x1080p50-YCbCr:422:10-DL_1.5G_Rec.709]" time="36.407"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-2048x1080p59.94-YCbCr:422:10-3G_A_Rec.709]" time="84.152"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-2048x1080p59.94-YCbCr:422:10-3G_B_Rec.709]" time="36.884"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-2048x1080p59.94-YCbCr:422:10-DL_1.5G_Rec.709]" time="29.173"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-2048x1080p60-YCbCr:422:10-3G_A_Rec.709]" time="26.136"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-2048x1080p60-YCbCr:422:10-3G_B_Rec.709]" time="33.486"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[3.0-2048x1080p60-YCbCr:422:10-DL_1.5G_Rec.709]" time="23.598"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[6.0-3840x2160p23.98-YCbCr:422:10-6G_2-SI_Rec.709]" time="36.135"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[6.0-3840x2160p23.98-YCbCr:422:10-DL_3G_B_2-SI_Rec.709]" time="33.440"><failure message="test_system.models.qxseries.qxexception.QxException: qx-020264 - No found in data for identifier">self = &lt;test_system.models.qxseries.ancillary.AncillaryInspector object at 0x7fe8f2c59160&gt;, kwargs = {&apos;found_in&apos;: True}
+path = &apos;http://qx-020264:8080/api/v1/analyser/ancillaryInspector&apos;
+r = {&apos;configData&apos;: {&apos;errorTriggers&apos;: {&apos;searchAncGapErrors&apos;: False, &apos;searchChecksumErrors&apos;: False, &apos;searchDBNErrors&apos;: False...&apos;: [{&apos;href&apos;: &apos;http://qx-020264:8080/api/v1/analyser/ancillaryInspector&apos;, &apos;rel&apos;: &apos;self&apos;}], &apos;message&apos;: &apos;&apos;, &apos;status&apos;: 200}
+return_list = [], param = &apos;found_in&apos;, value = True
+
+    def inspect(self, **kwargs):
+        &quot;&quot;&quot;
+        Retrieve information for the ANC inspector. Kwargs are supplied to indicate the type of ANC data to return.
+        ANC inspector info will be returned as a list containing each data type requested as individual element.
+    
+        :param captured_data: Bool
+        :param raw_data: Bool
+        :param found_in: Bool
+        &quot;&quot;&quot;
+    
+        path = self._baseurl + &quot;analyser/ancillaryInspector&quot;
+        r = self._http_session.get(path).json()
+    
+        return_list = []
+    
+        for param, value in kwargs.items():
+            if param == &quot;captured_data&quot; and value is True:
+                try:
+                    return_list.append(r[&quot;capturedData&quot;])
+                except KeyError:
+                    raise QxException(self.hostname + &quot; - No captured data for identifier&quot;)
+    
+            elif param == &quot;raw_data&quot; and value is True:
+                try:
+                    return_list.append(r[&quot;capturedRawData&quot;])
+                except KeyError:
+                    raise QxException(f&apos;{self.hostname} - No raw data for identifier {r}&apos;)
+    
+            elif param == &quot;found_in&quot; and value is True:
+                try:
+&gt;                   return_list.append(r[&quot;foundIn&quot;])
+E                   KeyError: &apos;foundIn&apos;
+
+kwargs     = {&apos;found_in&apos;: True}
+param      = &apos;found_in&apos;
+path       = &apos;http://qx-020264:8080/api/v1/analyser/ancillaryInspector&apos;
+r          = {&apos;configData&apos;: {&apos;errorTriggers&apos;: {&apos;searchAncGapErrors&apos;: False,
+                                  &apos;searchChecksumErrors&apos;: False,
+                                  &apos;searchDBNErrors&apos;: False,
+                                  &apos;searchParityErrors&apos;: False,
+                                  &apos;triggerOnlyOnErrors&apos;: False},
+                &apos;hancVancSelect&apos;: &apos;both&apos;,
+                &apos;identifier&apos;: {&apos;did&apos;: 65,
+                               &apos;identifierSelect&apos;: &apos;custom&apos;,
+                               &apos;sdid&apos;: 1},
+                &apos;range&apos;: {&apos;firstLine&apos;: 571,
+                          &apos;lastLine&apos;: 573,
+                          &apos;rangeSelect&apos;: &apos;inside&apos;},
+                &apos;subImageSearch&apos;: &apos;subImage1&apos;,
+                &apos;yPosCPosSelect&apos;: &apos;yPos&apos;},
+ &apos;links&apos;: [{&apos;href&apos;: &apos;http://qx-020264:8080/api/v1/analyser/ancillaryInspector&apos;,
+            &apos;rel&apos;: &apos;self&apos;}],
+ &apos;message&apos;: &apos;&apos;,
+ &apos;status&apos;: 200}
+return_list = []
+self       = &lt;test_system.models.qxseries.ancillary.AncillaryInspector object at 0x7fe8f2c59160&gt;
+value      = True
+
+../../../../ts_venv/lib/python3.8/site-packages/test_system/models/qxseries/ancillary.py:185: KeyError
+
+During handling of the above exception, another exception occurred:
+
+confidence_test_standards = (6.0, &apos;3840x2160p23.98&apos;, &apos;YCbCr:422:10&apos;, &apos;DL_3G_B_2-SI_Rec.709&apos;), generator_unit = &lt;test_system.models.qxseries.qx.Qx object at 0x7fe8f3e57880&gt;
+analyser_unit = &lt;test_system.models.qxseries.qx.Qx object at 0x7fe8f2c594f0&gt;
+
+    @pytest.mark.sdi_stress
+    @pytest.mark.timeout(600, method=&apos;thread&apos;)
+    def test_s352_location_confidence(confidence_test_standards, generator_unit, analyser_unit):
+        &quot;&quot;&quot;
+        Confirm SMPTE ST 352 Payload ID code ANC packets are inserted on the correct lines for all confidence test video
+        standards.
+        &quot;&quot;&quot;
+    
+        # Ensure we&apos;re in the right mode to run the test on both units
+        generator_unit.request_capability(OperationMode.SDI_STRESS)
+        analyser_unit.request_capability(OperationMode.SDI_STRESS)
+&gt;       _check_s352_location(confidence_test_standards, generator_unit, analyser_unit)
+
+analyser_unit = &lt;test_system.models.qxseries.qx.Qx object at 0x7fe8f2c594f0&gt;
+confidence_test_standards = (6.0, &apos;3840x2160p23.98&apos;, &apos;YCbCr:422:10&apos;, &apos;DL_3G_B_2-SI_Rec.709&apos;)
+generator_unit = &lt;test_system.models.qxseries.qx.Qx object at 0x7fe8f3e57880&gt;
+
+test_anc_location.py:160: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+test_anc_location.py:213: in _check_s352_location
+    anc_insp_data = analyser_qx.anc.inspect(found_in=True)
+        analyser_qx = &lt;test_system.models.qxseries.qx.Qx object at 0x7fe8f2c594f0&gt;
+        anc_insp_data = [{&apos;channel&apos;: &apos;Y-Pos&apos;,
+  &apos;hanc&apos;: True,
+  &apos;line&apos;: 10,
+  &apos;sample&apos;: 1928,
+  &apos;stream&apos;: &apos;Sub Image 1&apos;,
+  &apos;time&apos;: &apos;10:05:01&apos;}]
+        channel    = &apos;yPos&apos;
+        generator_qx = &lt;test_system.models.qxseries.qx.Qx object at 0x7fe8f3e57880&gt;
+        line       = 572
+        standards_list = (6.0, &apos;3840x2160p23.98&apos;, &apos;YCbCr:422:10&apos;, &apos;DL_3G_B_2-SI_Rec.709&apos;)
+        subimg     = &apos;subImage1&apos;
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;test_system.models.qxseries.ancillary.AncillaryInspector object at 0x7fe8f2c59160&gt;, kwargs = {&apos;found_in&apos;: True}
+path = &apos;http://qx-020264:8080/api/v1/analyser/ancillaryInspector&apos;
+r = {&apos;configData&apos;: {&apos;errorTriggers&apos;: {&apos;searchAncGapErrors&apos;: False, &apos;searchChecksumErrors&apos;: False, &apos;searchDBNErrors&apos;: False...&apos;: [{&apos;href&apos;: &apos;http://qx-020264:8080/api/v1/analyser/ancillaryInspector&apos;, &apos;rel&apos;: &apos;self&apos;}], &apos;message&apos;: &apos;&apos;, &apos;status&apos;: 200}
+return_list = [], param = &apos;found_in&apos;, value = True
+
+    def inspect(self, **kwargs):
+        &quot;&quot;&quot;
+        Retrieve information for the ANC inspector. Kwargs are supplied to indicate the type of ANC data to return.
+        ANC inspector info will be returned as a list containing each data type requested as individual element.
+    
+        :param captured_data: Bool
+        :param raw_data: Bool
+        :param found_in: Bool
+        &quot;&quot;&quot;
+    
+        path = self._baseurl + &quot;analyser/ancillaryInspector&quot;
+        r = self._http_session.get(path).json()
+    
+        return_list = []
+    
+        for param, value in kwargs.items():
+            if param == &quot;captured_data&quot; and value is True:
+                try:
+                    return_list.append(r[&quot;capturedData&quot;])
+                except KeyError:
+                    raise QxException(self.hostname + &quot; - No captured data for identifier&quot;)
+    
+            elif param == &quot;raw_data&quot; and value is True:
+                try:
+                    return_list.append(r[&quot;capturedRawData&quot;])
+                except KeyError:
+                    raise QxException(f&apos;{self.hostname} - No raw data for identifier {r}&apos;)
+    
+            elif param == &quot;found_in&quot; and value is True:
+                try:
+                    return_list.append(r[&quot;foundIn&quot;])
+                except KeyError:
+&gt;                   raise QxException(f&apos;{self.hostname} - No found in data for identifier&apos;)
+E                   test_system.models.qxseries.qxexception.QxException: qx-020264 - No found in data for identifier
+
+kwargs     = {&apos;found_in&apos;: True}
+param      = &apos;found_in&apos;
+path       = &apos;http://qx-020264:8080/api/v1/analyser/ancillaryInspector&apos;
+r          = {&apos;configData&apos;: {&apos;errorTriggers&apos;: {&apos;searchAncGapErrors&apos;: False,
+                                  &apos;searchChecksumErrors&apos;: False,
+                                  &apos;searchDBNErrors&apos;: False,
+                                  &apos;searchParityErrors&apos;: False,
+                                  &apos;triggerOnlyOnErrors&apos;: False},
+                &apos;hancVancSelect&apos;: &apos;both&apos;,
+                &apos;identifier&apos;: {&apos;did&apos;: 65,
+                               &apos;identifierSelect&apos;: &apos;custom&apos;,
+                               &apos;sdid&apos;: 1},
+                &apos;range&apos;: {&apos;firstLine&apos;: 571,
+                          &apos;lastLine&apos;: 573,
+                          &apos;rangeSelect&apos;: &apos;inside&apos;},
+                &apos;subImageSearch&apos;: &apos;subImage1&apos;,
+                &apos;yPosCPosSelect&apos;: &apos;yPos&apos;},
+ &apos;links&apos;: [{&apos;href&apos;: &apos;http://qx-020264:8080/api/v1/analyser/ancillaryInspector&apos;,
+            &apos;rel&apos;: &apos;self&apos;}],
+ &apos;message&apos;: &apos;&apos;,
+ &apos;status&apos;: 200}
+return_list = []
+self       = &lt;test_system.models.qxseries.ancillary.AncillaryInspector object at 0x7fe8f2c59160&gt;
+value      = True
+
+../../../../ts_venv/lib/python3.8/site-packages/test_system/models/qxseries/ancillary.py:187: QxException</failure><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[6.0-3840x2160p23.98-YCbCr:422:10-QL_1.5G_SQ_Rec.709]" time="173.590"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[6.0-3840x2160p24-YCbCr:422:10-6G_2-SI_Rec.709]" time="132.012"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[6.0-3840x2160p24-YCbCr:422:10-DL_3G_B_2-SI_Rec.709]" time="56.807"><failure message="test_system.models.qxseries.qxexception.QxException: qx-020264 - No found in data for identifier">self = &lt;test_system.models.qxseries.ancillary.AncillaryInspector object at 0x7fe8f25ca7f0&gt;, kwargs = {&apos;found_in&apos;: True}
+path = &apos;http://qx-020264:8080/api/v1/analyser/ancillaryInspector&apos;
+r = {&apos;configData&apos;: {&apos;errorTriggers&apos;: {&apos;searchAncGapErrors&apos;: False, &apos;searchChecksumErrors&apos;: False, &apos;searchDBNErrors&apos;: False...&apos;: [{&apos;href&apos;: &apos;http://qx-020264:8080/api/v1/analyser/ancillaryInspector&apos;, &apos;rel&apos;: &apos;self&apos;}], &apos;message&apos;: &apos;&apos;, &apos;status&apos;: 200}
+return_list = [], param = &apos;found_in&apos;, value = True
+
+    def inspect(self, **kwargs):
+        &quot;&quot;&quot;
+        Retrieve information for the ANC inspector. Kwargs are supplied to indicate the type of ANC data to return.
+        ANC inspector info will be returned as a list containing each data type requested as individual element.
+    
+        :param captured_data: Bool
+        :param raw_data: Bool
+        :param found_in: Bool
+        &quot;&quot;&quot;
+    
+        path = self._baseurl + &quot;analyser/ancillaryInspector&quot;
+        r = self._http_session.get(path).json()
+    
+        return_list = []
+    
+        for param, value in kwargs.items():
+            if param == &quot;captured_data&quot; and value is True:
+                try:
+                    return_list.append(r[&quot;capturedData&quot;])
+                except KeyError:
+                    raise QxException(self.hostname + &quot; - No captured data for identifier&quot;)
+    
+            elif param == &quot;raw_data&quot; and value is True:
+                try:
+                    return_list.append(r[&quot;capturedRawData&quot;])
+                except KeyError:
+                    raise QxException(f&apos;{self.hostname} - No raw data for identifier {r}&apos;)
+    
+            elif param == &quot;found_in&quot; and value is True:
+                try:
+&gt;                   return_list.append(r[&quot;foundIn&quot;])
+E                   KeyError: &apos;foundIn&apos;
+
+kwargs     = {&apos;found_in&apos;: True}
+param      = &apos;found_in&apos;
+path       = &apos;http://qx-020264:8080/api/v1/analyser/ancillaryInspector&apos;
+r          = {&apos;configData&apos;: {&apos;errorTriggers&apos;: {&apos;searchAncGapErrors&apos;: False,
+                                  &apos;searchChecksumErrors&apos;: False,
+                                  &apos;searchDBNErrors&apos;: False,
+                                  &apos;searchParityErrors&apos;: False,
+                                  &apos;triggerOnlyOnErrors&apos;: False},
+                &apos;hancVancSelect&apos;: &apos;both&apos;,
+                &apos;identifier&apos;: {&apos;did&apos;: 65,
+                               &apos;identifierSelect&apos;: &apos;custom&apos;,
+                               &apos;sdid&apos;: 1},
+                &apos;range&apos;: {&apos;firstLine&apos;: 571,
+                          &apos;lastLine&apos;: 573,
+                          &apos;rangeSelect&apos;: &apos;inside&apos;},
+                &apos;subImageSearch&apos;: &apos;subImage1&apos;,
+                &apos;yPosCPosSelect&apos;: &apos;yPos&apos;},
+ &apos;links&apos;: [{&apos;href&apos;: &apos;http://qx-020264:8080/api/v1/analyser/ancillaryInspector&apos;,
+            &apos;rel&apos;: &apos;self&apos;}],
+ &apos;message&apos;: &apos;&apos;,
+ &apos;status&apos;: 200}
+return_list = []
+self       = &lt;test_system.models.qxseries.ancillary.AncillaryInspector object at 0x7fe8f25ca7f0&gt;
+value      = True
+
+../../../../ts_venv/lib/python3.8/site-packages/test_system/models/qxseries/ancillary.py:185: KeyError
+
+During handling of the above exception, another exception occurred:
+
+confidence_test_standards = (6.0, &apos;3840x2160p24&apos;, &apos;YCbCr:422:10&apos;, &apos;DL_3G_B_2-SI_Rec.709&apos;), generator_unit = &lt;test_system.models.qxseries.qx.Qx object at 0x7fe8f28b5f10&gt;
+analyser_unit = &lt;test_system.models.qxseries.qx.Qx object at 0x7fe8f2a7c550&gt;
+
+    @pytest.mark.sdi_stress
+    @pytest.mark.timeout(600, method=&apos;thread&apos;)
+    def test_s352_location_confidence(confidence_test_standards, generator_unit, analyser_unit):
+        &quot;&quot;&quot;
+        Confirm SMPTE ST 352 Payload ID code ANC packets are inserted on the correct lines for all confidence test video
+        standards.
+        &quot;&quot;&quot;
+    
+        # Ensure we&apos;re in the right mode to run the test on both units
+        generator_unit.request_capability(OperationMode.SDI_STRESS)
+        analyser_unit.request_capability(OperationMode.SDI_STRESS)
+&gt;       _check_s352_location(confidence_test_standards, generator_unit, analyser_unit)
+
+__return__ = None
+analyser_unit = &lt;test_system.models.qxseries.qx.Qx object at 0x7fe8f2a7c550&gt;
+confidence_test_standards = (6.0, &apos;3840x2160p24&apos;, &apos;YCbCr:422:10&apos;, &apos;DL_3G_B_2-SI_Rec.709&apos;)
+generator_unit = &lt;test_system.models.qxseries.qx.Qx object at 0x7fe8f28b5f10&gt;
+
+test_anc_location.py:160: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+test_anc_location.py:213: in _check_s352_location
+    anc_insp_data = analyser_qx.anc.inspect(found_in=True)
+        analyser_qx = &lt;test_system.models.qxseries.qx.Qx object at 0x7fe8f2a7c550&gt;
+        anc_insp_data = [{&apos;channel&apos;: &apos;Y-Pos&apos;,
+  &apos;hanc&apos;: True,
+  &apos;line&apos;: 10,
+  &apos;sample&apos;: 1928,
+  &apos;stream&apos;: &apos;Sub Image 1&apos;,
+  &apos;time&apos;: &apos;10:10:59&apos;}]
+        channel    = &apos;yPos&apos;
+        generator_qx = &lt;test_system.models.qxseries.qx.Qx object at 0x7fe8f28b5f10&gt;
+        line       = 572
+        standards_list = (6.0, &apos;3840x2160p24&apos;, &apos;YCbCr:422:10&apos;, &apos;DL_3G_B_2-SI_Rec.709&apos;)
+        subimg     = &apos;subImage1&apos;
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;test_system.models.qxseries.ancillary.AncillaryInspector object at 0x7fe8f25ca7f0&gt;, kwargs = {&apos;found_in&apos;: True}
+path = &apos;http://qx-020264:8080/api/v1/analyser/ancillaryInspector&apos;
+r = {&apos;configData&apos;: {&apos;errorTriggers&apos;: {&apos;searchAncGapErrors&apos;: False, &apos;searchChecksumErrors&apos;: False, &apos;searchDBNErrors&apos;: False...&apos;: [{&apos;href&apos;: &apos;http://qx-020264:8080/api/v1/analyser/ancillaryInspector&apos;, &apos;rel&apos;: &apos;self&apos;}], &apos;message&apos;: &apos;&apos;, &apos;status&apos;: 200}
+return_list = [], param = &apos;found_in&apos;, value = True
+
+    def inspect(self, **kwargs):
+        &quot;&quot;&quot;
+        Retrieve information for the ANC inspector. Kwargs are supplied to indicate the type of ANC data to return.
+        ANC inspector info will be returned as a list containing each data type requested as individual element.
+    
+        :param captured_data: Bool
+        :param raw_data: Bool
+        :param found_in: Bool
+        &quot;&quot;&quot;
+    
+        path = self._baseurl + &quot;analyser/ancillaryInspector&quot;
+        r = self._http_session.get(path).json()
+    
+        return_list = []
+    
+        for param, value in kwargs.items():
+            if param == &quot;captured_data&quot; and value is True:
+                try:
+                    return_list.append(r[&quot;capturedData&quot;])
+                except KeyError:
+                    raise QxException(self.hostname + &quot; - No captured data for identifier&quot;)
+    
+            elif param == &quot;raw_data&quot; and value is True:
+                try:
+                    return_list.append(r[&quot;capturedRawData&quot;])
+                except KeyError:
+                    raise QxException(f&apos;{self.hostname} - No raw data for identifier {r}&apos;)
+    
+            elif param == &quot;found_in&quot; and value is True:
+                try:
+                    return_list.append(r[&quot;foundIn&quot;])
+                except KeyError:
+&gt;                   raise QxException(f&apos;{self.hostname} - No found in data for identifier&apos;)
+E                   test_system.models.qxseries.qxexception.QxException: qx-020264 - No found in data for identifier
+
+kwargs     = {&apos;found_in&apos;: True}
+param      = &apos;found_in&apos;
+path       = &apos;http://qx-020264:8080/api/v1/analyser/ancillaryInspector&apos;
+r          = {&apos;configData&apos;: {&apos;errorTriggers&apos;: {&apos;searchAncGapErrors&apos;: False,
+                                  &apos;searchChecksumErrors&apos;: False,
+                                  &apos;searchDBNErrors&apos;: False,
+                                  &apos;searchParityErrors&apos;: False,
+                                  &apos;triggerOnlyOnErrors&apos;: False},
+                &apos;hancVancSelect&apos;: &apos;both&apos;,
+                &apos;identifier&apos;: {&apos;did&apos;: 65,
+                               &apos;identifierSelect&apos;: &apos;custom&apos;,
+                               &apos;sdid&apos;: 1},
+                &apos;range&apos;: {&apos;firstLine&apos;: 571,
+                          &apos;lastLine&apos;: 573,
+                          &apos;rangeSelect&apos;: &apos;inside&apos;},
+                &apos;subImageSearch&apos;: &apos;subImage1&apos;,
+                &apos;yPosCPosSelect&apos;: &apos;yPos&apos;},
+ &apos;links&apos;: [{&apos;href&apos;: &apos;http://qx-020264:8080/api/v1/analyser/ancillaryInspector&apos;,
+            &apos;rel&apos;: &apos;self&apos;}],
+ &apos;message&apos;: &apos;&apos;,
+ &apos;status&apos;: 200}
+return_list = []
+self       = &lt;test_system.models.qxseries.ancillary.AncillaryInspector object at 0x7fe8f25ca7f0&gt;
+value      = True
+
+../../../../ts_venv/lib/python3.8/site-packages/test_system/models/qxseries/ancillary.py:187: QxException</failure><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[6.0-3840x2160p24-YCbCr:422:10-QL_1.5G_SQ_Rec.709]" time="44.220"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[6.0-3840x2160p25-YCbCr:422:10-6G_2-SI_Rec.709]" time="129.331"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase><testcase classname="AncillaryInspectorTests.test_anc_location" name="test_s352_location_confidence[6.0-3840x2160p25-YCbCr:422:10-DL_3G_B_2-SI_Rec.709]" time="24094.710"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase></testsuite></testsuites>

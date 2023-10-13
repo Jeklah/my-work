@@ -1,0 +1,2562 @@
+2023-07-28 11:32:57,700 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:32:58,765 - MainThread - INFO -: FPGA design from fpgaver is 8
+2023-07-28 11:32:58,796 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:32:59,307 - MainThread - INFO -: Management interface responded to ping after 1 attempts.
+2023-07-28 11:32:59,789 - MainThread - INFO -: SSH Ready after 0 retries.
+2023-07-28 11:33:01,313 - MainThread - INFO -: PID for process qx_server is 816
+2023-07-28 11:33:02,506 - MainThread - INFO -: PID for process qx_client is 766
+2023-07-28 11:33:02,506 - MainThread - INFO -: All critical processes are ready.
+2023-07-28 11:33:02,521 - MainThread - INFO -: Rest API is responding
+2023-07-28 11:33:02,546 - MainThread - INFO -: {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+20509',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'IP 2110',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+2023-07-28 11:33:03,006 - MainThread - INFO -: FPGA design from fpgaver is 8
+2023-07-28 11:33:03,453 - MainThread - INFO -: FPGA design from fpgaver is 8
+2023-07-28 11:33:04,774 - MainThread - INFO -: PID for process qx_nmosclient is 792
+2023-07-28 11:33:04,775 - MainThread - INFO -: All critical processes are ready.
+2023-07-28 11:33:04,815 - MainThread - INFO -: Successfully connected to port 22 for protocol ssh
+2023-07-28 11:33:04,817 - MainThread - INFO -: Successfully connected to port 80 for protocol http
+2023-07-28 11:33:04,818 - MainThread - INFO -: Successfully connected to port 8080 for protocol REST
+2023-07-28 11:33:04,819 - MainThread - INFO -: Successfully connected to port 3000 for protocol NMOS
+2023-07-28 11:33:04,820 - MainThread - INFO -: Successfully connected to port 5900 for protocol VNC
+2023-07-28 11:33:04,820 - MainThread - INFO -: All important ports are listening
+2023-07-28 11:33:04,821 - MainThread - INFO -: Device DNS / mDNS name lookup succeeded. getaddrinfo() returned [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('192.168.1.157', 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_DGRAM: 2>, 17, '', ('192.168.1.157', 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_RAW: 3>, 0, '', ('192.168.1.157', 0))]
+2023-07-28 11:33:05,199 - MainThread - INFO -: FPGA design from fpgaver is 8
+2023-07-28 11:33:05,199 - MainThread - INFO -: Operation mode is currently OperationMode.IP_2110, changing to OperationMode.SDI
+2023-07-28 11:33:05,940 - MainThread - INFO -: qx-020264 - Unit is currently running v6.0 in IP 2110 mode
+2023-07-28 11:33:06,788 - MainThread - INFO -: [dump_stored_designs.sh]	 Metadata in: /dev/mtd1
+2023-07-28 11:33:06,790 - MainThread - INFO -: [dump_stored_designs.sh]	 8 1
+2023-07-28 11:33:06,791 - MainThread - INFO -: qx-020264 - Boot (Active): OperationMode.IP_2110 (8), Backup (Inactive): OperationMode.SDI (1)
+2023-07-28 11:33:06,791 - MainThread - INFO -: Setting dual flash designs to OperationMode.SDI & OperationMode.CURRENT
+2023-07-28 11:33:06,791 - MainThread - INFO -: FPGA designs in flash are currently OperationMode.IP_2110 & OperationMode.SDI
+2023-07-28 11:33:06,791 - MainThread - INFO -: Store single FPGA design into flash (Using "boot" var (1))
+2023-07-28 11:33:06,791 - MainThread - INFO -: SSH command line: /usr/bin/flash_upgrade.sh 1
+2023-07-28 11:33:10,663 - MainThread - INFO -: ---------- Start of flash_upgrade.sh output ----------
+2023-07-28 11:33:10,664 - MainThread - INFO -: [flash_upgrade_script.sh]	 Primary design selected from command line as:  1
+2023-07-28 11:33:10,664 - MainThread - INFO -: [flash_upgrade_script.sh]	 Calcing FPGA partition layout
+2023-07-28 11:33:10,664 - MainThread - INFO -: [flash_upgrade_script.sh]	 Metadata in: /dev/mtd1
+2023-07-28 11:33:10,664 - MainThread - INFO -: [flash_upgrade_script.sh]	 Desired boot design is in partition A
+2023-07-28 11:33:10,664 - MainThread - INFO -: [flash_upgrade_script.sh]	 Staging secondary FPGA for verification
+2023-07-28 11:33:10,664 - MainThread - INFO -: [flash_upgrade_script.sh]	 Calcing wanted checksums
+2023-07-28 11:33:10,664 - MainThread - INFO -: [flash_upgrade_script.sh]	 
+2023-07-28 11:33:10,664 - MainThread - INFO -: [flash_upgrade_script.sh]	 flash dev - image file - ref checksum - current checksum
+2023-07-28 11:33:10,664 - MainThread - INFO -: [flash_upgrade_script.sh]	 /dev/mtd0 - /opt/imgs/1 - /opt/checksums/1.bin.md5 - /dev/mtd1
+2023-07-28 11:33:10,664 - MainThread - INFO -: [flash_upgrade_script.sh]	 /dev/mtd0 - /opt/imgs/8 - /opt/checksums/8.bin.md5 - /dev/mtd1
+2023-07-28 11:33:10,664 - MainThread - INFO -: [flash_upgrade_script.sh]	 /dev/mtd2 - /opt/imgs/ubootbin
+2023-07-28 11:33:10,664 - MainThread - INFO -: [flash_upgrade_script.sh]	 current: 
+2023-07-28 11:33:10,664 - MainThread - INFO -: [flash_upgrade_script.sh]	 /dev/mtd3
+2023-07-28 11:33:10,664 - MainThread - INFO -: [flash_upgrade_script.sh]	 /dev/mtd4 - /opt/imgs/imx6q-ph069-09.dtb
+2023-07-28 11:33:10,664 - MainThread - INFO -: [flash_upgrade_script.sh]	 /dev/mtd6 - /opt/imgs/kernel
+2023-07-28 11:33:10,665 - MainThread - INFO -: [flash_upgrade_script.sh]	 /dev/mtd7 - /opt/imgs/initrd
+2023-07-28 11:33:10,665 - MainThread - INFO -: [flash_upgrade_script.sh]	 current: 
+2023-07-28 11:33:10,665 - MainThread - INFO -: [flash_upgrade_script.sh]	 /dev/mtd10 - /opt/imgs/machxo.jed
+2023-07-28 11:33:10,665 - MainThread - INFO -: [flash_upgrade_script.sh]	 /dev/ - /opt/imgs/fp_machxo.jed
+2023-07-28 11:33:10,665 - MainThread - INFO -: [flash_upgrade_script.sh]	 
+2023-07-28 11:33:10,665 - MainThread - INFO -: [flash_upgrade_script.sh]	 Checking Mezzanine MachXO2
+2023-07-28 11:33:10,665 - MainThread - INFO -: [flash_upgrade_script.sh]	 MachXO2 MD5 sums match
+2023-07-28 11:33:10,665 - MainThread - INFO -: [flash_upgrade_script.sh]	 PH069 FPGA upgrade
+2023-07-28 11:33:10,665 - MainThread - INFO -: [flash_upgrade_script.sh]	 Creating fpgaInfo... 
+2023-07-28 11:33:10,665 - MainThread - INFO -: [flash_upgrade_script.sh]	 Wanted design in partition 0, setting active partition to 0
+2023-07-28 11:33:10,665 - MainThread - INFO -: [flash_upgrade_script.sh]	 Active partition found - activePart is: 0
+2023-07-28 11:33:10,665 - MainThread - INFO -: [flash_upgrade_script.sh]	 Created as: 
+2023-07-28 11:33:10,665 - MainThread - INFO -: [flash_upgrade_script.sh]	 md5sum: 43def70a611bfdfd6deefa1685149fb9
+2023-07-28 11:33:10,665 - MainThread - INFO -: [flash_upgrade_script.sh]	 mezzanine: 0 3 4 5 6 7 8 9 10 11 12 13 14 15
+2023-07-28 11:33:10,666 - MainThread - INFO -: [flash_upgrade_script.sh]	 machXO2: 0 1 2 262146 262147 262148 262149 262150 262151
+2023-07-28 11:33:10,666 - MainThread - INFO -: [flash_upgrade_script.sh]	 design: qx_ph069_common_top
+2023-07-28 11:33:10,666 - MainThread - INFO -: [flash_upgrade_script.sh]	 version: 1-5.3
+2023-07-28 11:33:10,666 - MainThread - INFO -: [flash_upgrade_script.sh]	 vivado: 2020.2
+2023-07-28 11:33:10,666 - MainThread - INFO -: [flash_upgrade_script.sh]	 device: xcku040-ffva1156-1-c
+2023-07-28 11:33:10,666 - MainThread - INFO -: [flash_upgrade_script.sh]	 date: 2023/06/28
+2023-07-28 11:33:10,666 - MainThread - INFO -: [flash_upgrade_script.sh]	 time: 19:42:13
+2023-07-28 11:33:10,666 - MainThread - INFO -: [flash_upgrade_script.sh]	 size: 14117832
+2023-07-28 11:33:10,666 - MainThread - INFO -: [flash_upgrade_script.sh]	 partition: 0
+2023-07-28 11:33:10,666 - MainThread - INFO -: [flash_upgrade_script.sh]	 md5sum: 65f9754ef46261df4ae1c4ba3965fef5
+2023-07-28 11:33:10,666 - MainThread - INFO -: [flash_upgrade_script.sh]	 mezzanine: 0 3 4 5 6 7 8 9 10 11 12 13 14 15
+2023-07-28 11:33:10,666 - MainThread - INFO -: [flash_upgrade_script.sh]	 machXO2: 0 1 2 262146 262147 262148 262149 262150 262151
+2023-07-28 11:33:10,666 - MainThread - INFO -: [flash_upgrade_script.sh]	 design: qx_ph069_common_top
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 version: 8-5.3
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 vivado: 2020.2
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 device: xcku040-ffva1156-1-c
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 date: 2023/07/25
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 time: 16:57:48
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 size: 13783480
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 partition: 1
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 Programming fpgainfo... 
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 Done!
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 0xAA995566 found at offset 0x00000014
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 0x30022001 found at offset 0x00000008
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 Writing TIMER: 0x00000000 (0x00000000)
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 0x30020001 found at offset 0x00000001
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 Writing address: 0x00000000 (0x00000000)
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 0x30008001 found at offset 0x00000001
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 Clearing IPROG
+2023-07-28 11:33:10,667 - MainThread - INFO -: [flash_upgrade_script.sh]	 Wrote: 65536
+2023-07-28 11:33:10,668 - MainThread - INFO -: [flash_upgrade_script.sh]	 Inspecting U-Boot
+2023-07-28 11:33:10,668 - MainThread - INFO -: [flash_upgrade_script.sh]	 MD5 sums /opt/checksums/ubootbin.md5 /mnt/board_storage/checksums/ubootbin.md5 match - U-Boot is good
+2023-07-28 11:33:10,668 - MainThread - INFO -: [flash_upgrade_script.sh]	 U-Boot environment is good
+2023-07-28 11:33:10,668 - MainThread - INFO -: [flash_upgrade_script.sh]	 Inspecting Recovery-Kernel
+2023-07-28 11:33:10,668 - MainThread - INFO -: [flash_upgrade_script.sh]	 MD5 sums /opt/checksums/kernel.md5 /mnt/board_storage/checksums/kernel.md5 match - Recovery-Kernel is good
+2023-07-28 11:33:10,668 - MainThread - INFO -: [flash_upgrade_script.sh]	 Inspecting Recovery-RamDisk
+2023-07-28 11:33:10,668 - MainThread - INFO -: [flash_upgrade_script.sh]	 MD5 sums /opt/checksums/initrd.md5 /mnt/board_storage/checksums/initrd.md5 match - Recovery-RamDisk is good
+2023-07-28 11:33:10,668 - MainThread - INFO -: [flash_upgrade_script.sh]	 Inspecting Recovery-DeviceTree
+2023-07-28 11:33:10,668 - MainThread - INFO -: [flash_upgrade_script.sh]	 MD5 sums /opt/checksums/imx6q-ph069-09.dtb.md5 /mnt/board_storage/checksums/imx6q-ph069-09.dtb.md5 match - Recovery-DeviceTree is good
+2023-07-28 11:33:10,668 - MainThread - INFO -: [flash_upgrade_script.sh]	 
+2023-07-28 11:33:10,668 - MainThread - INFO -: [flash_upgrade_script.sh]	 Updates made...
+2023-07-28 11:33:10,668 - MainThread - INFO -: ---------- End of flash_upgrade.sh output ----------
+2023-07-28 11:33:10,668 - MainThread - INFO -: qx-020264 set_operating_mode (dual firmware flash mode)
+2023-07-28 11:33:10,668 - MainThread - INFO -: qx-020264 	Flash partition contents before: OperationMode.IP_2110 OperationMode.SDI
+2023-07-28 11:33:11,673 - MainThread - INFO -: [dump_stored_designs.sh]	 Metadata in: /dev/mtd1
+2023-07-28 11:33:11,673 - MainThread - INFO -: [dump_stored_designs.sh]	 1 8
+2023-07-28 11:33:11,673 - MainThread - INFO -: qx-020264 - Boot (Active): OperationMode.SDI (1), Backup (Inactive): OperationMode.IP_2110 (8)
+2023-07-28 11:33:11,673 - MainThread - INFO -: qx-020264 	Flash partition contents after : (<OperationMode.SDI: OperationModeEntry(fpga_design=1, system_mode=1)>, <OperationMode.IP_2110: OperationModeEntry(fpga_design=8, system_mode=3)>)
+2023-07-28 11:33:11,673 - MainThread - INFO -: qx-020264 	Flash partition order: [0, 0, 1]
+2023-07-28 11:33:11,673 - MainThread - INFO -: qx-020264 	Flash jump to: 0x00000000
+2023-07-28 11:33:12,402 - MainThread - WARNING -: Sending reboot command to Qx qx-020264 - 192.168.1.157
+2023-07-28 11:33:22,815 - MainThread - WARNING -: Management interface responded to ping while waiting for reboot - retrying...
+2023-07-28 11:33:32,824 - MainThread - INFO -: Management interface stopped responding to pings while waiting for reboot
+2023-07-28 11:33:57,848 - MainThread - WARNING -: Management interface did not respond to ping after 1 attempts - retrying...
+2023-07-28 11:33:57,868 - MainThread - INFO -: Management interface responded to ping after 2 attempts.
+2023-07-28 11:33:58,463 - MainThread - INFO -: SSH Ready after 0 retries.
+2023-07-28 11:33:59,945 - MainThread - WARNING -: Failed to find process qx_server, retrying...
+2023-07-28 11:34:11,017 - MainThread - INFO -: PID for process qx_server is 816
+2023-07-28 11:34:12,235 - MainThread - INFO -: PID for process qx_client is 758
+2023-07-28 11:34:12,235 - MainThread - INFO -: All critical processes are ready.
+2023-07-28 11:34:12,240 - MainThread - WARNING -: Failed to to obtain system about info via rest API (HTTPConnectionPool(host='qx-020264', port=8080): Max retries exceeded with url: /api/v1/system/about (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f195caf4b80>: Failed to establish a new connection: [Errno 111] Connection refused'))), retrying...
+2023-07-28 11:34:22,261 - MainThread - WARNING -: Failed to to obtain system about info via rest API (HTTPConnectionPool(host='qx-020264', port=8080): Max retries exceeded with url: /api/v1/system/about (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f195caf4550>: Failed to establish a new connection: [Errno 111] Connection refused'))), retrying...
+2023-07-28 11:34:32,393 - MainThread - INFO -: Rest API is responding
+2023-07-28 11:34:32,591 - MainThread - INFO -: {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+2023-07-28 11:34:33,535 - MainThread - INFO -: FPGA design from fpgaver is 1
+2023-07-28 11:34:33,709 - MainThread - INFO -: Successfully connected to port 22 for protocol ssh
+2023-07-28 11:34:33,712 - MainThread - INFO -: Successfully connected to port 80 for protocol http
+2023-07-28 11:34:33,714 - MainThread - INFO -: Successfully connected to port 8080 for protocol REST
+2023-07-28 11:34:33,716 - MainThread - INFO -: Successfully connected to port 5900 for protocol VNC
+2023-07-28 11:34:33,717 - MainThread - INFO -: All important ports are listening
+2023-07-28 11:34:33,720 - MainThread - INFO -: Device DNS / mDNS name lookup succeeded. getaddrinfo() returned [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('192.168.1.157', 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_DGRAM: 2>, 17, '', ('192.168.1.157', 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_RAW: 3>, 0, '', ('192.168.1.157', 0))]
+2023-07-28 11:34:34,857 - MainThread - INFO -: qx-020264 - Output has changed to BNC
+2023-07-28 11:34:34,898 - MainThread - INFO -: qx-020264 - SDI spigot outputs have been changed: ('generator', 'generator', 'generator', 'generator')
+2023-07-28 11:34:35,517 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:34:35,518 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:34:35,518 - MainThread - INFO -: FIXTURE: Qx qx-020264 setup complete.
+2023-07-28 11:34:35,521 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:34:36,100 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:34:36,720 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-1-True]
+Started: 2023-07-28 11:34:36.686221
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:34:43,668 - MainThread - INFO -: qx-020264 - Generator set: 3840x2160p60 / YCbCr:422:10 / 12G_2-SI_Rec.709 / 100% Bars
+2023-07-28 11:34:45,694 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:34:45,694 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:34:45,709 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:34:45,709 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:34:45,890 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-1-True]
+Ended: 2023-07-28 11:34:45.843909
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:34:45,893 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:34:46,373 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:34:47,027 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-1-False]
+Started: 2023-07-28 11:34:46.985644
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:34:47,076 - MainThread - INFO -: qx-020264 - Generator set: 3840x2160p60 / YCbCr:422:10 / 12G_2-SI_Rec.709 / 100% Bars
+2023-07-28 11:34:49,127 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:34:49,127 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:34:49,203 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:34:49,203 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': False, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:34:49,276 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-1-False]
+Ended: 2023-07-28 11:34:49.234273
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:34:49,280 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:34:49,738 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:34:50,370 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-2-True]
+Started: 2023-07-28 11:34:50.329386
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:34:50,422 - MainThread - INFO -: qx-020264 - Generator set: 3840x2160p60 / YCbCr:422:10 / 12G_2-SI_Rec.709 / 100% Bars
+2023-07-28 11:34:52,516 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:34:52,517 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:34:52,560 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:34:52,560 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:34:52,632 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-2-True]
+Ended: 2023-07-28 11:34:52.586469
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:34:52,634 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:34:53,116 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:34:53,738 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-2-False]
+Started: 2023-07-28 11:34:53.702113
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:34:53,759 - MainThread - INFO -: qx-020264 - Generator set: 3840x2160p60 / YCbCr:422:10 / 12G_2-SI_Rec.709 / 100% Bars
+2023-07-28 11:34:55,804 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:34:55,804 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:34:55,878 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:34:55,878 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': False, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:34:55,965 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-2-False]
+Ended: 2023-07-28 11:34:55.889552
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:34:55,968 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:34:56,574 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:34:57,197 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-3-True]
+Started: 2023-07-28 11:34:57.159882
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:34:57,276 - MainThread - INFO -: qx-020264 - Generator set: 3840x2160p60 / YCbCr:422:10 / 12G_2-SI_Rec.709 / 100% Bars
+2023-07-28 11:34:59,400 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:34:59,400 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:34:59,412 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:34:59,413 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:34:59,508 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-3-True]
+Ended: 2023-07-28 11:34:59.457794
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:34:59,511 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:00,083 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:00,657 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-3-False]
+Started: 2023-07-28 11:35:00.628774
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:00,711 - MainThread - INFO -: qx-020264 - Generator set: 3840x2160p60 / YCbCr:422:10 / 12G_2-SI_Rec.709 / 100% Bars
+2023-07-28 11:35:02,785 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:02,785 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:02,851 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:02,851 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': False, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:02,912 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-3-False]
+Ended: 2023-07-28 11:35:02.872629
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:02,914 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:03,331 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:03,811 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-4-True]
+Started: 2023-07-28 11:35:03.767518
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:03,843 - MainThread - INFO -: qx-020264 - Generator set: 3840x2160p60 / YCbCr:422:10 / 12G_2-SI_Rec.709 / 100% Bars
+2023-07-28 11:35:05,919 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:05,919 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:05,940 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:05,941 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:06,064 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-4-True]
+Ended: 2023-07-28 11:35:05.982585
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:06,067 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:06,467 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:07,048 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-4-False]
+Started: 2023-07-28 11:35:06.973258
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:07,068 - MainThread - INFO -: qx-020264 - Generator set: 3840x2160p60 / YCbCr:422:10 / 12G_2-SI_Rec.709 / 100% Bars
+2023-07-28 11:35:09,176 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:09,177 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:09,248 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:09,249 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': False, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:09,332 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-4-False]
+Ended: 2023-07-28 11:35:09.281969
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:09,338 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:09,753 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:10,227 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-5-True]
+Started: 2023-07-28 11:35:10.167872
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:10,236 - MainThread - INFO -: qx-020264 - Generator set: 3840x2160p60 / YCbCr:422:10 / 12G_2-SI_Rec.709 / 100% Bars
+2023-07-28 11:35:12,331 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:12,331 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:12,352 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:12,352 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:12,414 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-5-True]
+Ended: 2023-07-28 11:35:12.379684
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:12,418 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:12,878 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:13,359 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-5-False]
+Started: 2023-07-28 11:35:13.305549
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:13,406 - MainThread - INFO -: qx-020264 - Generator set: 3840x2160p60 / YCbCr:422:10 / 12G_2-SI_Rec.709 / 100% Bars
+2023-07-28 11:35:15,446 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:15,446 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:15,531 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:15,532 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': False, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:15,662 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-5-False]
+Ended: 2023-07-28 11:35:15.578528
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:15,665 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:16,091 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:16,574 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-6-True]
+Started: 2023-07-28 11:35:16.512397
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:16,610 - MainThread - INFO -: qx-020264 - Generator set: 3840x2160p60 / YCbCr:422:10 / 12G_2-SI_Rec.709 / 100% Bars
+2023-07-28 11:35:18,686 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:18,686 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:18,702 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:18,704 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:18,794 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-6-True]
+Ended: 2023-07-28 11:35:18.744388
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:18,797 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:19,189 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:19,793 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-6-False]
+Started: 2023-07-28 11:35:19.706151
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:19,837 - MainThread - INFO -: qx-020264 - Generator set: 3840x2160p60 / YCbCr:422:10 / 12G_2-SI_Rec.709 / 100% Bars
+2023-07-28 11:35:21,877 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:21,878 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:21,918 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:21,918 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': False, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:22,023 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-6-False]
+Ended: 2023-07-28 11:35:21.943772
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:22,026 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:22,429 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:22,906 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-7-True]
+Started: 2023-07-28 11:35:22.866317
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:22,945 - MainThread - INFO -: qx-020264 - Generator set: 3840x2160p60 / YCbCr:422:10 / 12G_2-SI_Rec.709 / 100% Bars
+2023-07-28 11:35:25,052 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:25,052 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:25,064 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:25,064 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:25,150 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-7-True]
+Ended: 2023-07-28 11:35:25.107584
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:25,153 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:25,584 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:26,089 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-7-False]
+Started: 2023-07-28 11:35:26.048665
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:26,121 - MainThread - INFO -: qx-020264 - Generator set: 3840x2160p60 / YCbCr:422:10 / 12G_2-SI_Rec.709 / 100% Bars
+2023-07-28 11:35:28,209 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:28,209 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:28,274 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:28,275 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': False, 'audioGroup8': True}
+2023-07-28 11:35:28,336 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-7-False]
+Ended: 2023-07-28 11:35:28.301450
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:28,338 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:28,782 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:29,294 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-8-True]
+Started: 2023-07-28 11:35:29.224221
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:29,309 - MainThread - INFO -: qx-020264 - Generator set: 3840x2160p60 / YCbCr:422:10 / 12G_2-SI_Rec.709 / 100% Bars
+2023-07-28 11:35:31,363 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:31,363 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:31,389 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:31,389 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:31,489 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-8-True]
+Ended: 2023-07-28 11:35:31.418155
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:31,492 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:31,893 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:32,395 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-8-False]
+Started: 2023-07-28 11:35:32.289130
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:32,409 - MainThread - INFO -: qx-020264 - Generator set: 3840x2160p60 / YCbCr:422:10 / 12G_2-SI_Rec.709 / 100% Bars
+2023-07-28 11:35:34,530 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:34,530 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:34,566 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:34,567 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': False}
+2023-07-28 11:35:34,631 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard0-8-False]
+Ended: 2023-07-28 11:35:34.581752
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:34,633 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:35,158 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:35,627 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-1-True]
+Started: 2023-07-28 11:35:35.583264
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:37,571 - MainThread - INFO -: qx-020264 - Generator set: 2048x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-07-28 11:35:39,616 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:39,616 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:39,629 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:39,629 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:39,790 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-1-True]
+Ended: 2023-07-28 11:35:39.685698
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:39,792 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:40,210 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:40,716 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-1-False]
+Started: 2023-07-28 11:35:40.667369
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:40,753 - MainThread - INFO -: qx-020264 - Generator set: 2048x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-07-28 11:35:42,845 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:42,846 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:42,894 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:42,895 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': False, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:42,956 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-1-False]
+Ended: 2023-07-28 11:35:42.911379
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:42,958 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:43,368 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:43,905 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-2-True]
+Started: 2023-07-28 11:35:43.813208
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:43,917 - MainThread - INFO -: qx-020264 - Generator set: 2048x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-07-28 11:35:45,995 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:45,996 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:46,029 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:46,029 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:46,175 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-2-True]
+Ended: 2023-07-28 11:35:46.091406
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:46,178 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:46,710 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:47,191 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-2-False]
+Started: 2023-07-28 11:35:47.135301
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:47,215 - MainThread - INFO -: qx-020264 - Generator set: 2048x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-07-28 11:35:49,273 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:49,274 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:49,300 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:49,301 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': False, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:49,427 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-2-False]
+Ended: 2023-07-28 11:35:49.330039
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:49,429 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:49,888 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:50,422 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-3-True]
+Started: 2023-07-28 11:35:50.379552
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:50,448 - MainThread - INFO -: qx-020264 - Generator set: 2048x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-07-28 11:35:52,531 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:52,531 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:52,544 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:52,544 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:52,607 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-3-True]
+Ended: 2023-07-28 11:35:52.571914
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:52,610 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:53,054 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:53,533 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-3-False]
+Started: 2023-07-28 11:35:53.485713
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:53,547 - MainThread - INFO -: qx-020264 - Generator set: 2048x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-07-28 11:35:55,654 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:55,654 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:55,679 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:55,679 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': False, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:55,782 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-3-False]
+Ended: 2023-07-28 11:35:55.703381
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:55,785 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:56,203 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:56,707 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-4-True]
+Started: 2023-07-28 11:35:56.613490
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:35:56,790 - MainThread - INFO -: qx-020264 - Generator set: 2048x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-07-28 11:35:58,946 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:58,947 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:58,983 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:35:58,983 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:35:59,103 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-4-True]
+Ended: 2023-07-28 11:35:59.026385
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:35:59,106 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:35:59,509 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:00,140 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-4-False]
+Started: 2023-07-28 11:36:00.091444
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:36:00,183 - MainThread - INFO -: qx-020264 - Generator set: 2048x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-07-28 11:36:02,238 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:02,239 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:36:02,264 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:02,264 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': False, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:36:02,316 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-4-False]
+Ended: 2023-07-28 11:36:02.284376
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:36:02,320 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:02,741 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:03,246 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-5-True]
+Started: 2023-07-28 11:36:03.204021
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:36:03,286 - MainThread - INFO -: qx-020264 - Generator set: 2048x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-07-28 11:36:05,324 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:05,324 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:36:05,351 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:05,352 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:36:05,437 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-5-True]
+Ended: 2023-07-28 11:36:05.397354
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:36:05,440 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:05,875 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:06,326 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-5-False]
+Started: 2023-07-28 11:36:06.278577
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:36:06,357 - MainThread - INFO -: qx-020264 - Generator set: 2048x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-07-28 11:36:08,436 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:08,436 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:36:08,463 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:08,463 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': False, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:36:08,533 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-5-False]
+Ended: 2023-07-28 11:36:08.495935
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:36:08,535 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:08,973 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:09,582 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-6-True]
+Started: 2023-07-28 11:36:09.422625
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:36:09,614 - MainThread - INFO -: qx-020264 - Generator set: 2048x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-07-28 11:36:11,689 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:11,690 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:36:11,711 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:11,711 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:36:11,809 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-6-True]
+Ended: 2023-07-28 11:36:11.729906
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:36:11,813 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:12,271 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:12,897 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-6-False]
+Started: 2023-07-28 11:36:12.829198
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:36:12,929 - MainThread - INFO -: qx-020264 - Generator set: 2048x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-07-28 11:36:14,983 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:14,983 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:36:15,032 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:15,032 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': False, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:36:15,094 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-6-False]
+Ended: 2023-07-28 11:36:15.042190
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:36:15,098 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:15,503 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:15,985 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-7-True]
+Started: 2023-07-28 11:36:15.933549
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:36:16,000 - MainThread - INFO -: qx-020264 - Generator set: 2048x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-07-28 11:36:18,048 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:18,048 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:36:18,068 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:18,069 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:36:18,191 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-7-True]
+Ended: 2023-07-28 11:36:18.103682
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:36:18,194 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:18,613 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:19,058 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-7-False]
+Started: 2023-07-28 11:36:19.027100
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:36:19,094 - MainThread - INFO -: qx-020264 - Generator set: 2048x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-07-28 11:36:21,134 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:21,135 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:36:21,155 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:21,155 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': False, 'audioGroup8': True}
+2023-07-28 11:36:21,242 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-7-False]
+Ended: 2023-07-28 11:36:21.164854
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:36:21,245 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:21,660 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:22,116 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-8-True]
+Started: 2023-07-28 11:36:22.095514
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:36:22,137 - MainThread - INFO -: qx-020264 - Generator set: 2048x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-07-28 11:36:24,206 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:24,206 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:36:24,241 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:24,241 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:36:24,406 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-8-True]
+Ended: 2023-07-28 11:36:24.263226
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:36:24,411 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:24,867 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.1.157 Hostname: qx-020264)
+2023-07-28 11:36:25,351 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-8-False]
+Started: 2023-07-28 11:36:25.299692
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-07-28 11:36:25,370 - MainThread - INFO -: qx-020264 - Generator set: 2048x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-07-28 11:36:27,463 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:27,464 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': True}
+2023-07-28 11:36:27,513 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:27,513 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': True, 'audioGroup2': True, 'audioGroup3': True, 'audioGroup4': True, 'audioGroup5': True, 'audioGroup6': True, 'audioGroup7': True, 'audioGroup8': False}
+2023-07-28 11:36:27,589 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Audio/test_enable_disable_audio_groups.py::test_enable_disable_single_audio_group[standard1-8-False]
+Ended: 2023-07-28 11:36:27.555189
+Test Generator Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '948038959',
+ 'FPGA_version': '5.3.0+28538',
+ 'IP': '192.168.1.157',
+ 'Image_version': 'release_v4_6_0',
+ 'Software_version': '6.0.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '27f37b4aafa3debf797f4f42f6abadba9edd1670',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+
+2023-07-28 11:36:27,670 - MainThread - INFO -: qx-020264 - Set Audio Group configuration.
+2023-07-28 11:36:27,670 - MainThread - INFO -: qx-020264 - AudioGroup configuration {'audioGroup1': False, 'audioGroup2': False, 'audioGroup3': False, 'audioGroup4': False, 'audioGroup5': False, 'audioGroup6': False, 'audioGroup7': False, 'audioGroup8': False}
+2023-07-28 11:36:27,670 - MainThread - INFO -: FIXTURE: Qx qx-020264 teardown complete.

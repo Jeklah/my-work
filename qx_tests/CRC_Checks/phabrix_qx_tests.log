@@ -1,0 +1,75 @@
+2023-05-10 13:04:29,452 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.18 Hostname: qx-020264.local)
+2023-05-10 13:04:30,525 - MainThread - INFO -: FPGA design from fpgaver is 1
+2023-05-10 13:04:30,540 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.18 Hostname: qx-020264.local)
+2023-05-10 13:04:31,588 - MainThread - INFO -: FPGA design from fpgaver is 1
+2023-05-10 13:04:31,599 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.18 Hostname: qx-020264.local)
+2023-05-10 13:04:32,042 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.18 Hostname: qx-020264.local)
+2023-05-10 13:04:32,548 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: CRC_Checks/test_standard_crc.py::test_sad_crc_files[1.0.0-1]
+Started: 2023-05-10 13:04:32.492859
+Test Generator Device: 
+  {'Build_number': '861016679',
+ 'FPGA_version': '4.8.0+14723',
+ 'IP': '192.168.0.18',
+ 'Image_version': 'release_v4_4_0',
+ 'Software_version': '5.2.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264.local',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': 'c819846b4ca9057f587c8578ee8e9289394e8f2e',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '861016679',
+ 'FPGA_version': '4.8.0+14723',
+ 'IP': '192.168.0.18',
+ 'Image_version': 'release_v4_4_0',
+ 'Software_version': '5.2.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264.local',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': 'c819846b4ca9057f587c8578ee8e9289394e8f2e',
+ 'software_branch': 'develop'}      
+-------------------------------------------------------------------------------
+
+2023-05-10 13:04:32,555 - MainThread - INFO -: Loaded store crc dataframe with metadata: None
+2023-05-10 13:04:32,653 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: CRC_Checks/test_standard_crc.py::test_sad_crc_files[1.0.0-1]
+Ended: 2023-05-10 13:04:32.576845
+Test Generator Device: 
+  {'Build_number': '861016679',
+ 'FPGA_version': '4.8.0+14723',
+ 'IP': '192.168.0.18',
+ 'Image_version': 'release_v4_4_0',
+ 'Software_version': '5.2.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264.local',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': 'c819846b4ca9057f587c8578ee8e9289394e8f2e',
+ 'software_branch': 'develop'}
+
+Test Analyser Device: 
+  {'Build_number': '861016679',
+ 'FPGA_version': '4.8.0+14723',
+ 'IP': '192.168.0.18',
+ 'Image_version': 'release_v4_4_0',
+ 'Software_version': '5.2.0',
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264.local',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': 'c819846b4ca9057f587c8578ee8e9289394e8f2e',
+ 'software_branch': 'develop'}      
+================================= Test End ====================================
+

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="2" failures="0" hostname="ab-VM" name="autolib" skipped="0" tests="2" time="6.437" timestamp="2023-08-10T13:28:33.240705"><testcase classname="" name="Audio.test_aes" time="0.000"><error message="collection failure">../../../../.local/lib/python3.8/site-packages/pluggy/hooks.py:286: in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+        args       = ()
+        kwargs     = {&apos;collector&apos;: &lt;Module test_aes.py&gt;,
+ &apos;name&apos;: &apos;test_2110_aes_output&apos;,
+ &apos;obj&apos;: &lt;function test_2110_aes_output at 0x7fc433154e50&gt;}
+        notincall  = set()
+        self       = &lt;_HookCaller &apos;pytest_pycollect_makeitem&apos;&gt;
+../../../../.local/lib/python3.8/site-packages/pluggy/manager.py:93: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+        hook       = &lt;_HookCaller &apos;pytest_pycollect_makeitem&apos;&gt;
+        kwargs     = {&apos;collector&apos;: &lt;Module test_aes.py&gt;,
+ &apos;name&apos;: &apos;test_2110_aes_output&apos;,
+ &apos;obj&apos;: &lt;function test_2110_aes_output at 0x7fc433154e50&gt;}
+        methods    = [&lt;HookImpl plugin_name=&apos;unittest&apos;, plugin=&lt;module &apos;_pytest.unittest&apos; from &apos;/home/arthur/.local/lib/python3.8/site-packages/_pytest/unittest.py&apos;&gt;&gt;,
+ &lt;HookImpl plugin_name=&apos;python&apos;, plugin=&lt;module &apos;_pytest.python&apos; from &apos;/home/arthur/.local/lib/python3.8/site-packages/_pytest/python.py&apos;&gt;&gt;]
+        self       = &lt;_pytest.config.PytestPluginManager object at 0x7fc435539ca0&gt;
+../../../../.local/lib/python3.8/site-packages/pluggy/manager.py:84: in &lt;lambda&gt;
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+        hook       = &lt;_HookCaller &apos;pytest_pycollect_makeitem&apos;&gt;
+        kwargs     = {&apos;collector&apos;: &lt;Module test_aes.py&gt;,
+ &apos;name&apos;: &apos;test_2110_aes_output&apos;,
+ &apos;obj&apos;: &lt;function test_2110_aes_output at 0x7fc433154e50&gt;}
+        methods    = [&lt;HookImpl plugin_name=&apos;unittest&apos;, plugin=&lt;module &apos;_pytest.unittest&apos; from &apos;/home/arthur/.local/lib/python3.8/site-packages/_pytest/unittest.py&apos;&gt;&gt;,
+ &lt;HookImpl plugin_name=&apos;python&apos;, plugin=&lt;module &apos;_pytest.python&apos; from &apos;/home/arthur/.local/lib/python3.8/site-packages/_pytest/python.py&apos;&gt;&gt;]
+../../../../.local/lib/python3.8/site-packages/_pytest/python.py:246: in pytest_pycollect_makeitem
+    res = list(collector._genfunctions(name, obj))
+        collector  = &lt;Module test_aes.py&gt;
+        name       = &apos;test_2110_aes_output&apos;
+        obj        = &lt;function test_2110_aes_output at 0x7fc433154e50&gt;
+        outcome    = &lt;pluggy.callers._Result object at 0x7fc433149610&gt;
+        res        = None
+../../../../.local/lib/python3.8/site-packages/_pytest/python.py:413: in _genfunctions
+    self.ihook.pytest_generate_tests.call_extra(methods, dict(metafunc=metafunc))
+        cls        = None
+        clscol     = None
+        definition = &lt;FunctionDefinition test_2110_aes_output&gt;
+        fixtureinfo = FuncFixtureInfo(argnames=(&apos;aes_2110_config&apos;, &apos;generator_qx&apos;, &apos;analyser_qx&apos;), initialnames=(&apos;test_start_banner&apos;, &apos;aes_2110_config&apos;, &apos;generator_qx&apos;, &apos;analyser_qx&apos;), names_closure=[&apos;test_generator_hostname&apos;, &apos;test_analyser_hostname&apos;, &apos;generator_qx&apos;, &apos;analyser_qx&apos;, &apos;test_start_banner&apos;, &apos;aes_2110_config&apos;, &apos;request&apos;], name2fixturedefs={&apos;test_start_banner&apos;: (&lt;FixtureDef argname=&apos;test_start_banner&apos; scope=&apos;function&apos; baseid=&apos;&apos;&gt;,), &apos;generator_qx&apos;: (&lt;FixtureDef argname=&apos;generator_qx&apos; scope=&apos;module&apos; baseid=&apos;Audio/test_aes.py&apos;&gt;,), &apos;analyser_qx&apos;: (&lt;FixtureDef argname=&apos;analyser_qx&apos; scope=&apos;module&apos; baseid=&apos;Audio/test_aes.py&apos;&gt;,), &apos;test_generator_hostname&apos;: (&lt;FixtureDef argname=&apos;test_generator_hostname&apos; scope=&apos;session&apos; baseid=&apos;&apos;&gt;,), &apos;test_analyser_hostname&apos;: (&lt;FixtureDef argname=&apos;test_analyser_hostname&apos; scope=&apos;session&apos; baseid=&apos;&apos;&gt;,)})
+        fm         = &lt;_pytest.fixtures.FixtureManager object at 0x7fc43311e400&gt;
+        funcobj    = &lt;function test_2110_aes_output at 0x7fc433154e50&gt;
+        metafunc   = &lt;_pytest.python.Metafunc object at 0x7fc433149e20&gt;
+        methods    = []
+        module     = &lt;module &apos;tests.Audio.test_aes&apos; from &apos;/home/arthur/projects/qx_sw/tests/Audio/test_aes.py&apos;&gt;
+        name       = &apos;test_2110_aes_output&apos;
+        self       = &lt;Module test_aes.py&gt;
+../../../../.local/lib/python3.8/site-packages/pluggy/hooks.py:324: in call_extra
+    return self(**kwargs)
+        kwargs     = {&apos;metafunc&apos;: &lt;_pytest.python.Metafunc object at 0x7fc433149e20&gt;}
+        methods    = []
+        old        = ([&lt;HookImpl plugin_name=&apos;python&apos;, plugin=&lt;module &apos;_pytest.python&apos; from &apos;/home/arthur/.local/lib/python3.8/site-packages/_pytest/python.py&apos;&gt;&gt;,
+  &lt;HookImpl plugin_name=&apos;/home/arthur/projects/qx_sw/tests/conftest.py&apos;, plugin=&lt;module &apos;tests.conftest&apos; from &apos;/home/arthur/projects/qx_sw/tests/conftest.py&apos;&gt;&gt;,
+  &lt;HookImpl plugin_name=&apos;funcmanage&apos;, plugin=&lt;_pytest.fixtures.FixtureManager object at 0x7fc43311e400&gt;&gt;],
+ [])
+        self       = &lt;_HookCaller &apos;pytest_generate_tests&apos;&gt;
+../../../../.local/lib/python3.8/site-packages/pluggy/hooks.py:286: in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+        args       = ()
+        kwargs     = {&apos;metafunc&apos;: &lt;_pytest.python.Metafunc object at 0x7fc433149e20&gt;}
+        notincall  = set()
+        self       = &lt;_HookCaller &apos;pytest_generate_tests&apos;&gt;
+../../../../.local/lib/python3.8/site-packages/pluggy/manager.py:93: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+        hook       = &lt;_HookCaller &apos;pytest_generate_tests&apos;&gt;
+        kwargs     = {&apos;metafunc&apos;: &lt;_pytest.python.Metafunc object at 0x7fc433149e20&gt;}
+        methods    = [&lt;HookImpl plugin_name=&apos;python&apos;, plugin=&lt;module &apos;_pytest.python&apos; from &apos;/home/arthur/.local/lib/python3.8/site-packages/_pytest/python.py&apos;&gt;&gt;,
+ &lt;HookImpl plugin_name=&apos;/home/arthur/projects/qx_sw/tests/conftest.py&apos;, plugin=&lt;module &apos;tests.conftest&apos; from &apos;/home/arthur/projects/qx_sw/tests/conftest.py&apos;&gt;&gt;,
+ &lt;HookImpl plugin_name=&apos;funcmanage&apos;, plugin=&lt;_pytest.fixtures.FixtureManager object at 0x7fc43311e400&gt;&gt;]
+        self       = &lt;_pytest.config.PytestPluginManager object at 0x7fc435539ca0&gt;
+../../../../.local/lib/python3.8/site-packages/pluggy/manager.py:84: in &lt;lambda&gt;
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+        hook       = &lt;_HookCaller &apos;pytest_generate_tests&apos;&gt;
+        kwargs     = {&apos;metafunc&apos;: &lt;_pytest.python.Metafunc object at 0x7fc433149e20&gt;}
+        methods    = [&lt;HookImpl plugin_name=&apos;python&apos;, plugin=&lt;module &apos;_pytest.python&apos; from &apos;/home/arthur/.local/lib/python3.8/site-packages/_pytest/python.py&apos;&gt;&gt;,
+ &lt;HookImpl plugin_name=&apos;/home/arthur/projects/qx_sw/tests/conftest.py&apos;, plugin=&lt;module &apos;tests.conftest&apos; from &apos;/home/arthur/projects/qx_sw/tests/conftest.py&apos;&gt;&gt;,
+ &lt;HookImpl plugin_name=&apos;funcmanage&apos;, plugin=&lt;_pytest.fixtures.FixtureManager object at 0x7fc43311e400&gt;&gt;]
+../conftest.py:113: in pytest_generate_tests
+    unit = make_qx(qx_generator)
+        metafunc   = &lt;_pytest.python.Metafunc object at 0x7fc433149e20&gt;
+../../../../.local/lib/python3.8/site-packages/autolib/factory.py:19: in make_qx
+    qx = Qx(hostname, http_session)
+        hostname   = &apos;qx-020264&apos;
+        http_session = None
+../../../../.local/lib/python3.8/site-packages/autolib/models/qxseries/qx.py:151: in __init__
+    self.ssh.execute(&quot;fw_setenv bootdelay 2&quot;)
+        hostname   = &apos;qx-020264&apos;
+        http_session = None
+        retry_count = 5
+        self       = &lt;autolib.models.qxseries.qx.Qx object at 0x7fc433149b80&gt;
+../../../../.local/lib/python3.8/site-packages/autolib/ssh.py:43: in execute
+    self._client.connect(self._hostname, port=22, username=self._username, password=self._password, banner_timeout=200)
+        command    = &apos;fw_setenv bootdelay 2&apos;
+        retries    = 5
+        retry      = 0
+        self       = &lt;autolib.ssh.SSHTools object at 0x7fc4331498b0&gt;
+        timeout    = 30
+../../../../.local/lib/python3.8/site-packages/paramiko/client.py:368: in connect
+    raise NoValidConnectionsError(errors)
+E   paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.0.78
+        addr       = (&apos;192.168.0.78&apos;, 22)
+        af         = &lt;AddressFamily.AF_INET: 2&gt;
+        allow_agent = True
+        auth_timeout = None
+        banner_timeout = 200
+        compress   = False
+        disabled_algorithms = None
+        errors     = {(&apos;192.168.0.78&apos;, 22): OSError(113, &apos;No route to host&apos;)}
+        gss_auth   = False
+        gss_deleg_creds = True
+        gss_host   = None
+        gss_kex    = False
+        gss_trust_dns = True
+        hostname   = &apos;qx-020264&apos;
+        key_filename = None
+        look_for_keys = True
+        passphrase = None
+        password   = &apos;PragmaticPhantastic&apos;
+        pkey       = None
+        port       = 22
+        self       = &lt;paramiko.client.SSHClient object at 0x7fc4331499a0&gt;
+        sock       = &lt;socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=(&apos;0.0.0.0&apos;, 37628)&gt;
+        timeout    = None
+        to_try     = [(&lt;AddressFamily.AF_INET: 2&gt;, (&apos;192.168.0.78&apos;, 22))]
+        username   = &apos;root&apos;</error></testcase><testcase classname="" name="Audio.test_enable_disable_audio_groups" time="0.000"><error message="collection failure">../../../../.local/lib/python3.8/site-packages/pluggy/hooks.py:286: in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+        args       = ()
+        kwargs     = {&apos;collector&apos;: &lt;Module test_enable_disable_audio_groups.py&gt;,
+ &apos;name&apos;: &apos;test_enable_disable_single_audio_group&apos;,
+ &apos;obj&apos;: &lt;function test_enable_disable_single_audio_group at 0x7fc432d07310&gt;}
+        notincall  = set()
+        self       = &lt;_HookCaller &apos;pytest_pycollect_makeitem&apos;&gt;
+../../../../.local/lib/python3.8/site-packages/pluggy/manager.py:93: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+        hook       = &lt;_HookCaller &apos;pytest_pycollect_makeitem&apos;&gt;
+        kwargs     = {&apos;collector&apos;: &lt;Module test_enable_disable_audio_groups.py&gt;,
+ &apos;name&apos;: &apos;test_enable_disable_single_audio_group&apos;,
+ &apos;obj&apos;: &lt;function test_enable_disable_single_audio_group at 0x7fc432d07310&gt;}
+        methods    = [&lt;HookImpl plugin_name=&apos;unittest&apos;, plugin=&lt;module &apos;_pytest.unittest&apos; from &apos;/home/arthur/.local/lib/python3.8/site-packages/_pytest/unittest.py&apos;&gt;&gt;,
+ &lt;HookImpl plugin_name=&apos;python&apos;, plugin=&lt;module &apos;_pytest.python&apos; from &apos;/home/arthur/.local/lib/python3.8/site-packages/_pytest/python.py&apos;&gt;&gt;]
+        self       = &lt;_pytest.config.PytestPluginManager object at 0x7fc435539ca0&gt;
+../../../../.local/lib/python3.8/site-packages/pluggy/manager.py:84: in &lt;lambda&gt;
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+        hook       = &lt;_HookCaller &apos;pytest_pycollect_makeitem&apos;&gt;
+        kwargs     = {&apos;collector&apos;: &lt;Module test_enable_disable_audio_groups.py&gt;,
+ &apos;name&apos;: &apos;test_enable_disable_single_audio_group&apos;,
+ &apos;obj&apos;: &lt;function test_enable_disable_single_audio_group at 0x7fc432d07310&gt;}
+        methods    = [&lt;HookImpl plugin_name=&apos;unittest&apos;, plugin=&lt;module &apos;_pytest.unittest&apos; from &apos;/home/arthur/.local/lib/python3.8/site-packages/_pytest/unittest.py&apos;&gt;&gt;,
+ &lt;HookImpl plugin_name=&apos;python&apos;, plugin=&lt;module &apos;_pytest.python&apos; from &apos;/home/arthur/.local/lib/python3.8/site-packages/_pytest/python.py&apos;&gt;&gt;]
+../../../../.local/lib/python3.8/site-packages/_pytest/python.py:246: in pytest_pycollect_makeitem
+    res = list(collector._genfunctions(name, obj))
+        collector  = &lt;Module test_enable_disable_audio_groups.py&gt;
+        name       = &apos;test_enable_disable_single_audio_group&apos;
+        obj        = &lt;function test_enable_disable_single_audio_group at 0x7fc432d07310&gt;
+        outcome    = &lt;pluggy.callers._Result object at 0x7fc432e69490&gt;
+        res        = None
+../../../../.local/lib/python3.8/site-packages/_pytest/python.py:413: in _genfunctions
+    self.ihook.pytest_generate_tests.call_extra(methods, dict(metafunc=metafunc))
+        cls        = None
+        clscol     = None
+        definition = &lt;FunctionDefinition test_enable_disable_single_audio_group&gt;
+        fixtureinfo = FuncFixtureInfo(argnames=(&apos;generator_qx&apos;, &apos;standard&apos;, &apos;audio_group_index_value&apos;, &apos;audio_group_bool_value&apos;), initialnames=(&apos;test_start_banner&apos;, &apos;generator_qx&apos;, &apos;standard&apos;, &apos;audio_group_index_value&apos;, &apos;audio_group_bool_value&apos;), names_closure=[&apos;test_generator_hostname&apos;, &apos;test_analyser_hostname&apos;, &apos;generator_qx&apos;, &apos;test_start_banner&apos;, &apos;standard&apos;, &apos;audio_group_index_value&apos;, &apos;audio_group_bool_value&apos;, &apos;request&apos;], name2fixturedefs={&apos;test_start_banner&apos;: (&lt;FixtureDef argname=&apos;test_start_banner&apos; scope=&apos;function&apos; baseid=&apos;&apos;&gt;,), &apos;generator_qx&apos;: (&lt;FixtureDef argname=&apos;generator_qx&apos; scope=&apos;module&apos; baseid=&apos;Audio/test_enable_disable_audio_groups.py&apos;&gt;,), &apos;test_generator_hostname&apos;: (&lt;FixtureDef argname=&apos;test_generator_hostname&apos; scope=&apos;session&apos; baseid=&apos;&apos;&gt;,), &apos;test_analyser_hostname&apos;: (&lt;FixtureDef argname=&apos;test_analyser_hostname&apos; scope=&apos;session&apos; baseid=&apos;&apos;&gt;,)})
+        fm         = &lt;_pytest.fixtures.FixtureManager object at 0x7fc43311e400&gt;
+        funcobj    = &lt;function test_enable_disable_single_audio_group at 0x7fc432d07310&gt;
+        metafunc   = &lt;_pytest.python.Metafunc object at 0x7fc432e69f40&gt;
+        methods    = []
+        module     = &lt;module &apos;tests.Audio.test_enable_disable_audio_groups&apos; from &apos;/home/arthur/projects/qx_sw/tests/Audio/test_enable_disable_audio_groups.py&apos;&gt;
+        name       = &apos;test_enable_disable_single_audio_group&apos;
+        self       = &lt;Module test_enable_disable_audio_groups.py&gt;
+../../../../.local/lib/python3.8/site-packages/pluggy/hooks.py:324: in call_extra
+    return self(**kwargs)
+        kwargs     = {&apos;metafunc&apos;: &lt;_pytest.python.Metafunc object at 0x7fc432e69f40&gt;}
+        methods    = []
+        old        = ([&lt;HookImpl plugin_name=&apos;python&apos;, plugin=&lt;module &apos;_pytest.python&apos; from &apos;/home/arthur/.local/lib/python3.8/site-packages/_pytest/python.py&apos;&gt;&gt;,
+  &lt;HookImpl plugin_name=&apos;/home/arthur/projects/qx_sw/tests/conftest.py&apos;, plugin=&lt;module &apos;tests.conftest&apos; from &apos;/home/arthur/projects/qx_sw/tests/conftest.py&apos;&gt;&gt;,
+  &lt;HookImpl plugin_name=&apos;funcmanage&apos;, plugin=&lt;_pytest.fixtures.FixtureManager object at 0x7fc43311e400&gt;&gt;],
+ [])
+        self       = &lt;_HookCaller &apos;pytest_generate_tests&apos;&gt;
+../../../../.local/lib/python3.8/site-packages/pluggy/hooks.py:286: in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+        args       = ()
+        kwargs     = {&apos;metafunc&apos;: &lt;_pytest.python.Metafunc object at 0x7fc432e69f40&gt;}
+        notincall  = set()
+        self       = &lt;_HookCaller &apos;pytest_generate_tests&apos;&gt;
+../../../../.local/lib/python3.8/site-packages/pluggy/manager.py:93: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+        hook       = &lt;_HookCaller &apos;pytest_generate_tests&apos;&gt;
+        kwargs     = {&apos;metafunc&apos;: &lt;_pytest.python.Metafunc object at 0x7fc432e69f40&gt;}
+        methods    = [&lt;HookImpl plugin_name=&apos;python&apos;, plugin=&lt;module &apos;_pytest.python&apos; from &apos;/home/arthur/.local/lib/python3.8/site-packages/_pytest/python.py&apos;&gt;&gt;,
+ &lt;HookImpl plugin_name=&apos;/home/arthur/projects/qx_sw/tests/conftest.py&apos;, plugin=&lt;module &apos;tests.conftest&apos; from &apos;/home/arthur/projects/qx_sw/tests/conftest.py&apos;&gt;&gt;,
+ &lt;HookImpl plugin_name=&apos;funcmanage&apos;, plugin=&lt;_pytest.fixtures.FixtureManager object at 0x7fc43311e400&gt;&gt;]
+        self       = &lt;_pytest.config.PytestPluginManager object at 0x7fc435539ca0&gt;
+../../../../.local/lib/python3.8/site-packages/pluggy/manager.py:84: in &lt;lambda&gt;
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+        hook       = &lt;_HookCaller &apos;pytest_generate_tests&apos;&gt;
+        kwargs     = {&apos;metafunc&apos;: &lt;_pytest.python.Metafunc object at 0x7fc432e69f40&gt;}
+        methods    = [&lt;HookImpl plugin_name=&apos;python&apos;, plugin=&lt;module &apos;_pytest.python&apos; from &apos;/home/arthur/.local/lib/python3.8/site-packages/_pytest/python.py&apos;&gt;&gt;,
+ &lt;HookImpl plugin_name=&apos;/home/arthur/projects/qx_sw/tests/conftest.py&apos;, plugin=&lt;module &apos;tests.conftest&apos; from &apos;/home/arthur/projects/qx_sw/tests/conftest.py&apos;&gt;&gt;,
+ &lt;HookImpl plugin_name=&apos;funcmanage&apos;, plugin=&lt;_pytest.fixtures.FixtureManager object at 0x7fc43311e400&gt;&gt;]
+../conftest.py:113: in pytest_generate_tests
+    unit = make_qx(qx_generator)
+        metafunc   = &lt;_pytest.python.Metafunc object at 0x7fc432e69f40&gt;
+../../../../.local/lib/python3.8/site-packages/autolib/factory.py:19: in make_qx
+    qx = Qx(hostname, http_session)
+        hostname   = &apos;qx-020264&apos;
+        http_session = None
+../../../../.local/lib/python3.8/site-packages/autolib/models/qxseries/qx.py:151: in __init__
+    self.ssh.execute(&quot;fw_setenv bootdelay 2&quot;)
+        hostname   = &apos;qx-020264&apos;
+        http_session = None
+        retry_count = 5
+        self       = &lt;autolib.models.qxseries.qx.Qx object at 0x7fc432e69e50&gt;
+../../../../.local/lib/python3.8/site-packages/autolib/ssh.py:43: in execute
+    self._client.connect(self._hostname, port=22, username=self._username, password=self._password, banner_timeout=200)
+        command    = &apos;fw_setenv bootdelay 2&apos;
+        retries    = 5
+        retry      = 0
+        self       = &lt;autolib.ssh.SSHTools object at 0x7fc432e69e20&gt;
+        timeout    = 30
+../../../../.local/lib/python3.8/site-packages/paramiko/client.py:368: in connect
+    raise NoValidConnectionsError(errors)
+E   paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.0.78
+        addr       = (&apos;192.168.0.78&apos;, 22)
+        af         = &lt;AddressFamily.AF_INET: 2&gt;
+        allow_agent = True
+        auth_timeout = None
+        banner_timeout = 200
+        compress   = False
+        disabled_algorithms = None
+        errors     = {(&apos;192.168.0.78&apos;, 22): OSError(113, &apos;No route to host&apos;)}
+        gss_auth   = False
+        gss_deleg_creds = True
+        gss_host   = None
+        gss_kex    = False
+        gss_trust_dns = True
+        hostname   = &apos;qx-020264&apos;
+        key_filename = None
+        look_for_keys = True
+        passphrase = None
+        password   = &apos;PragmaticPhantastic&apos;
+        pkey       = None
+        port       = 22
+        self       = &lt;paramiko.client.SSHClient object at 0x7fc432e69040&gt;
+        sock       = &lt;socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=(&apos;0.0.0.0&apos;, 37640)&gt;
+        timeout    = None
+        to_try     = [(&lt;AddressFamily.AF_INET: 2&gt;, (&apos;192.168.0.78&apos;, 22))]
+        username   = &apos;root&apos;</error></testcase></testsuite></testsuites>

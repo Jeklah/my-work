@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="autolib" errors="2" failures="0" skipped="0" tests="2" time="158.210" timestamp="2023-09-29T15:43:48.062857" hostname="ab-VM"><testcase classname="" name="AncillaryInspectorTests.test_anc_location" time="0.000"><error message="collection failure">../../autolib/autolib/lib/python3.8/site-packages/_pytest/runner.py:341: in from_call
+    result: Optional[TResult] = func()
+        cls        = &lt;class '_pytest.runner.CallInfo'&gt;
+        duration   = 95.3459171979921
+        excinfo    = &lt;ExceptionInfo BdbQuit() tblen=16&gt;
+        func       = &lt;function pytest_make_collect_report.&lt;locals&gt;.&lt;lambda&gt; at 0x7fedd047c310&gt;
+        precise_start = 194361.52086908
+        precise_stop = 194456.866786278
+        reraise    = None
+        result     = None
+        start      = 1695998628.1161213
+        stop       = 1695998723.46204
+        when       = 'collect'
+../../autolib/autolib/lib/python3.8/site-packages/_pytest/runner.py:372: in &lt;lambda&gt;
+    call = CallInfo.from_call(lambda: list(collector.collect()), "collect")
+        collector  = &lt;Module test_anc_location.py&gt;
+../../autolib/autolib/lib/python3.8/site-packages/_pytest/python.py:531: in collect
+    self._inject_setup_module_fixture()
+        __class__  = &lt;class '_pytest.python.Module'&gt;
+        self       = &lt;Module test_anc_location.py&gt;
+../../autolib/autolib/lib/python3.8/site-packages/_pytest/python.py:545: in _inject_setup_module_fixture
+    self.obj, ("setUpModule", "setup_module")
+        has_nose   = True
+        self       = &lt;Module test_anc_location.py&gt;
+../../autolib/autolib/lib/python3.8/site-packages/_pytest/python.py:310: in obj
+    self._obj = obj = self._getobj()
+        obj        = None
+        self       = &lt;Module test_anc_location.py&gt;
+../../autolib/autolib/lib/python3.8/site-packages/_pytest/python.py:528: in _getobj
+    return self._importtestmodule()
+        self       = &lt;Module test_anc_location.py&gt;
+../../autolib/autolib/lib/python3.8/site-packages/_pytest/python.py:617: in _importtestmodule
+    mod = import_path(self.path, mode=importmode, root=self.config.rootpath)
+        importmode = 'prepend'
+        self       = &lt;Module test_anc_location.py&gt;
+../../autolib/autolib/lib/python3.8/site-packages/_pytest/pathlib.py:565: in import_path
+    importlib.import_module(module_name)
+        mode       = &lt;ImportMode.prepend: 'prepend'&gt;
+        module_name = 'tests.AncillaryInspectorTests.test_anc_location'
+        names      = ['tests', 'AncillaryInspectorTests', 'test_anc_location']
+        p          = PosixPath('/home/arthur/projects/qx_sw/tests/AncillaryInspectorTests/test_anc_location.py')
+        path       = PosixPath('/home/arthur/projects/qx_sw/tests/AncillaryInspectorTests/test_anc_location.py')
+        pkg_path   = PosixPath('/home/arthur/projects/qx_sw/tests')
+        pkg_root   = PosixPath('/home/arthur/projects/qx_sw')
+        root       = PosixPath('/home/arthur/projects/qx_sw/tests')
+/usr/lib/python3.8/importlib/__init__.py:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+        level      = 0
+        name       = 'tests.AncillaryInspectorTests.test_anc_location'
+        package    = None
+&lt;frozen importlib._bootstrap&gt;:1014: in _gcd_import
+    ???
+        level      = 0
+        name       = 'tests.AncillaryInspectorTests.test_anc_location'
+        package    = None
+&lt;frozen importlib._bootstrap&gt;:991: in _find_and_load
+    ???
+        import_    = &lt;function _gcd_import at 0x7fedd2d91430&gt;
+        module     = &lt;object object at 0x7fedd2d67060&gt;
+        name       = 'tests.AncillaryInspectorTests.test_anc_location'
+&lt;frozen importlib._bootstrap&gt;:975: in _find_and_load_unlocked
+    ???
+        import_    = &lt;function _gcd_import at 0x7fedd2d91430&gt;
+        name       = 'tests.AncillaryInspectorTests.test_anc_location'
+        parent     = 'tests.AncillaryInspectorTests'
+        parent_module = &lt;module 'tests.AncillaryInspectorTests' from '/home/arthur/projects/qx_sw/tests/AncillaryInspectorTests/__init__.py'&gt;
+        path       = ['/home/arthur/projects/qx_sw/tests/AncillaryInspectorTests']
+        spec       = ModuleSpec(name='tests.AncillaryInspectorTests.test_anc_location', loader=&lt;_pytest.assertion.rewrite.AssertionRewritingHook object at 0x7fedd1dc4cd0&gt;, origin='/home/arthur/projects/qx_sw/tests/AncillaryInspectorTests/test_anc_location.py')
+&lt;frozen importlib._bootstrap&gt;:682: in _load_unlocked
+    ???
+        module     = &lt;module 'tests.AncillaryInspectorTests.test_anc_location' from '/home/arthur/projects/qx_sw/tests/AncillaryInspectorTests/test_anc_location.py'&gt;
+        spec       = ModuleSpec(name='tests.AncillaryInspectorTests.test_anc_location', loader=&lt;_pytest.assertion.rewrite.AssertionRewritingHook object at 0x7fedd1dc4cd0&gt;, origin='/home/arthur/projects/qx_sw/tests/AncillaryInspectorTests/test_anc_location.py')
+&lt;frozen importlib._bootstrap&gt;:682: in _load_unlocked
+    ???
+        module     = &lt;module 'tests.AncillaryInspectorTests.test_anc_location' from '/home/arthur/projects/qx_sw/tests/AncillaryInspectorTests/test_anc_location.py'&gt;
+        spec       = ModuleSpec(name='tests.AncillaryInspectorTests.test_anc_location', loader=&lt;_pytest.assertion.rewrite.AssertionRewritingHook object at 0x7fedd1dc4cd0&gt;, origin='/home/arthur/projects/qx_sw/tests/AncillaryInspectorTests/test_anc_location.py')
+/usr/lib/python3.8/bdb.py:88: in trace_dispatch
+    return self.dispatch_line(frame)
+        arg        = None
+        event      = 'line'
+        frame      = &lt;frame at 0x7fedd04d09f0, file '&lt;frozen importlib._bootstrap&gt;', line 686, code _load_unlocked&gt;
+        self       = &lt;_pytest.debugging.pytestPDB._get_pdb_wrapper_class.&lt;locals&gt;.PytestPdbWrapper object at 0x7fedd04aa8b0&gt;
+../../autolib/autolib/lib/python3.8/site-packages/pudb/debugger.py:221: in dispatch_line
+    raise bdb.BdbQuit
+E   bdb.BdbQuit
+        frame      = &lt;frame at 0x7fedd04d09f0, file '&lt;frozen importlib._bootstrap&gt;', line 686, code _load_unlocked&gt;
+        self       = &lt;_pytest.debugging.pytestPDB._get_pdb_wrapper_class.&lt;locals&gt;.PytestPdbWrapper object at 0x7fedd04aa8b0&gt;</error></testcase><testcase classname="" name="NMOS.test_flowconfig_manipulation" time="0.000"><error message="collection failure">../../autolib/autolib/lib/python3.8/site-packages/_pytest/runner.py:341: in from_call
+    result: Optional[TResult] = func()
+        cls        = &lt;class '_pytest.runner.CallInfo'&gt;
+        duration   = 0.01561519902315922
+        excinfo    = &lt;ExceptionInfo TypeError("'ABCMeta' object is not subscriptable") tblen=15&gt;
+        func       = &lt;function pytest_make_collect_report.&lt;locals&gt;.&lt;lambda&gt; at 0x7fedbdb9a1f0&gt;
+        precise_start = 194470.475457073
+        precise_stop = 194470.491072272
+        reraise    = None
+        result     = None
+        start      = 1695998737.0707083
+        stop       = 1695998737.0863264
+        when       = 'collect'
+../../autolib/autolib/lib/python3.8/site-packages/_pytest/runner.py:372: in &lt;lambda&gt;
+    call = CallInfo.from_call(lambda: list(collector.collect()), "collect")
+        collector  = &lt;Module NMOS/test_flowconfig_manipulation.py&gt;
+../../autolib/autolib/lib/python3.8/site-packages/_pytest/python.py:531: in collect
+    self._inject_setup_module_fixture()
+        __class__  = &lt;class '_pytest.python.Module'&gt;
+        self       = &lt;Module NMOS/test_flowconfig_manipulation.py&gt;
+../../autolib/autolib/lib/python3.8/site-packages/_pytest/python.py:545: in _inject_setup_module_fixture
+    self.obj, ("setUpModule", "setup_module")
+        has_nose   = True
+        self       = &lt;Module NMOS/test_flowconfig_manipulation.py&gt;
+../../autolib/autolib/lib/python3.8/site-packages/_pytest/python.py:310: in obj
+    self._obj = obj = self._getobj()
+        obj        = None
+        self       = &lt;Module NMOS/test_flowconfig_manipulation.py&gt;
+../../autolib/autolib/lib/python3.8/site-packages/_pytest/python.py:528: in _getobj
+    return self._importtestmodule()
+        self       = &lt;Module NMOS/test_flowconfig_manipulation.py&gt;
+../../autolib/autolib/lib/python3.8/site-packages/_pytest/python.py:617: in _importtestmodule
+    mod = import_path(self.path, mode=importmode, root=self.config.rootpath)
+        importmode = 'prepend'
+        self       = &lt;Module NMOS/test_flowconfig_manipulation.py&gt;
+../../autolib/autolib/lib/python3.8/site-packages/_pytest/pathlib.py:565: in import_path
+    importlib.import_module(module_name)
+        mode       = &lt;ImportMode.prepend: 'prepend'&gt;
+        module_name = 'test_flowconfig_manipulation'
+        p          = PosixPath('/home/arthur/projects/qx_sw/tests/NMOS/test_flowconfig_manipulation.py')
+        path       = PosixPath('/home/arthur/projects/qx_sw/tests/NMOS/test_flowconfig_manipulation.py')
+        pkg_path   = None
+        pkg_root   = PosixPath('/home/arthur/projects/qx_sw/tests/NMOS')
+        root       = PosixPath('/home/arthur/projects/qx_sw/tests')
+/usr/lib/python3.8/importlib/__init__.py:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+        level      = 0
+        name       = 'test_flowconfig_manipulation'
+        package    = None
+&lt;frozen importlib._bootstrap&gt;:1014: in _gcd_import
+    ???
+        level      = 0
+        name       = 'test_flowconfig_manipulation'
+        package    = None
+&lt;frozen importlib._bootstrap&gt;:991: in _find_and_load
+    ???
+        import_    = &lt;function _gcd_import at 0x7fedd2d91430&gt;
+        module     = &lt;object object at 0x7fedd2d67060&gt;
+        name       = 'test_flowconfig_manipulation'
+&lt;frozen importlib._bootstrap&gt;:975: in _find_and_load_unlocked
+    ???
+        import_    = &lt;function _gcd_import at 0x7fedd2d91430&gt;
+        name       = 'test_flowconfig_manipulation'
+        parent     = ''
+        path       = None
+        spec       = ModuleSpec(name='test_flowconfig_manipulation', loader=&lt;_pytest.assertion.rewrite.AssertionRewritingHook object at 0x7fedd1dc4cd0&gt;, origin='/home/arthur/projects/qx_sw/tests/NMOS/test_flowconfig_manipulation.py')
+&lt;frozen importlib._bootstrap&gt;:671: in _load_unlocked
+    ???
+        module     = &lt;module 'test_flowconfig_manipulation' from '/home/arthur/projects/qx_sw/tests/NMOS/test_flowconfig_manipulation.py'&gt;
+        spec       = ModuleSpec(name='test_flowconfig_manipulation', loader=&lt;_pytest.assertion.rewrite.AssertionRewritingHook object at 0x7fedd1dc4cd0&gt;, origin='/home/arthur/projects/qx_sw/tests/NMOS/test_flowconfig_manipulation.py')
+../../autolib/autolib/lib/python3.8/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+    exec(co, module.__dict__)
+        cache_dir  = PosixPath('/home/arthur/projects/qx_sw/tests/NMOS/__pycache__')
+        cache_name = 'test_flowconfig_manipulation.cpython-38-pytest-7.4.0.pyc'
+        co         = &lt;code object &lt;module&gt; at 0x7fedbdb3fa80, file "/home/arthur/projects/qx_sw/tests/NMOS/test_flowconfig_manipulation.py", line 1&gt;
+        fn         = PosixPath('/home/arthur/projects/qx_sw/tests/NMOS/test_flowconfig_manipulation.py')
+        module     = &lt;module 'test_flowconfig_manipulation' from '/home/arthur/projects/qx_sw/tests/NMOS/test_flowconfig_manipulation.py'&gt;
+        ok         = True
+        pyc        = PosixPath('/home/arthur/projects/qx_sw/tests/NMOS/__pycache__/test_flowconfig_manipulation.cpython-38-pytest-7.4.0.pyc')
+        self       = &lt;_pytest.assertion.rewrite.AssertionRewritingHook object at 0x7fedd1dc4cd0&gt;
+        state      = &lt;_pytest.assertion.AssertionState object at 0x7fedd1dc4d60&gt;
+        write      = True
+NMOS/test_flowconfig_manipulation.py:223: in &lt;module&gt;
+    preset_callback: Callable[[dict, str], dict]):
+E   TypeError: 'ABCMeta' object is not subscriptable
+        Callable   = &lt;class 'collections.abc.Callable'&gt;
+        ConnectionMaker = &lt;class 'test_flowconfig_manipulation.ConnectionMaker'&gt;
+        Dict       = typing.Dict
+        DualMapping = &lt;enum 'DualMapping'&gt;
+        FILLER_VALUE = 'FILLERVALUE'
+        FLOW_LISTS = {&lt;ST2110Protocol.Dash20: '2110-20'&gt;: 'configs211020',
+ &lt;ST2110Protocol.Dash30: '2110-30'&gt;: 'configs211030',
+ &lt;ST2110Protocol.Dash31: '2110-31'&gt;: 'configs211031',
+ &lt;ST2110Protocol.Dash40: '2110-40'&gt;: 'configs211040'}
+        OperationMode = &lt;enum 'OperationMode'&gt;
+        Path       = &lt;class 'pathlib.Path'&gt;
+        Qx         = &lt;class 'autolib.models.qxseries.qx.Qx'&gt;
+        ST2110Protocol = &lt;enum 'ST2110Protocol'&gt;
+        SingleMapping = &lt;enum 'SingleMapping'&gt;
+        StateSnapshot = &lt;class 'autolib.models.qxseries.qx.StateSnapshot'&gt;
+        TemporaryPreset = &lt;class 'autolib.models.qxseries.qx.TemporaryPreset'&gt;
+        TestException = &lt;class 'autolib.testexception.TestException'&gt;
+        Union      = typing.Union
+        __builtins__ = &lt;builtins&gt;
+        __cached__ = '/home/arthur/projects/qx_sw/tests/NMOS/__pycache__/test_flowconfig_manipulation.cpython-38.pyc'
+        __doc__    = ('\n'
+ 'Tests that validate the behaviour of the new non-manual FlowConfig '
+ 'discarding code.\n'
+ '\n'
+ 'IMPORTANT: These tests require autolib rather than autolib. Hopefully '
+ 'autolib will be retired before this\n'
+ 'goes live.\n')
+        __file__   = '/home/arthur/projects/qx_sw/tests/NMOS/test_flowconfig_manipulation.py'
+        __loader__ = &lt;_pytest.assertion.rewrite.AssertionRewritingHook object at 0x7fedd1dc4cd0&gt;
+        __name__   = 'test_flowconfig_manipulation'
+        __package__ = ''
+        __spec__   = ModuleSpec(name='test_flowconfig_manipulation', loader=&lt;_pytest.assertion.rewrite.AssertionRewritingHook object at 0x7fedd1dc4cd0&gt;, origin='/home/arthur/projects/qx_sw/tests/NMOS/test_flowconfig_manipulation.py')
+        _add_50_manual_flow_configs = &lt;function _add_50_manual_flow_configs at 0x7fedbdb8bc10&gt;
+        _add_50_nmos_flow_configs = &lt;function _add_50_nmos_flow_configs at 0x7fedbdb8bca0&gt;
+        _generalised_nmos_test = &lt;function _generalised_nmos_test at 0x7fedbdb8bee0&gt;
+        autolib_log = 'autolib_log'
+        connections_dual = {&lt;DualMapping.VID: {'Qx': 'SFP A+B Rx:VID', 'QxL': 'SFP E+F Rx:VID', 'QxP': 'SFP E+F Rx:VID'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                 'master_enable': True,
+                                                                                                 'sender_id': 'fe4657fd-5dff-3c24-947e-40a36ba03fb2',
+                                                                                                 'transport_file': {'data': 'v=0\r\n'
+                                                                                                                            'o=- '
+                                                                                                                            '1443716955 '
+                                                                                                                            '1443716955 '
+                                                                                                                            'IN '
+                                                                                                                            'IP4 '
+                                                                                                                            '192.168.10.4\r\n'
+                                                                                                                            's=emsfp-a0-3f-b2_0-0-0\r\n'
+                                                                                                                            't=0 '
+                                                                                                                            '0\r\n'
+                                                                                                                            'a=group:DUP '
+                                                                                                                            'primary '
+                                                                                                                            'secondary\r\n'
+                                                                                                                            'm=video '
+                                                                                                                            '20000 '
+                                                                                                                            'RTP/AVP '
+                                                                                                                            '96\r\n'
+                                                                                                                            'c=IN '
+                                                                                                                            'IP4 '
+                                                                                                                            '239.4.20.1/64\r\n'
+                                                                                                                            'a=source-filter: '
+                                                                                                                            'incl '
+                                                                                                                            'IN '
+                                                                                                                            'IP4 '
+                                                                                                                            '239.4.20.1 '
+                                                                                                                            '192.168.10.4\r\n'
+                                                                                                                            'a=rtpmap:96 '
+                                                                                                                            'raw/90000\r\n'
+                                                                                                                            'a=fmtp:96 '
+                                                                                                                            'sampling=YCbCr-4:2:2; '
+                                                                                                                            'width=1920; '
+                                                                                                                            'height=1080; '
+                                                                                                                            'exactframerate=25; '
+                                                                                                                            'depth=10; '
+                                                                                                                            'TCS=SDR; '
+                                                                                                                            'colorimetry=BT709; '
+                                                                                                                            'PM=2110GPM; '
+                                                                                                                            'SSN=ST2110-20:2017; '
+                                                                                                                            'TP=2110TPN; \r\n'
+                                                                                                                            'a=mediaclk:direct=0\r\n'
+                                                                                                                            'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n'
+                                                                                                                            'a=mid:primary\r\n'
+                                                                                                                            'm=video '
+                                                                                                                            '20000 '
+                                                                                                                            'RTP/AVP '
+                                                                                                                            '96\r\n'
+                                                                                                                            'c=IN '
+                                                                                                                            'IP4 '
+                                                                                                                            '239.4.20.2/64\r\n'
+                                                                                                                            'a=source-filter: '
+                                                                                                                            'incl '
+                                                                                                                            'IN '
+                                                                                                                            'IP4 '
+                                                                                                                            '239.4.20.2 '
+                                                                                                                            '192.168.10.4\r\n'
+                                                                                                                            'a=rtpmap:96 '
+                                                                                                                            'raw/90000\r\n'
+                                                                                                                            'a=fmtp:96 '
+                                                                                                                            'sampling=YCbCr-4:2:2; '
+                                                                                                                            'width=1920; '
+                                                                                                                            'height=1080; '
+                                                                                                                            'exactframerate=25; '
+                                                                                                                            'depth=10; '
+                                                                                                                            'TCS=SDR; '
+                                                                                                                            'colorimetry=BT709; '
+                                                                                                                            'PM=2110GPM; '
+                                                                                                                            'SSN=ST2110-20:2017; '
+                                                                                                                            'TP=2110TPN; \r\n'
+                                                                                                                            'a=mediaclk:direct=0\r\n'
+                                                                                                                            'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n'
+                                                                                                                            'a=mid:secondary\r\n',
+                                                                                                                    'type': 'application/sdp'},
+                                                                                                 'transport_params': [{'destination_port': 20000,
+                                                                                                                       'interface_ip': 'auto',
+                                                                                                                       'multicast_ip': '239.4.20.1',
+                                                                                                                       'rtp_enabled': True,
+                                                                                                                       'source_ip': '192.168.10.4'},
+                                                                                                                      {'destination_port': 20000,
+                                                                                                                       'interface_ip': 'auto',
+                                                                                                                       'multicast_ip': '239.4.20.2',
+                                                                                                                       'rtp_enabled': True,
+                                                                                                                       'source_ip': '192.168.10.4'}]},
+ &lt;DualMapping.AUD1: {'Qx': 'SFP A+B Rx:AUD 1', 'QxL': 'SFP E+F Rx:AUD 1', 'QxP': 'SFP E+F Rx:AUD 1'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                        'master_enable': True,
+                                                                                                        'sender_id': 'fffbba85-fbd2-47b3-9f3f-40a36ba03fb2',
+                                                                                                        'transport_file': {'data': 'v=0\r\n'
+                                                                                                                                   'o=- '
+                                                                                                                                   '1443716955 '
+                                                                                                                                   '1443716955 '
+                                                                                                                                   'IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '192.168.10.4\r\n'
+                                                                                                                                   's=emsfp-a0-3f-b2_0-1-0\r\n'
+                                                                                                                                   't=0 '
+                                                                                                                                   '0\r\n'
+                                                                                                                                   'a=group:DUP '
+                                                                                                                                   'primary '
+                                                                                                                                   'secondary\r\n'
+                                                                                                                                   'm=audio '
+                                                                                                                                   '20000 '
+                                                                                                                                   'RTP/AVP '
+                                                                                                                                   '97\r\n'
+                                                                                                                                   'c=IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '239.4.30.1/64\r\n'
+                                                                                                                                   'a=source-filter: '
+                                                                                                                                   'incl '
+                                                                                                                                   'IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '239.4.30.1 '
+                                                                                                                                   '192.168.10.4\r\n'
+                                                                                                                                   'a=rtpmap:97 '
+                                                                                                                                   'L24/48000/8\r\n'
+                                                                                                                                   'a=mediaclk:direct=0 '
+                                                                                                                                   'rate=48000\r\n'
+                                                                                                                                   'a=framecount:48\r\n'
+                                                                                                                                   'a=ptime:1\r\n'
+                                                                                                                                   'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n'
+                                                                                                                                   'a=mid:primary\r\n'
+                                                                                                                                   'm=audio '
+                                                                                                                                   '20000 '
+                                                                                                                                   'RTP/AVP '
+                                                                                                                                   '97\r\n'
+                                                                                                                                   'c=IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '239.4.30.2/64\r\n'
+                                                                                                                                   'a=source-filter: '
+                                                                                                                                   'incl '
+                                                                                                                                   'IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '239.4.30.2 '
+                                                                                                                                   '192.168.10.4\r\n'
+                                                                                                                                   'a=rtpmap:97 '
+                                                                                                                                   'L24/48000/8\r\n'
+                                                                                                                                   'a=mediaclk:direct=0 '
+                                                                                                                                   'rate=48000\r\n'
+                                                                                                                                   'a=framecount:48\r\n'
+                                                                                                                                   'a=ptime:1\r\n'
+                                                                                                                                   'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n'
+                                                                                                                                   'a=mid:secondary\r\n',
+                                                                                                                           'type': 'application/sdp'},
+                                                                                                        'transport_params': [{'destination_port': 20000,
+                                                                                                                              'interface_ip': 'auto',
+                                                                                                                              'multicast_ip': '239.4.30.1',
+                                                                                                                              'rtp_enabled': True,
+                                                                                                                              'source_ip': '192.168.10.4'},
+                                                                                                                             {'destination_port': 20000,
+                                                                                                                              'interface_ip': 'auto',
+                                                                                                                              'multicast_ip': '239.4.30.2',
+                                                                                                                              'rtp_enabled': True,
+                                                                                                                              'source_ip': '192.168.10.4'}]},
+ &lt;DualMapping.AUD2: {'Qx': 'SFP A+B Rx:AUD 2', 'QxL': 'SFP E+F Rx:AUD 2', 'QxP': 'SFP E+F Rx:AUD 2'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                        'master_enable': True,
+                                                                                                        'sender_id': 'dfff1d0d-77bf-1341-a9ff-40a36ba03fb2',
+                                                                                                        'transport_file': {'data': 'v=0\r\n'
+                                                                                                                                   'o=- '
+                                                                                                                                   '1443716955 '
+                                                                                                                                   '1443716955 '
+                                                                                                                                   'IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '192.168.10.4\r\n'
+                                                                                                                                   's=emsfp-a0-3f-b2_0-2-0\r\n'
+                                                                                                                                   't=0 '
+                                                                                                                                   '0\r\n'
+                                                                                                                                   'a=group:DUP '
+                                                                                                                                   'primary '
+                                                                                                                                   'secondary\r\n'
+                                                                                                                                   'm=audio '
+                                                                                                                                   '20000 '
+                                                                                                                                   'RTP/AVP '
+                                                                                                                                   '97\r\n'
+                                                                                                                                   'c=IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '239.4.31.1/64\r\n'
+                                                                                                                                   'a=source-filter: '
+                                                                                                                                   'incl '
+                                                                                                                                   'IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '239.4.31.1 '
+                                                                                                                                   '192.168.10.4\r\n'
+                                                                                                                                   'a=rtpmap:97 '
+                                                                                                                                   'AM824/48000/16\r\n'
+                                                                                                                                   'a=mediaclk:direct=0 '
+                                                                                                                                   'rate=48000\r\n'
+                                                                                                                                   'a=framecount:6\r\n'
+                                                                                                                                   'a=ptime:0.125\r\n'
+                                                                                                                                   'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n'
+                                                                                                                                   'a=mid:primary\r\n'
+                                                                                                                                   'm=audio '
+                                                                                                                                   '20000 '
+                                                                                                                                   'RTP/AVP '
+                                                                                                                                   '97\r\n'
+                                                                                                                                   'c=IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '239.4.31.2/64\r\n'
+                                                                                                                                   'a=source-filter: '
+                                                                                                                                   'incl '
+                                                                                                                                   'IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '239.4.31.2 '
+                                                                                                                                   '192.168.10.4\r\n'
+                                                                                                                                   'a=rtpmap:97 '
+                                                                                                                                   'AM824/48000/16\r\n'
+                                                                                                                                   'a=mediaclk:direct=0 '
+                                                                                                                                   'rate=48000\r\n'
+                                                                                                                                   'a=framecount:6\r\n'
+                                                                                                                                   'a=ptime:0.125\r\n'
+                                                                                                                                   'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n'
+                                                                                                                                   'a=mid:secondary\r\n',
+                                                                                                                           'type': 'application/sdp'},
+                                                                                                        'transport_params': [{'destination_port': 20000,
+                                                                                                                              'interface_ip': 'auto',
+                                                                                                                              'multicast_ip': '239.4.31.1',
+                                                                                                                              'rtp_enabled': True,
+                                                                                                                              'source_ip': '192.168.10.4'},
+                                                                                                                             {'destination_port': 20000,
+                                                                                                                              'interface_ip': 'auto',
+                                                                                                                              'multicast_ip': '239.4.31.2',
+                                                                                                                              'rtp_enabled': True,
+                                                                                                                              'source_ip': '192.168.10.4'}]},
+ &lt;DualMapping.AUD3: {'Qx': 'SFP A+B Rx:AUD 3', 'QxL': 'SFP E+F Rx:AUD 3', 'QxP': 'SFP E+F Rx:AUD 3'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                        'master_enable': True,
+                                                                                                        'sender_id': '647f7f95-27eb-2ecf-a4bf-40a36ba03fb2',
+                                                                                                        'transport_file': {'data': 'v=0\r\n'
+                                                                                                                                   'o=- '
+                                                                                                                                   '1443716955 '
+                                                                                                                                   '1443716955 '
+                                                                                                                                   'IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '192.168.10.4\r\n'
+                                                                                                                                   's=emsfp-a0-3f-b2_0-3-0\r\n'
+                                                                                                                                   't=0 '
+                                                                                                                                   '0\r\n'
+                                                                                                                                   'a=group:DUP '
+                                                                                                                                   'primary '
+                                                                                                                                   'secondary\r\n'
+                                                                                                                                   'm=audio '
+                                                                                                                                   '20000 '
+                                                                                                                                   'RTP/AVP '
+                                                                                                                                   '97\r\n'
+                                                                                                                                   'c=IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '239.4.30.3/64\r\n'
+                                                                                                                                   'a=source-filter: '
+                                                                                                                                   'incl '
+                                                                                                                                   'IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '239.4.30.3 '
+                                                                                                                                   '192.168.0.1\r\n'
+                                                                                                                                   'a=rtpmap:97 '
+                                                                                                                                   'L24/48000/8\r\n'
+                                                                                                                                   'a=mediaclk:direct=0 '
+                                                                                                                                   'rate=48000\r\n'
+                                                                                                                                   'a=framecount:6\r\n'
+                                                                                                                                   'a=ptime:0.125\r\n'
+                                                                                                                                   'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n'
+                                                                                                                                   'a=mid:primary\r\n'
+                                                                                                                                   'm=audio '
+                                                                                                                                   '20000 '
+                                                                                                                                   'RTP/AVP '
+                                                                                                                                   '97\r\n'
+                                                                                                                                   'c=IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '239.4.30.4/64\r\n'
+                                                                                                                                   'a=source-filter: '
+                                                                                                                                   'incl '
+                                                                                                                                   'IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '239.4.30.4 '
+                                                                                                                                   '192.168.10.4\r\n'
+                                                                                                                                   'a=rtpmap:97 '
+                                                                                                                                   'L24/48000/8\r\n'
+                                                                                                                                   'a=mediaclk:direct=0 '
+                                                                                                                                   'rate=48000\r\n'
+                                                                                                                                   'a=framecount:6\r\n'
+                                                                                                                                   'a=ptime:0.125\r\n'
+                                                                                                                                   'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n'
+                                                                                                                                   'a=mid:secondary\r\n',
+                                                                                                                           'type': 'application/sdp'},
+                                                                                                        'transport_params': [{'destination_port': 20000,
+                                                                                                                              'interface_ip': 'auto',
+                                                                                                                              'multicast_ip': '239.4.30.3',
+                                                                                                                              'rtp_enabled': True,
+                                                                                                                              'source_ip': '192.168.10.4'},
+                                                                                                                             {'destination_port': 20000,
+                                                                                                                              'interface_ip': 'auto',
+                                                                                                                              'multicast_ip': '239.4.30.4',
+                                                                                                                              'rtp_enabled': True,
+                                                                                                                              'source_ip': '192.168.10.4'}]},
+ &lt;DualMapping.AUD4: {'Qx': 'SFP A+B Rx:AUD 4', 'QxL': 'SFP E+F Rx:AUD 4', 'QxP': 'SFP E+F Rx:AUD 4'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                        'master_enable': True,
+                                                                                                        'sender_id': '35fbe21d-bdff-3a5e-8f7f-40a36ba03fb2',
+                                                                                                        'transport_file': {'data': 'v=0\r\n'
+                                                                                                                                   'o=- '
+                                                                                                                                   '1443716955 '
+                                                                                                                                   '1443716955 '
+                                                                                                                                   'IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '192.168.10.4\r\n'
+                                                                                                                                   's=emsfp-a0-3f-b2_0-4-0\r\n'
+                                                                                                                                   't=0 '
+                                                                                                                                   '0\r\n'
+                                                                                                                                   'a=group:DUP '
+                                                                                                                                   'primary '
+                                                                                                                                   'secondary\r\n'
+                                                                                                                                   'm=audio '
+                                                                                                                                   '20000 '
+                                                                                                                                   'RTP/AVP '
+                                                                                                                                   '97\r\n'
+                                                                                                                                   'c=IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '239.4.31.3/64\r\n'
+                                                                                                                                   'a=source-filter: '
+                                                                                                                                   'incl '
+                                                                                                                                   'IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '239.4.31.3 '
+                                                                                                                                   '192.168.0.1\r\n'
+                                                                                                                                   'a=rtpmap:97 '
+                                                                                                                                   'AM824/48000/6\r\n'
+                                                                                                                                   'a=mediaclk:direct=0 '
+                                                                                                                                   'rate=48000\r\n'
+                                                                                                                                   'a=framecount:48\r\n'
+                                                                                                                                   'a=ptime:1\r\n'
+                                                                                                                                   'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n'
+                                                                                                                                   'a=mid:primary\r\n'
+                                                                                                                                   'm=audio '
+                                                                                                                                   '20000 '
+                                                                                                                                   'RTP/AVP '
+                                                                                                                                   '97\r\n'
+                                                                                                                                   'c=IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '239.4.31.4/64\r\n'
+                                                                                                                                   'a=source-filter: '
+                                                                                                                                   'incl '
+                                                                                                                                   'IN '
+                                                                                                                                   'IP4 '
+                                                                                                                                   '239.4.31.4 '
+                                                                                                                                   '192.168.0.1\r\n'
+                                                                                                                                   'a=rtpmap:97 '
+                                                                                                                                   'AM824/48000/6\r\n'
+                                                                                                                                   'a=mediaclk:direct=0 '
+                                                                                                                                   'rate=48000\r\n'
+                                                                                                                                   'a=framecount:48\r\n'
+                                                                                                                                   'a=ptime:1\r\n'
+                                                                                                                                   'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n'
+                                                                                                                                   'a=mid:secondary\r\n',
+                                                                                                                           'type': 'application/sdp'},
+                                                                                                        'transport_params': [{'destination_port': 20000,
+                                                                                                                              'interface_ip': 'auto',
+                                                                                                                              'multicast_ip': '239.4.31.3',
+                                                                                                                              'rtp_enabled': True,
+                                                                                                                              'source_ip': '192.168.10.4'},
+                                                                                                                             {'destination_port': 20000,
+                                                                                                                              'interface_ip': 'auto',
+                                                                                                                              'multicast_ip': '239.4.31.4',
+                                                                                                                              'rtp_enabled': True,
+                                                                                                                              'source_ip': '192.168.10.4'}]},
+ &lt;DualMapping.ANC: {'Qx': 'SFP A+B Rx:ANC', 'QxL': 'SFP E+F Rx:ANC', 'QxP': 'SFP E+F Rx:ANC'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                 'master_enable': True,
+                                                                                                 'sender_id': '49f7cec5-fbb8-3425-9541-40a36ba03fb2',
+                                                                                                 'transport_file': {'data': 'v=0\r\n'
+                                                                                                                            'o=- '
+                                                                                                                            '1443716955 '
+                                                                                                                            '1443716955 '
+                                                                                                                            'IN '
+                                                                                                                            'IP4 '
+                                                                                                                            '192.168.10.4\r\n'
+                                                                                                                            's=emsfp-a0-3f-b2_0-9-0\r\n'
+                                                                                                                            't=0 '
+                                                                                                                            '0\r\n'
+                                                                                                                            'a=group:DUP '
+                                                                                                                            'primary '
+                                                                                                                            'secondary\r\n'
+                                                                                                                            'm=video '
+                                                                                                                            '20000 '
+                                                                                                                            'RTP/AVP '
+                                                                                                                            '100\r\n'
+                                                                                                                            'c=IN '
+                                                                                                                            'IP4 '
+                                                                                                                            '239.4.40.1/64\r\n'
+                                                                                                                            'a=source-filter: '
+                                                                                                                            'incl '
+                                                                                                                            'IN '
+                                                                                                                            'IP4 '
+                                                                                                                            '239.4.40.1 '
+                                                                                                                            '192.168.10.4\r\n'
+                                                                                                                            'a=rtpmap:100 '
+                                                                                                                            'smpte291/90000\r\n'
+                                                                                                                            'a=fmtp:100 '
+                                                                                                                            'VPID_Code=133; \r\n'
+                                                                                                                            'a=mediaclk:direct=0 '
+                                                                                                                            'rate=90000\r\n'
+                                                                                                                            'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n'
+                                                                                                                            'a=mid:primary\r\n'
+                                                                                                                            'm=video '
+                                                                                                                            '20000 '
+                                                                                                                            'RTP/AVP '
+                                                                                                                            '100\r\n'
+                                                                                                                            'c=IN '
+                                                                                                                            'IP4 '
+                                                                                                                            '239.4.40.2/64\r\n'
+                                                                                                                            'a=source-filter: '
+                                                                                                                            'incl '
+                                                                                                                            'IN '
+                                                                                                                            'IP4 '
+                                                                                                                            '239.4.40.2 '
+                                                                                                                            '192.168.10.4\r\n'
+                                                                                                                            'a=rtpmap:100 '
+                                                                                                                            'smpte291/90000\r\n'
+                                                                                                                            'a=fmtp:100 '
+                                                                                                                            'VPID_Code=133; \r\n'
+                                                                                                                            'a=mediaclk:direct=0 '
+                                                                                                                            'rate=90000\r\n'
+                                                                                                                            'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n'
+                                                                                                                            'a=mid:secondary\r\n',
+                                                                                                                    'type': 'application/sdp'},
+                                                                                                 'transport_params': [{'destination_port': 20000,
+                                                                                                                       'interface_ip': 'auto',
+                                                                                                                       'multicast_ip': '239.4.40.1',
+                                                                                                                       'rtp_enabled': True,
+                                                                                                                       'source_ip': '192.168.10.4'},
+                                                                                                                      {'destination_port': 20000,
+                                                                                                                       'interface_ip': 'auto',
+                                                                                                                       'multicast_ip': '239.4.40.2',
+                                                                                                                       'rtp_enabled': True,
+                                                                                                                       'source_ip': '192.168.10.4'}]}}
+        connections_single = {&lt;SingleMapping.VID_1: {'Qx': 'SFP A Rx:VID', 'QxL': 'SFP E Rx:VID', 'QxP': 'SFP E Rx:VID'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                               'master_enable': True,
+                                                                                               'sender_id': 'fe4657fd-5dff-3c24-947e-40a36ba03fb2',
+                                                                                               'transport_file': {'data': 'v=0\r\n'
+                                                                                                                          'o=- '
+                                                                                                                          '1443716955 '
+                                                                                                                          '1443716955 '
+                                                                                                                          'IN '
+                                                                                                                          'IP4 '
+                                                                                                                          '192.168.10.4\r\n'
+                                                                                                                          's=emsfp-a0-3f-b2_0-0-0\r\n'
+                                                                                                                          't=0 '
+                                                                                                                          '0\r\n'
+                                                                                                                          'm=video '
+                                                                                                                          '20000 '
+                                                                                                                          'RTP/AVP '
+                                                                                                                          '96\r\n'
+                                                                                                                          'c=IN '
+                                                                                                                          'IP4 '
+                                                                                                                          '239.4.20.1/64\r\n'
+                                                                                                                          'a=source-filter: '
+                                                                                                                          'incl '
+                                                                                                                          'IN '
+                                                                                                                          'IP4 '
+                                                                                                                          '239.4.20.1 '
+                                                                                                                          '192.168.10.4\r\n'
+                                                                                                                          'a=rtpmap:96 '
+                                                                                                                          'raw/90000\r\n'
+                                                                                                                          'a=fmtp:96 '
+                                                                                                                          'sampling=YCbCr-4:2:2; '
+                                                                                                                          'width=1920; '
+                                                                                                                          'height=1080; '
+                                                                                                                          'exactframerate=25; '
+                                                                                                                          'depth=10; '
+                                                                                                                          'TCS=SDR; '
+                                                                                                                          'colorimetry=BT709; '
+                                                                                                                          'PM=2110GPM; '
+                                                                                                                          'SSN=ST2110-20:2017; '
+                                                                                                                          'TP=2110TPN; \r\n'
+                                                                                                                          'a=mediaclk:direct=0\r\n'
+                                                                                                                          'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n',
+                                                                                                                  'type': 'application/sdp'},
+                                                                                               'transport_params': [{'destination_port': 20000,
+                                                                                                                     'interface_ip': 'auto',
+                                                                                                                     'multicast_ip': '239.4.20.1',
+                                                                                                                     'rtp_enabled': True,
+                                                                                                                     'source_ip': '192.168.10.4'}]},
+ &lt;SingleMapping.AUD1_1: {'Qx': 'SFP A Rx:AUD 1', 'QxL': 'SFP E Rx:AUD 1', 'QxP': 'SFP E Rx:AUD 1'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                      'master_enable': True,
+                                                                                                      'sender_id': 'fffbba85-fbd2-47b3-9f3f-40a36ba03fb2',
+                                                                                                      'transport_file': {'data': 'v=0\r\n'
+                                                                                                                                 'o=- '
+                                                                                                                                 '1443716955 '
+                                                                                                                                 '1443716955 '
+                                                                                                                                 'IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '192.168.10.4\r\n'
+                                                                                                                                 's=emsfp-a0-3f-b2_0-1-0\r\n'
+                                                                                                                                 't=0 '
+                                                                                                                                 '0\r\n'
+                                                                                                                                 'm=audio '
+                                                                                                                                 '20000 '
+                                                                                                                                 'RTP/AVP '
+                                                                                                                                 '97\r\n'
+                                                                                                                                 'c=IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '239.4.30.1/64\r\n'
+                                                                                                                                 'a=source-filter: '
+                                                                                                                                 'incl '
+                                                                                                                                 'IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '239.4.30.1 '
+                                                                                                                                 '192.168.10.4\r\n'
+                                                                                                                                 'a=rtpmap:97 '
+                                                                                                                                 'L24/48000/8\r\n'
+                                                                                                                                 'a=mediaclk:direct=0 '
+                                                                                                                                 'rate=48000\r\n'
+                                                                                                                                 'a=framecount:48\r\n'
+                                                                                                                                 'a=ptime:1\r\n'
+                                                                                                                                 'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n',
+                                                                                                                         'type': 'application/sdp'},
+                                                                                                      'transport_params': [{'destination_port': 20000,
+                                                                                                                            'interface_ip': 'auto',
+                                                                                                                            'multicast_ip': '239.4.30.1',
+                                                                                                                            'rtp_enabled': True,
+                                                                                                                            'source_ip': '192.168.10.4'}]},
+ &lt;SingleMapping.AUD2_1: {'Qx': 'SFP A Rx:AUD 2', 'QxL': 'SFP E Rx:AUD 2', 'QxP': 'SFP E Rx:AUD 2'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                      'master_enable': True,
+                                                                                                      'sender_id': 'dfff1d0d-77bf-1341-a9ff-40a36ba03fb2',
+                                                                                                      'transport_file': {'data': 'v=0\r\n'
+                                                                                                                                 'o=- '
+                                                                                                                                 '1443716955 '
+                                                                                                                                 '1443716955 '
+                                                                                                                                 'IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '192.168.10.4\r\n'
+                                                                                                                                 's=emsfp-a0-3f-b2_0-2-0\r\n'
+                                                                                                                                 't=0 '
+                                                                                                                                 '0\r\n'
+                                                                                                                                 'm=audio '
+                                                                                                                                 '20000 '
+                                                                                                                                 'RTP/AVP '
+                                                                                                                                 '97\r\n'
+                                                                                                                                 'c=IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '239.4.31.1/64\r\n'
+                                                                                                                                 'a=source-filter: '
+                                                                                                                                 'incl '
+                                                                                                                                 'IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '239.4.31.1 '
+                                                                                                                                 '192.168.10.4\r\n'
+                                                                                                                                 'a=rtpmap:97 '
+                                                                                                                                 'AM824/48000/16\r\n'
+                                                                                                                                 'a=mediaclk:direct=0 '
+                                                                                                                                 'rate=48000\r\n'
+                                                                                                                                 'a=framecount:6\r\n'
+                                                                                                                                 'a=ptime:0.125\r\n'
+                                                                                                                                 'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n',
+                                                                                                                         'type': 'application/sdp'},
+                                                                                                      'transport_params': [{'destination_port': 20000,
+                                                                                                                            'interface_ip': 'auto',
+                                                                                                                            'multicast_ip': '239.4.31.1',
+                                                                                                                            'rtp_enabled': True,
+                                                                                                                            'source_ip': '192.168.10.4'}]},
+ &lt;SingleMapping.AUD3_1: {'Qx': 'SFP A Rx:AUD 3', 'QxL': 'SFP E Rx:AUD 3', 'QxP': 'SFP E Rx:AUD 3'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                      'master_enable': True,
+                                                                                                      'sender_id': '647f7f95-27eb-2ecf-a4bf-40a36ba03fb2',
+                                                                                                      'transport_file': {'data': 'v=0\r\n'
+                                                                                                                                 'o=- '
+                                                                                                                                 '1443716955 '
+                                                                                                                                 '1443716955 '
+                                                                                                                                 'IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '192.168.10.4\r\n'
+                                                                                                                                 's=emsfp-a0-3f-b2_0-3-0\r\n'
+                                                                                                                                 't=0 '
+                                                                                                                                 '0\r\n'
+                                                                                                                                 'm=audio '
+                                                                                                                                 '20000 '
+                                                                                                                                 'RTP/AVP '
+                                                                                                                                 '97\r\n'
+                                                                                                                                 'c=IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '239.4.30.3/64\r\n'
+                                                                                                                                 'a=source-filter: '
+                                                                                                                                 'incl '
+                                                                                                                                 'IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '239.4.30.3 '
+                                                                                                                                 '192.168.0.1\r\n'
+                                                                                                                                 'a=rtpmap:97 '
+                                                                                                                                 'L24/48000/8\r\n'
+                                                                                                                                 'a=mediaclk:direct=0 '
+                                                                                                                                 'rate=48000\r\n'
+                                                                                                                                 'a=framecount:6\r\n'
+                                                                                                                                 'a=ptime:0.125\r\n'
+                                                                                                                                 'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n',
+                                                                                                                         'type': 'application/sdp'},
+                                                                                                      'transport_params': [{'destination_port': 20000,
+                                                                                                                            'interface_ip': 'auto',
+                                                                                                                            'multicast_ip': '239.4.30.3',
+                                                                                                                            'rtp_enabled': True,
+                                                                                                                            'source_ip': '192.168.10.4'}]},
+ &lt;SingleMapping.AUD4_1: {'Qx': 'SFP A Rx:AUD 4', 'QxL': 'SFP E Rx:AUD 4', 'QxP': 'SFP E Rx:AUD 4'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                      'master_enable': True,
+                                                                                                      'sender_id': '35fbe21d-bdff-3a5e-8f7f-40a36ba03fb2',
+                                                                                                      'transport_file': {'data': 'v=0\r\n'
+                                                                                                                                 'o=- '
+                                                                                                                                 '1443716955 '
+                                                                                                                                 '1443716955 '
+                                                                                                                                 'IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '192.168.10.4\r\n'
+                                                                                                                                 's=emsfp-a0-3f-b2_0-4-0\r\n'
+                                                                                                                                 't=0 '
+                                                                                                                                 '0\r\n'
+                                                                                                                                 'm=audio '
+                                                                                                                                 '20000 '
+                                                                                                                                 'RTP/AVP '
+                                                                                                                                 '97\r\n'
+                                                                                                                                 'c=IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '239.4.31.3/64\r\n'
+                                                                                                                                 'a=source-filter: '
+                                                                                                                                 'incl '
+                                                                                                                                 'IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '239.4.31.3 '
+                                                                                                                                 '192.168.0.1\r\n'
+                                                                                                                                 'a=rtpmap:97 '
+                                                                                                                                 'AM824/48000/6\r\n'
+                                                                                                                                 'a=mediaclk:direct=0 '
+                                                                                                                                 'rate=48000\r\n'
+                                                                                                                                 'a=framecount:48\r\n'
+                                                                                                                                 'a=ptime:1\r\n'
+                                                                                                                                 'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n',
+                                                                                                                         'type': 'application/sdp'},
+                                                                                                      'transport_params': [{'destination_port': 20000,
+                                                                                                                            'interface_ip': 'auto',
+                                                                                                                            'multicast_ip': '239.4.31.3',
+                                                                                                                            'rtp_enabled': True,
+                                                                                                                            'source_ip': '192.168.10.4'}]},
+ &lt;SingleMapping.ANC_2: {'Qx': 'SFP B Rx:ANC', 'QxL': 'SFP F Rx:ANC', 'QxP': 'SFP F Rx:ANC'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                               'master_enable': True,
+                                                                                               'sender_id': '49f7cec5-fbb8-3425-9541-40a36ba03fb2',
+                                                                                               'transport_file': {'data': 'v=0\r\n'
+                                                                                                                          'o=- '
+                                                                                                                          '1443716955 '
+                                                                                                                          '1443716955 '
+                                                                                                                          'IN '
+                                                                                                                          'IP4 '
+                                                                                                                          '192.168.10.4\r\n'
+                                                                                                                          's=emsfp-a0-3f-b2_0-9-0\r\n'
+                                                                                                                          't=0 '
+                                                                                                                          '0\r\n'
+                                                                                                                          'm=video '
+                                                                                                                          '20000 '
+                                                                                                                          'RTP/AVP '
+                                                                                                                          '100\r\n'
+                                                                                                                          'c=IN '
+                                                                                                                          'IP4 '
+                                                                                                                          '239.4.40.2/64\r\n'
+                                                                                                                          'a=source-filter: '
+                                                                                                                          'incl '
+                                                                                                                          'IN '
+                                                                                                                          'IP4 '
+                                                                                                                          '239.4.40.2 '
+                                                                                                                          '192.168.10.4\r\n'
+                                                                                                                          'a=rtpmap:100 '
+                                                                                                                          'smpte291/90000\r\n'
+                                                                                                                          'a=fmtp:100 '
+                                                                                                                          'VPID_Code=133; \r\n'
+                                                                                                                          'a=mediaclk:direct=0 '
+                                                                                                                          'rate=90000\r\n'
+                                                                                                                          'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n',
+                                                                                                                  'type': 'application/sdp'},
+                                                                                               'transport_params': [{'destination_port': 20000,
+                                                                                                                     'interface_ip': 'auto',
+                                                                                                                     'multicast_ip': '239.4.40.2',
+                                                                                                                     'rtp_enabled': True,
+                                                                                                                     'source_ip': '192.168.10.4'}]},
+ &lt;SingleMapping.VID_2: {'Qx': 'SFP B Rx:VID', 'QxL': 'SFP F Rx:VID', 'QxP': 'SFP F Rx:VID'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                               'master_enable': True,
+                                                                                               'sender_id': 'fe4657fd-5dff-3c24-947e-40a36ba03fb2',
+                                                                                               'transport_file': {'data': 'v=0\r\n'
+                                                                                                                          'o=- '
+                                                                                                                          '1443716955 '
+                                                                                                                          '1443716955 '
+                                                                                                                          'IN '
+                                                                                                                          'IP4 '
+                                                                                                                          '192.168.10.4\r\n'
+                                                                                                                          's=emsfp-a0-3f-b2_0-0-0\r\n'
+                                                                                                                          't=0 '
+                                                                                                                          '0\r\n'
+                                                                                                                          'm=video '
+                                                                                                                          '20000 '
+                                                                                                                          'RTP/AVP '
+                                                                                                                          '96\r\n'
+                                                                                                                          'c=IN '
+                                                                                                                          'IP4 '
+                                                                                                                          '239.4.20.2/64\r\n'
+                                                                                                                          'a=source-filter: '
+                                                                                                                          'incl '
+                                                                                                                          'IN '
+                                                                                                                          'IP4 '
+                                                                                                                          '239.4.20.2 '
+                                                                                                                          '192.168.10.4\r\n'
+                                                                                                                          'a=rtpmap:96 '
+                                                                                                                          'raw/90000\r\n'
+                                                                                                                          'a=fmtp:96 '
+                                                                                                                          'sampling=YCbCr-4:2:2; '
+                                                                                                                          'width=1920; '
+                                                                                                                          'height=1080; '
+                                                                                                                          'exactframerate=25; '
+                                                                                                                          'depth=10; '
+                                                                                                                          'TCS=SDR; '
+                                                                                                                          'colorimetry=BT709; '
+                                                                                                                          'PM=2110GPM; '
+                                                                                                                          'SSN=ST2110-20:2017; '
+                                                                                                                          'TP=2110TPN; \r\n'
+                                                                                                                          'a=mediaclk:direct=0\r\n'
+                                                                                                                          'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n',
+                                                                                                                  'type': 'application/sdp'},
+                                                                                               'transport_params': [{'destination_port': 20000,
+                                                                                                                     'interface_ip': 'auto',
+                                                                                                                     'multicast_ip': '239.4.20.2',
+                                                                                                                     'rtp_enabled': True,
+                                                                                                                     'source_ip': '192.168.10.4'}]},
+ &lt;SingleMapping.AUD3_2: {'Qx': 'SFP B Rx:AUD 3', 'QxL': 'SFP F Rx:AUD 3', 'QxP': 'SFP F Rx:AUD 3'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                      'master_enable': True,
+                                                                                                      'sender_id': '647f7f95-27eb-2ecf-a4bf-40a36ba03fb2',
+                                                                                                      'transport_file': {'data': 'v=0\r\n'
+                                                                                                                                 'o=- '
+                                                                                                                                 '1443716955 '
+                                                                                                                                 '1443716955 '
+                                                                                                                                 'IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '192.168.10.4\r\n'
+                                                                                                                                 's=emsfp-a0-3f-b2_0-3-0\r\n'
+                                                                                                                                 't=0 '
+                                                                                                                                 '0\r\n'
+                                                                                                                                 'm=audio '
+                                                                                                                                 '20000 '
+                                                                                                                                 'RTP/AVP '
+                                                                                                                                 '97\r\n'
+                                                                                                                                 'c=IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '239.4.30.4/64\r\n'
+                                                                                                                                 'a=source-filter: '
+                                                                                                                                 'incl '
+                                                                                                                                 'IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '239.4.30.4 '
+                                                                                                                                 '192.168.10.4\r\n'
+                                                                                                                                 'a=rtpmap:97 '
+                                                                                                                                 'L24/48000/8\r\n'
+                                                                                                                                 'a=mediaclk:direct=0 '
+                                                                                                                                 'rate=48000\r\n'
+                                                                                                                                 'a=framecount:6\r\n'
+                                                                                                                                 'a=ptime:0.125\r\n'
+                                                                                                                                 'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n',
+                                                                                                                         'type': 'application/sdp'},
+                                                                                                      'transport_params': [{'destination_port': 20000,
+                                                                                                                            'interface_ip': 'auto',
+                                                                                                                            'multicast_ip': '239.4.30.4',
+                                                                                                                            'rtp_enabled': True,
+                                                                                                                            'source_ip': '192.168.10.4'}]},
+ &lt;SingleMapping.AUD4_2: {'Qx': 'SFP B Rx:AUD 4', 'QxL': 'SFP F Rx:AUD 4', 'QxP': 'SFP F Rx:AUD 4'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                      'master_enable': True,
+                                                                                                      'sender_id': '35fbe21d-bdff-3a5e-8f7f-40a36ba03fb2',
+                                                                                                      'transport_file': {'data': 'v=0\r\n'
+                                                                                                                                 'o=- '
+                                                                                                                                 '1443716955 '
+                                                                                                                                 '1443716955 '
+                                                                                                                                 'IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '192.168.10.4\r\n'
+                                                                                                                                 's=emsfp-a0-3f-b2_0-4-0\r\n'
+                                                                                                                                 't=0 '
+                                                                                                                                 '0\r\n'
+                                                                                                                                 'm=audio '
+                                                                                                                                 '20000 '
+                                                                                                                                 'RTP/AVP '
+                                                                                                                                 '97\r\n'
+                                                                                                                                 'c=IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '239.4.31.4/64\r\n'
+                                                                                                                                 'a=source-filter: '
+                                                                                                                                 'incl '
+                                                                                                                                 'IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '239.4.31.4 '
+                                                                                                                                 '192.168.0.1\r\n'
+                                                                                                                                 'a=rtpmap:97 '
+                                                                                                                                 'AM824/48000/6\r\n'
+                                                                                                                                 'a=mediaclk:direct=0 '
+                                                                                                                                 'rate=48000\r\n'
+                                                                                                                                 'a=framecount:48\r\n'
+                                                                                                                                 'a=ptime:1\r\n'
+                                                                                                                                 'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n',
+                                                                                                                         'type': 'application/sdp'},
+                                                                                                      'transport_params': [{'destination_port': 20000,
+                                                                                                                            'interface_ip': 'auto',
+                                                                                                                            'multicast_ip': '239.4.31.4',
+                                                                                                                            'rtp_enabled': True,
+                                                                                                                            'source_ip': '192.168.10.4'}]},
+ &lt;SingleMapping.AUD1_2: {'Qx': 'SFP B Rx:AUD 1', 'QxL': 'SFP F Rx:AUD 1', 'QxP': 'SFP F Rx:AUD 1'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                      'master_enable': True,
+                                                                                                      'sender_id': 'fffbba85-fbd2-47b3-9f3f-40a36ba03fb2',
+                                                                                                      'transport_file': {'data': 'v=0\r\n'
+                                                                                                                                 'o=- '
+                                                                                                                                 '1443716955 '
+                                                                                                                                 '1443716955 '
+                                                                                                                                 'IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '192.168.10.4\r\n'
+                                                                                                                                 's=emsfp-a0-3f-b2_0-1-0\r\n'
+                                                                                                                                 't=0 '
+                                                                                                                                 '0\r\n'
+                                                                                                                                 'm=audio '
+                                                                                                                                 '20000 '
+                                                                                                                                 'RTP/AVP '
+                                                                                                                                 '97\r\n'
+                                                                                                                                 'c=IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '239.4.30.2/64\r\n'
+                                                                                                                                 'a=source-filter: '
+                                                                                                                                 'incl '
+                                                                                                                                 'IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '239.4.30.2 '
+                                                                                                                                 '192.168.10.4\r\n'
+                                                                                                                                 'a=rtpmap:97 '
+                                                                                                                                 'L24/48000/8\r\n'
+                                                                                                                                 'a=mediaclk:direct=0 '
+                                                                                                                                 'rate=48000\r\n'
+                                                                                                                                 'a=framecount:48\r\n'
+                                                                                                                                 'a=ptime:1\r\n'
+                                                                                                                                 'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n',
+                                                                                                                         'type': 'application/sdp'},
+                                                                                                      'transport_params': [{'destination_port': 20000,
+                                                                                                                            'interface_ip': 'auto',
+                                                                                                                            'multicast_ip': '239.4.30.2',
+                                                                                                                            'rtp_enabled': True,
+                                                                                                                            'source_ip': '192.168.10.4'}]},
+ &lt;SingleMapping.AUD2_2: {'Qx': 'SFP B Rx:AUD 2', 'QxL': 'SFP F Rx:AUD 2', 'QxP': 'SFP F Rx:AUD 2'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                      'master_enable': True,
+                                                                                                      'sender_id': 'dfff1d0d-77bf-1341-a9ff-40a36ba03fb2',
+                                                                                                      'transport_file': {'data': 'v=0\r\n'
+                                                                                                                                 'o=- '
+                                                                                                                                 '1443716955 '
+                                                                                                                                 '1443716955 '
+                                                                                                                                 'IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '192.168.10.4\r\n'
+                                                                                                                                 's=emsfp-a0-3f-b2_0-2-0\r\n'
+                                                                                                                                 't=0 '
+                                                                                                                                 '0\r\n'
+                                                                                                                                 'm=audio '
+                                                                                                                                 '20000 '
+                                                                                                                                 'RTP/AVP '
+                                                                                                                                 '97\r\n'
+                                                                                                                                 'c=IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '239.4.31.2/64\r\n'
+                                                                                                                                 'a=source-filter: '
+                                                                                                                                 'incl '
+                                                                                                                                 'IN '
+                                                                                                                                 'IP4 '
+                                                                                                                                 '239.4.31.2 '
+                                                                                                                                 '192.168.10.4\r\n'
+                                                                                                                                 'a=rtpmap:97 '
+                                                                                                                                 'AM824/48000/16\r\n'
+                                                                                                                                 'a=mediaclk:direct=0 '
+                                                                                                                                 'rate=48000\r\n'
+                                                                                                                                 'a=framecount:6\r\n'
+                                                                                                                                 'a=ptime:0.125\r\n'
+                                                                                                                                 'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n',
+                                                                                                                         'type': 'application/sdp'},
+                                                                                                      'transport_params': [{'destination_port': 20000,
+                                                                                                                            'interface_ip': 'auto',
+                                                                                                                            'multicast_ip': '239.4.31.2',
+                                                                                                                            'rtp_enabled': True,
+                                                                                                                            'source_ip': '192.168.10.4'}]},
+ &lt;SingleMapping.ANC_1: {'Qx': 'SFP A Rx:ANC', 'QxL': 'SFP E Rx:ANC', 'QxP': 'SFP E Rx:ANC'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                               'master_enable': True,
+                                                                                               'sender_id': '49f7cec5-fbb8-3425-9541-40a36ba03fb2',
+                                                                                               'transport_file': {'data': 'v=0\r\n'
+                                                                                                                          'o=- '
+                                                                                                                          '1443716955 '
+                                                                                                                          '1443716955 '
+                                                                                                                          'IN '
+                                                                                                                          'IP4 '
+                                                                                                                          '192.168.10.4\r\n'
+                                                                                                                          's=emsfp-a0-3f-b2_0-9-0\r\n'
+                                                                                                                          't=0 '
+                                                                                                                          '0\r\n'
+                                                                                                                          'm=video '
+                                                                                                                          '20000 '
+                                                                                                                          'RTP/AVP '
+                                                                                                                          '100\r\n'
+                                                                                                                          'c=IN '
+                                                                                                                          'IP4 '
+                                                                                                                          '239.4.40.1/64\r\n'
+                                                                                                                          'a=source-filter: '
+                                                                                                                          'incl '
+                                                                                                                          'IN '
+                                                                                                                          'IP4 '
+                                                                                                                          '239.4.40.1 '
+                                                                                                                          '192.168.10.4\r\n'
+                                                                                                                          'a=rtpmap:100 '
+                                                                                                                          'smpte291/90000\r\n'
+                                                                                                                          'a=fmtp:100 '
+                                                                                                                          'VPID_Code=133; \r\n'
+                                                                                                                          'a=mediaclk:direct=0 '
+                                                                                                                          'rate=90000\r\n'
+                                                                                                                          'a=ts-refclk:ptp=IEEE1588-2008:08-00-11-FF-FE-22-B6-CE:0\r\n',
+                                                                                                                  'type': 'application/sdp'},
+                                                                                               'transport_params': [{'destination_port': 20000,
+                                                                                                                     'interface_ip': 'auto',
+                                                                                                                     'multicast_ip': '239.4.40.1',
+                                                                                                                     'rtp_enabled': True,
+                                                                                                                     'source_ip': '192.168.10.4'}]}}
+        disable_connections_dual = {&lt;DualMapping.VID: {'Qx': 'SFP A+B Rx:VID', 'QxL': 'SFP E+F Rx:VID', 'QxP': 'SFP E+F Rx:VID'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                 'master_enable': False},
+ &lt;DualMapping.AUD1: {'Qx': 'SFP A+B Rx:AUD 1', 'QxL': 'SFP E+F Rx:AUD 1', 'QxP': 'SFP E+F Rx:AUD 1'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                        'master_enable': False},
+ &lt;DualMapping.AUD2: {'Qx': 'SFP A+B Rx:AUD 2', 'QxL': 'SFP E+F Rx:AUD 2', 'QxP': 'SFP E+F Rx:AUD 2'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                        'master_enable': False},
+ &lt;DualMapping.AUD3: {'Qx': 'SFP A+B Rx:AUD 3', 'QxL': 'SFP E+F Rx:AUD 3', 'QxP': 'SFP E+F Rx:AUD 3'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                        'master_enable': False},
+ &lt;DualMapping.AUD4: {'Qx': 'SFP A+B Rx:AUD 4', 'QxL': 'SFP E+F Rx:AUD 4', 'QxP': 'SFP E+F Rx:AUD 4'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                        'master_enable': False},
+ &lt;DualMapping.ANC: {'Qx': 'SFP A+B Rx:ANC', 'QxL': 'SFP E+F Rx:ANC', 'QxP': 'SFP E+F Rx:ANC'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                 'master_enable': False}}
+        disable_connections_single = {&lt;SingleMapping.VID_1: {'Qx': 'SFP A Rx:VID', 'QxL': 'SFP E Rx:VID', 'QxP': 'SFP E Rx:VID'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                               'master_enable': False},
+ &lt;SingleMapping.AUD1_1: {'Qx': 'SFP A Rx:AUD 1', 'QxL': 'SFP E Rx:AUD 1', 'QxP': 'SFP E Rx:AUD 1'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                      'master_enable': False},
+ &lt;SingleMapping.AUD2_1: {'Qx': 'SFP A Rx:AUD 2', 'QxL': 'SFP E Rx:AUD 2', 'QxP': 'SFP E Rx:AUD 2'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                      'master_enable': False},
+ &lt;SingleMapping.AUD3_1: {'Qx': 'SFP A Rx:AUD 3', 'QxL': 'SFP E Rx:AUD 3', 'QxP': 'SFP E Rx:AUD 3'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                      'master_enable': False},
+ &lt;SingleMapping.AUD4_1: {'Qx': 'SFP A Rx:AUD 4', 'QxL': 'SFP E Rx:AUD 4', 'QxP': 'SFP E Rx:AUD 4'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                      'master_enable': False},
+ &lt;SingleMapping.ANC_2: {'Qx': 'SFP B Rx:ANC', 'QxL': 'SFP F Rx:ANC', 'QxP': 'SFP F Rx:ANC'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                               'master_enable': False},
+ &lt;SingleMapping.VID_2: {'Qx': 'SFP B Rx:VID', 'QxL': 'SFP F Rx:VID', 'QxP': 'SFP F Rx:VID'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                               'master_enable': False},
+ &lt;SingleMapping.AUD3_2: {'Qx': 'SFP B Rx:AUD 3', 'QxL': 'SFP F Rx:AUD 3', 'QxP': 'SFP F Rx:AUD 3'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                      'master_enable': False},
+ &lt;SingleMapping.AUD4_2: {'Qx': 'SFP B Rx:AUD 4', 'QxL': 'SFP F Rx:AUD 4', 'QxP': 'SFP F Rx:AUD 4'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                      'master_enable': False},
+ &lt;SingleMapping.AUD1_2: {'Qx': 'SFP B Rx:AUD 1', 'QxL': 'SFP F Rx:AUD 1', 'QxP': 'SFP F Rx:AUD 1'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                      'master_enable': False},
+ &lt;SingleMapping.AUD2_2: {'Qx': 'SFP B Rx:AUD 2', 'QxL': 'SFP F Rx:AUD 2', 'QxP': 'SFP F Rx:AUD 2'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                                      'master_enable': False},
+ &lt;SingleMapping.ANC_1: {'Qx': 'SFP A Rx:ANC', 'QxL': 'SFP E Rx:ANC', 'QxP': 'SFP E Rx:ANC'}&gt;: {'activation': {'mode': 'activate_immediate'},
+                                                                                               'master_enable': False}}
+        json       = &lt;module 'json' from '/usr/lib/python3.8/json/__init__.py'&gt;
+        log        = &lt;Logger autolib_log (INFO)&gt;
+        logging    = &lt;module 'logging' from '/usr/lib/python3.8/logging/__init__.py'&gt;
+        make_qx    = &lt;function make_qx at 0x7fedd1d2e310&gt;
+        pytest     = &lt;module 'pytest' from '/home/arthur/projects/autolib/autolib/lib/python3.8/site-packages/pytest/__init__.py'&gt;
+        qx         = &lt;function qx at 0x7fedbdb8bd30&gt;
+        reset_test_unit = &lt;function reset_test_unit at 0x7fedbdb8bb80&gt;
+        tempfile   = &lt;module 'tempfile' from '/usr/lib/python3.8/tempfile.py'&gt;
+        time       = &lt;module 'time' (built-in)&gt;
+        uuid4      = &lt;function uuid4 at 0x7fedd284bb80&gt;</error></testcase></testsuite></testsuites>
