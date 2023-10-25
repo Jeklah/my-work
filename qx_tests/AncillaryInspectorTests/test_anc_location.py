@@ -5,7 +5,6 @@ SDI generator.
 
 import logging
 import time
-# import pdb; pdb.set_trace()
 
 import pytest
 from typing import Generator, List, Tuple
@@ -47,8 +46,7 @@ def generator_unit(test_generator_hostname: str) -> Generator[Qx, None, None]:
     generator_qx = make_sdi_unit(test_generator_hostname)
     generator_qx.generator.bouncing_box = False
     generator_qx.generator.output_copy = False
-    generator_qx.io.set_sdi_output_source(
-        str(SDIIOType.BNC).lower(), (SDIOutputSource.GENERATOR, ) * 4)
+    generator_qx.io.set_sdi_output_source = SDIIOType.BNC, (SDIOutputSource.GENERATOR, ) * 4
     log.info(f"FIXTURE: Generator Qx {generator_qx.hostname} setup complete")
     yield generator_qx
     # No teardown is needed
@@ -56,7 +54,7 @@ def generator_unit(test_generator_hostname: str) -> Generator[Qx, None, None]:
 
 
 @pytest.fixture
-def analyser_unit(test_analyser_hostname) -> Generator[Qx, None, None]:
+def analyser_unit(test_analyser_hostname: str) -> Generator[Qx, None, None]:
     """
     Provide a Qx configured for the test run to act as an analyser.
 
@@ -92,16 +90,14 @@ def _generate_expected_s352_locations(qx_analyser: Qx) -> Generator[tuple, None,
     # expected st352 locations
     parsed_analysed_standard = ParsedStandard(
         qx_analyser.analyser.sdi.analyser_status.get('standard', None))
-    # parsed_analysed_standard = qx_analyser.analyser.parse_analyser_status(
-    #     qx_analyser.analyser.get_analyser_status())
 
     resolution = parsed_analysed_standard.api_resolution
-    scan_type = f'{parsed_analysed_standard.frame_rate}{parsed_analysed_standard.frame_type.value}'  # noqa: E501
+    scan_type = f'{parsed_analysed_standard.frame_rate}{parsed_analysed_standard.frame_type.value}'
     link_count = parsed_analysed_standard.links
     data_rate = parsed_analysed_standard.data_rate
     standard_level = parsed_analysed_standard.level
     frame_type = parsed_analysed_standard.frame_type
-    # Use analysed standard data to determine which sub-images SHOULD contain a 352 packet  # noqa: E501
+    # Use analysed standard data to determine which sub-images SHOULD contain a 352 packet
     if standard_level == "A":
         if data_rate <= 3.0 and link_count == 1:
             sub_image_search = ["subImage1"]
@@ -156,7 +152,7 @@ def _generate_expected_s352_locations(qx_analyser: Qx) -> Generator[tuple, None,
         s352_exp_channel = ["yPos", "cPos"]
 
     # Calculate the number of expected results we should get based on the analysed standard
-    no_of_results = (len(s352_exp_line)*len(s352_exp_channel)) * len(sub_image_search)
+    no_of_results = (len(s352_exp_line) * len(s352_exp_channel)) * len(sub_image_search)
 
     # @DUNC This is horrible - we need to configure the logger to automatically emit stuff like the analyser
     # hostname automatically

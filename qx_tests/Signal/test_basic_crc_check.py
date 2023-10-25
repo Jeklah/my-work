@@ -25,8 +25,7 @@ def generator_qx(test_generator_hostname):
     generator_qx.generator.bouncing_box = False
     generator_qx.generator.output_copy = False
     generator_qx.generator.jitter_insertion("Disabled", 0.01, 10)
-    # generator_qx.io.sdi_out_type = SDIIOType.BNC
-    generator_qx.io.set_sdi_output_source(str(SDIIOType.BNC).lower(), (SDIOutputSource.GENERATOR, ) * 4)
+    generator_qx.io.set_sdi_output_source = SDIIOType.BNC, (SDIOutputSource.GENERATOR, ) * 4
     log.info(f"FIXTURE: Qx {generator_qx.hostname} setup complete")
     yield generator_qx
     generator_qx.generator.bouncing_box = False
@@ -68,11 +67,11 @@ def test_active_image_crc_bbox(generator_qx, analyser_qx, confidence_test_standa
 
     assert analyser_qx.analyser.sdi.expected_video_analyser(res, colour_map, gam)
 
-    crc_no_bbox = generator_qx.analyser.sdi.get_crc_analyser()
+    crc_no_bbox = generator_qx.analyser.sdi.get_link_and_subimage_crcs()
     generator_qx.generator.bouncing_box = True
     time.sleep(1)
 
-    crc_with_bbox = analyser_qx.analyser.sdi.get_crc_analyser()
+    crc_with_bbox = analyser_qx.analyser.sdi.get_link_and_subimage_crcs()
 
     assert len(crc_with_bbox) == len(crc_no_bbox)  # Sanity check that we still have the same number of subimages
 
@@ -112,7 +111,7 @@ def test_crc_consistency(generator_qx, analyser_qx, confidence_test_standards):
     generator_qx.generator.set_generator(res, colour_map, gam)
     time.sleep(5)
     assert analyser_qx.analyser.sdi.expected_video_analyser(res, colour_map, gam)
-    crc_before = generator_qx.analyser.sdi.get_crc_analyser()
+    crc_before = generator_qx.analyser.sdi.get_link_and_subimage_crcs()
 
     # Standard to switch to in between (not a standard used in this test)
     interim_standard = "2048x1080p30", "RGBA:4444:10", "3G_A_HLG_Rec.2020"
@@ -124,7 +123,7 @@ def test_crc_consistency(generator_qx, analyser_qx, confidence_test_standards):
     generator_qx.generator.set_generator(res, colour_map, gam)
     time.sleep(5)
     assert analyser_qx.analyser.sdi.expected_video_analyser(res, colour_map, gam)
-    crc_after = generator_qx.analyser.sdi.get_crc_analyser()
+    crc_after = generator_qx.analyser.sdi.get_link_and_subimage_crcs()
 
     assert len(crc_before) == len(crc_after)  # Sanity check that we still have the same number of subimages
 

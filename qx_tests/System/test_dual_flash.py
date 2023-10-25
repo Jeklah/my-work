@@ -82,8 +82,8 @@ class TestDualFlashSuite:
           - (Active: ???, Inactive: ???)
         - Verify that the active design is in the first position in the flash.
         """
-        if type(qx) != Qx:
-            pytest.mark.skip("This test is only appropriate for Qx devices.")
+        if type(qx) is not Qx:
+            pytest.skip("This test is only appropriate for Qx devices.")
 
         # This method will assert if there is a problem with clearing the metadata and then flashing the default designs
         self._initialise_metadata(qx)

@@ -35,8 +35,7 @@ def generator_qx(test_generator_hostname):
         generator_qx.generator.bouncing_box = False
         generator_qx.generator.output_copy = False
         generator_qx.generator.jitter_insertion("Disabled", 0.01, 10)
-        generator_qx.io.set_sdi_output_source(
-            str(SDIIOType.BNC).lower(), (SDIOutputSource.GENERATOR, ) * 4)
+        generator_qx.io.set_sdi_output_source = SDIIOType.BNC, (SDIOutputSource.GENERATOR, ) * 4
         log.info(f"FIXTURE: Qx {generator_qx.hostname} setup complete")
         yield generator_qx
         generator_qx.generator.bouncing_box = False

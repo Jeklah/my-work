@@ -1,22 +1,19 @@
-2023-10-13 16:06:46,432 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.17 Hostname: qx-020264)
-2023-10-13 16:06:47,301 - MainThread - INFO -: FPGA design from fpgaver is 1
-2023-10-13 16:06:47,308 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.17 Hostname: qx-020264)
-2023-10-13 16:06:48,180 - MainThread - INFO -: FPGA design from fpgaver is 1
-2023-10-13 16:06:48,208 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.17 Hostname: qx-020264)
-2023-10-13 16:06:48,727 - MainThread - INFO -: FIXTURE: Qx qx-020264 setup complete
-2023-10-13 16:06:48,731 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.17 Hostname: qx-020264)
-2023-10-13 16:06:49,247 - MainThread - INFO -: FIXTURE: Qx qx-020264 setup complete
-2023-10-13 16:06:49,250 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.17 Hostname: qx-020264)
-2023-10-13 16:06:49,764 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.17 Hostname: qx-020264)
-2023-10-13 16:06:50,228 - MainThread - INFO -: 
-
-================================ Test Start ===================================
-Test name: Signal/test_sdi_io.py::TestSdiInputOutput::test_output_copy
-Started: 2023-10-13 16:06:50.187826
-Test Generator Device: 
-  {'Build_number': '745709117',
+2023-10-24 16:34:33,433 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.91 Hostname: qx-020264)
+2023-10-24 16:34:34,394 - MainThread - INFO -: FPGA design from fpgaver is 1
+2023-10-24 16:34:34,400 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.91 Hostname: qx-020264)
+2023-10-24 16:34:35,331 - MainThread - INFO -: FPGA design from fpgaver is 1
+2023-10-24 16:34:35,348 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.91 Hostname: qx-020264)
+2023-10-24 16:34:36,304 - MainThread - INFO -: FPGA design from fpgaver is 1
+2023-10-24 16:34:36,326 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.91 Hostname: qx-020264)
+2023-10-24 16:34:43,638 - MainThread - INFO -: Management interface responded to ping after 1 attempts.
+2023-10-24 16:34:44,172 - MainThread - INFO -: SSH Ready after 0 retries.
+2023-10-24 16:34:45,665 - MainThread - INFO -: PID for process qx_server is 797
+2023-10-24 16:34:47,168 - MainThread - INFO -: PID for process qx_client is 747
+2023-10-24 16:34:47,168 - MainThread - INFO -: All critical processes are ready.
+2023-10-24 16:34:47,197 - MainThread - INFO -: Rest API is responding
+2023-10-24 16:34:47,220 - MainThread - INFO -: {'Build_number': '745709117',
  'FPGA_version': '4.8.0+7408',
- 'IP': '192.168.0.17',
+ 'IP': '192.168.0.91',
  'Image_version': 'release_v4_3_6',
  'Software_version': '4.8.0',
  'all': {'currentFirmwareMode': 'SDI',
@@ -66,7 +63,167 @@ Test Generator Device:
          'softwareNumber': '745709117',
          'softwareVersion': '4.8.0',
          'status': 200,
-         'timeOnUnit': 'Fri Oct 13 16:06:50 2023',
+         'timeOnUnit': 'Tue Oct 24 16:34:47 2023',
+         'toolchainVersion': 'release_v4_3_6'},
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
+ 'software_branch': 'release_staging_4_8_0'}
+2023-10-24 16:34:47,746 - MainThread - INFO -: FPGA design from fpgaver is 1
+2023-10-24 16:34:47,776 - MainThread - INFO -: Successfully connected to port 22 for protocol ssh
+2023-10-24 16:34:47,778 - MainThread - INFO -: Successfully connected to port 80 for protocol http
+2023-10-24 16:34:47,779 - MainThread - INFO -: Successfully connected to port 8080 for protocol REST
+2023-10-24 16:34:47,781 - MainThread - INFO -: Successfully connected to port 5900 for protocol VNC
+2023-10-24 16:34:47,781 - MainThread - INFO -: All important ports are listening
+2023-10-24 16:34:47,782 - MainThread - INFO -: Device DNS / mDNS name lookup succeeded. getaddrinfo() returned [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('192.168.0.91', 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_DGRAM: 2>, 17, '', ('192.168.0.91', 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_RAW: 3>, 0, '', ('192.168.0.91', 0))]
+2023-10-24 16:34:47,782 - MainThread - INFO -: Qx is now available, block_until_ready succeeded
+2023-10-24 16:34:48,323 - MainThread - INFO -: FPGA design from fpgaver is 1
+2023-10-24 16:34:48,323 - MainThread - INFO -: Requested operation mode is the current operation mode.
+2023-10-24 16:34:48,662 - MainThread - INFO -: qx-020264 - Jitter insertion has been set to: Disabled / 0.01 / 10
+2023-10-24 16:34:48,662 - MainThread - INFO -: FIXTURE: Qx qx-020264 setup complete
+2023-10-24 16:34:48,667 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.91 Hostname: qx-020264)
+2023-10-24 16:34:49,260 - MainThread - INFO -: Management interface responded to ping after 1 attempts.
+2023-10-24 16:34:49,728 - MainThread - INFO -: SSH Ready after 0 retries.
+2023-10-24 16:34:51,295 - MainThread - INFO -: PID for process qx_server is 797
+2023-10-24 16:34:52,648 - MainThread - INFO -: PID for process qx_client is 747
+2023-10-24 16:34:52,648 - MainThread - INFO -: All critical processes are ready.
+2023-10-24 16:34:52,661 - MainThread - INFO -: Rest API is responding
+2023-10-24 16:34:52,705 - MainThread - INFO -: {'Build_number': '745709117',
+ 'FPGA_version': '4.8.0+7408',
+ 'IP': '192.168.0.91',
+ 'Image_version': 'release_v4_3_6',
+ 'Software_version': '4.8.0',
+ 'all': {'currentFirmwareMode': 'SDI',
+         'currentSystemMode': 'SDI',
+         'device': 'Qx',
+         'driver': {'A': {'gain_1.5G': -1,
+                          'gain_12G': -5,
+                          'gain_3G': -1,
+                          'gain_6G': -2},
+                    'B': {'gain_1.5G': -2,
+                          'gain_12G': -7,
+                          'gain_3G': -2,
+                          'gain_6G': -3},
+                    'C': {'gain_1.5G': -1,
+                          'gain_12G': -7,
+                          'gain_3G': -2,
+                          'gain_6G': -3},
+                    'D': {'gain_1.5G': -1,
+                          'gain_12G': -4,
+                          'gain_3G': -1,
+                          'gain_6G': -2}},
+         'eye': {'dcGain': 'N/A',
+                 'displayGains': {'gain_1.5G': 'N/A',
+                                  'gain_12G': 'N/A',
+                                  'gain_270M': 'N/A',
+                                  'gain_3G': 'N/A',
+                                  'gain_6G': 'N/A'},
+                 'eyeCalRevision': 1,
+                 'gain': 2432,
+                 'measurementGains': {'gain_1.5G': 'N/A',
+                                      'gain_12G': 'N/A',
+                                      'gain_270M': 'N/A',
+                                      'gain_3G': 'N/A',
+                                      'gain_6G': 'N/A'},
+                 'offset': 362},
+         'fpgaVersion': '4.8.0+7408',
+         'frontPanelRevision': '3',
+         'imageVersion': 'release_v4_3_6',
+         'jitterAdcSpan': '-9 ok',
+         'links': [{'href': 'http://qx-020264:8080/api/v1/system/about',
+                    'rel': 'self'}],
+         'mainBoardRevision': '9',
+         'message': '',
+         'mezzanineBoardRevision': '6',
+         'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
+         'softwareBranch': 'release_staging_4_8_0',
+         'softwareNumber': '745709117',
+         'softwareVersion': '4.8.0',
+         'status': 200,
+         'timeOnUnit': 'Tue Oct 24 16:34:52 2023',
+         'toolchainVersion': 'release_v4_3_6'},
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
+ 'software_branch': 'release_staging_4_8_0'}
+2023-10-24 16:34:53,227 - MainThread - INFO -: FPGA design from fpgaver is 1
+2023-10-24 16:34:53,277 - MainThread - INFO -: Successfully connected to port 22 for protocol ssh
+2023-10-24 16:34:53,278 - MainThread - INFO -: Successfully connected to port 80 for protocol http
+2023-10-24 16:34:53,281 - MainThread - INFO -: Successfully connected to port 8080 for protocol REST
+2023-10-24 16:34:53,282 - MainThread - INFO -: Successfully connected to port 5900 for protocol VNC
+2023-10-24 16:34:53,282 - MainThread - INFO -: All important ports are listening
+2023-10-24 16:34:53,285 - MainThread - INFO -: Device DNS / mDNS name lookup succeeded. getaddrinfo() returned [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('192.168.0.91', 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_DGRAM: 2>, 17, '', ('192.168.0.91', 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_RAW: 3>, 0, '', ('192.168.0.91', 0))]
+2023-10-24 16:34:53,285 - MainThread - INFO -: Qx is now available, block_until_ready succeeded
+2023-10-24 16:34:53,693 - MainThread - INFO -: FPGA design from fpgaver is 1
+2023-10-24 16:34:53,694 - MainThread - INFO -: Requested operation mode is the current operation mode.
+2023-10-24 16:34:53,694 - MainThread - INFO -: FIXTURE: Qx qx-020264 setup complete
+2023-10-24 16:34:53,703 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.91 Hostname: qx-020264)
+2023-10-24 16:34:54,430 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.91 Hostname: qx-020264)
+2023-10-24 16:34:54,965 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Signal/test_generator_test_patterns.py::test_generator_test_pattern_then_get[1920x1080p25-YCbCr:422:10-1.5G_Rec.709]
+Started: 2023-10-24 16:34:54.897205
+Test Generator Device: 
+  {'Build_number': '745709117',
+ 'FPGA_version': '4.8.0+7408',
+ 'IP': '192.168.0.91',
+ 'Image_version': 'release_v4_3_6',
+ 'Software_version': '4.8.0',
+ 'all': {'currentFirmwareMode': 'SDI',
+         'currentSystemMode': 'SDI',
+         'device': 'Qx',
+         'driver': {'A': {'gain_1.5G': -1,
+                          'gain_12G': -5,
+                          'gain_3G': -1,
+                          'gain_6G': -2},
+                    'B': {'gain_1.5G': -2,
+                          'gain_12G': -7,
+                          'gain_3G': -2,
+                          'gain_6G': -3},
+                    'C': {'gain_1.5G': -1,
+                          'gain_12G': -7,
+                          'gain_3G': -2,
+                          'gain_6G': -3},
+                    'D': {'gain_1.5G': -1,
+                          'gain_12G': -4,
+                          'gain_3G': -1,
+                          'gain_6G': -2}},
+         'eye': {'dcGain': 'N/A',
+                 'displayGains': {'gain_1.5G': 'N/A',
+                                  'gain_12G': 'N/A',
+                                  'gain_270M': 'N/A',
+                                  'gain_3G': 'N/A',
+                                  'gain_6G': 'N/A'},
+                 'eyeCalRevision': 1,
+                 'gain': 2432,
+                 'measurementGains': {'gain_1.5G': 'N/A',
+                                      'gain_12G': 'N/A',
+                                      'gain_270M': 'N/A',
+                                      'gain_3G': 'N/A',
+                                      'gain_6G': 'N/A'},
+                 'offset': 362},
+         'fpgaVersion': '4.8.0+7408',
+         'frontPanelRevision': '3',
+         'imageVersion': 'release_v4_3_6',
+         'jitterAdcSpan': '-9 ok',
+         'links': [{'href': 'http://qx-020264:8080/api/v1/system/about',
+                    'rel': 'self'}],
+         'mainBoardRevision': '9',
+         'message': '',
+         'mezzanineBoardRevision': '6',
+         'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
+         'softwareBranch': 'release_staging_4_8_0',
+         'softwareNumber': '745709117',
+         'softwareVersion': '4.8.0',
+         'status': 200,
+         'timeOnUnit': 'Tue Oct 24 16:34:54 2023',
          'toolchainVersion': 'release_v4_3_6'},
  'device': 'Qx',
  'firmware_mode': 'SDI',
@@ -79,7 +236,7 @@ Test Generator Device:
 Test Analyser Device: 
   {'Build_number': '745709117',
  'FPGA_version': '4.8.0+7408',
- 'IP': '192.168.0.17',
+ 'IP': '192.168.0.91',
  'Image_version': 'release_v4_3_6',
  'Software_version': '4.8.0',
  'all': {'currentFirmwareMode': 'SDI',
@@ -129,7 +286,7 @@ Test Analyser Device:
          'softwareNumber': '745709117',
          'softwareVersion': '4.8.0',
          'status': 200,
-         'timeOnUnit': 'Fri Oct 13 16:06:50 2023',
+         'timeOnUnit': 'Tue Oct 24 16:34:54 2023',
          'toolchainVersion': 'release_v4_3_6'},
  'device': 'Qx',
  'firmware_mode': 'SDI',
@@ -140,170 +297,44 @@ Test Analyser Device:
  'software_branch': 'release_staging_4_8_0'}      
 -------------------------------------------------------------------------------
 
-2023-10-13 16:06:50,281 - MainThread - INFO -: Management interface responded to ping after 1 attempts.
-2023-10-13 16:06:50,660 - MainThread - INFO -: SSH Ready after 0 retries.
-2023-10-13 16:06:51,848 - MainThread - INFO -: PID for process qx_server is 803
-2023-10-13 16:06:53,127 - MainThread - INFO -: PID for process qx_client is 747
-2023-10-13 16:06:53,127 - MainThread - INFO -: All critical processes are ready.
-2023-10-13 16:06:53,203 - MainThread - INFO -: Rest API is responding
-2023-10-13 16:06:53,223 - MainThread - INFO -: {'Build_number': '745709117',
- 'FPGA_version': '4.8.0+7408',
- 'IP': '192.168.0.17',
- 'Image_version': 'release_v4_3_6',
- 'Software_version': '4.8.0',
- 'all': {'currentFirmwareMode': 'SDI',
-         'currentSystemMode': 'SDI',
-         'device': 'Qx',
-         'driver': {'A': {'gain_1.5G': -1,
-                          'gain_12G': -5,
-                          'gain_3G': -1,
-                          'gain_6G': -2},
-                    'B': {'gain_1.5G': -2,
-                          'gain_12G': -7,
-                          'gain_3G': -2,
-                          'gain_6G': -3},
-                    'C': {'gain_1.5G': -1,
-                          'gain_12G': -7,
-                          'gain_3G': -2,
-                          'gain_6G': -3},
-                    'D': {'gain_1.5G': -1,
-                          'gain_12G': -4,
-                          'gain_3G': -1,
-                          'gain_6G': -2}},
-         'eye': {'dcGain': 'N/A',
-                 'displayGains': {'gain_1.5G': 'N/A',
-                                  'gain_12G': 'N/A',
-                                  'gain_270M': 'N/A',
-                                  'gain_3G': 'N/A',
-                                  'gain_6G': 'N/A'},
-                 'eyeCalRevision': 1,
-                 'gain': 2432,
-                 'measurementGains': {'gain_1.5G': 'N/A',
-                                      'gain_12G': 'N/A',
-                                      'gain_270M': 'N/A',
-                                      'gain_3G': 'N/A',
-                                      'gain_6G': 'N/A'},
-                 'offset': 362},
-         'fpgaVersion': '4.8.0+7408',
-         'frontPanelRevision': '3',
-         'imageVersion': 'release_v4_3_6',
-         'jitterAdcSpan': '-9 ok',
-         'links': [{'href': 'http://qx-020264:8080/api/v1/system/about',
-                    'rel': 'self'}],
-         'mainBoardRevision': '9',
-         'message': '',
-         'mezzanineBoardRevision': '6',
-         'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
-         'softwareBranch': 'release_staging_4_8_0',
-         'softwareNumber': '745709117',
-         'softwareVersion': '4.8.0',
-         'status': 200,
-         'timeOnUnit': 'Fri Oct 13 16:06:53 2023',
-         'toolchainVersion': 'release_v4_3_6'},
- 'device': 'Qx',
- 'firmware_mode': 'SDI',
- 'hostname': 'qx-020264',
- 'main_pcb_rev': '9',
- 'mezzanine_rev': '6',
- 'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
- 'software_branch': 'release_staging_4_8_0'}
-2023-10-13 16:06:53,646 - MainThread - INFO -: FPGA design from fpgaver is 1
-2023-10-13 16:06:53,656 - MainThread - INFO -: Successfully connected to port 22 for protocol ssh
-2023-10-13 16:06:53,658 - MainThread - INFO -: Successfully connected to port 80 for protocol http
-2023-10-13 16:06:53,660 - MainThread - INFO -: Successfully connected to port 8080 for protocol REST
-2023-10-13 16:06:53,662 - MainThread - INFO -: Successfully connected to port 5900 for protocol VNC
-2023-10-13 16:06:53,662 - MainThread - INFO -: All important ports are listening
-2023-10-13 16:06:53,664 - MainThread - INFO -: Device DNS / mDNS name lookup succeeded. getaddrinfo() returned [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('192.168.0.17', 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_DGRAM: 2>, 17, '', ('192.168.0.17', 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_RAW: 3>, 0, '', ('192.168.0.17', 0))]
-2023-10-13 16:06:53,664 - MainThread - INFO -: Qx is now available, block_until_ready succeeded
-2023-10-13 16:06:54,067 - MainThread - INFO -: FPGA design from fpgaver is 1
-2023-10-13 16:06:54,067 - MainThread - INFO -: Requested operation mode is the current operation mode.
-2023-10-13 16:06:54,705 - MainThread - INFO -: Management interface responded to ping after 1 attempts.
-2023-10-13 16:06:55,080 - MainThread - INFO -: SSH Ready after 0 retries.
-2023-10-13 16:06:56,322 - MainThread - INFO -: PID for process qx_server is 803
-2023-10-13 16:06:57,557 - MainThread - INFO -: PID for process qx_client is 747
-2023-10-13 16:06:57,558 - MainThread - INFO -: All critical processes are ready.
-2023-10-13 16:06:57,600 - MainThread - INFO -: Rest API is responding
-2023-10-13 16:06:57,619 - MainThread - INFO -: {'Build_number': '745709117',
- 'FPGA_version': '4.8.0+7408',
- 'IP': '192.168.0.17',
- 'Image_version': 'release_v4_3_6',
- 'Software_version': '4.8.0',
- 'all': {'currentFirmwareMode': 'SDI',
-         'currentSystemMode': 'SDI',
-         'device': 'Qx',
-         'driver': {'A': {'gain_1.5G': -1,
-                          'gain_12G': -5,
-                          'gain_3G': -1,
-                          'gain_6G': -2},
-                    'B': {'gain_1.5G': -2,
-                          'gain_12G': -7,
-                          'gain_3G': -2,
-                          'gain_6G': -3},
-                    'C': {'gain_1.5G': -1,
-                          'gain_12G': -7,
-                          'gain_3G': -2,
-                          'gain_6G': -3},
-                    'D': {'gain_1.5G': -1,
-                          'gain_12G': -4,
-                          'gain_3G': -1,
-                          'gain_6G': -2}},
-         'eye': {'dcGain': 'N/A',
-                 'displayGains': {'gain_1.5G': 'N/A',
-                                  'gain_12G': 'N/A',
-                                  'gain_270M': 'N/A',
-                                  'gain_3G': 'N/A',
-                                  'gain_6G': 'N/A'},
-                 'eyeCalRevision': 1,
-                 'gain': 2432,
-                 'measurementGains': {'gain_1.5G': 'N/A',
-                                      'gain_12G': 'N/A',
-                                      'gain_270M': 'N/A',
-                                      'gain_3G': 'N/A',
-                                      'gain_6G': 'N/A'},
-                 'offset': 362},
-         'fpgaVersion': '4.8.0+7408',
-         'frontPanelRevision': '3',
-         'imageVersion': 'release_v4_3_6',
-         'jitterAdcSpan': '-9 ok',
-         'links': [{'href': 'http://qx-020264:8080/api/v1/system/about',
-                    'rel': 'self'}],
-         'mainBoardRevision': '9',
-         'message': '',
-         'mezzanineBoardRevision': '6',
-         'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
-         'softwareBranch': 'release_staging_4_8_0',
-         'softwareNumber': '745709117',
-         'softwareVersion': '4.8.0',
-         'status': 200,
-         'timeOnUnit': 'Fri Oct 13 16:06:57 2023',
-         'toolchainVersion': 'release_v4_3_6'},
- 'device': 'Qx',
- 'firmware_mode': 'SDI',
- 'hostname': 'qx-020264',
- 'main_pcb_rev': '9',
- 'mezzanine_rev': '6',
- 'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
- 'software_branch': 'release_staging_4_8_0'}
-2023-10-13 16:06:58,055 - MainThread - INFO -: FPGA design from fpgaver is 1
-2023-10-13 16:06:58,072 - MainThread - INFO -: Successfully connected to port 22 for protocol ssh
-2023-10-13 16:06:58,073 - MainThread - INFO -: Successfully connected to port 80 for protocol http
-2023-10-13 16:06:58,074 - MainThread - INFO -: Successfully connected to port 8080 for protocol REST
-2023-10-13 16:06:58,075 - MainThread - INFO -: Successfully connected to port 5900 for protocol VNC
-2023-10-13 16:06:58,075 - MainThread - INFO -: All important ports are listening
-2023-10-13 16:06:58,076 - MainThread - INFO -: Device DNS / mDNS name lookup succeeded. getaddrinfo() returned [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('192.168.0.17', 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_DGRAM: 2>, 17, '', ('192.168.0.17', 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_RAW: 3>, 0, '', ('192.168.0.17', 0))]
-2023-10-13 16:06:58,077 - MainThread - INFO -: Qx is now available, block_until_ready succeeded
-2023-10-13 16:06:58,465 - MainThread - INFO -: FPGA design from fpgaver is 1
-2023-10-13 16:06:58,466 - MainThread - INFO -: Requested operation mode is the current operation mode.
-2023-10-13 16:06:59,030 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
-2023-10-13 16:07:09,277 - MainThread - INFO -: 
+2023-10-24 16:34:57,290 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / 100% Bars
+2023-10-24 16:34:59,561 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / 75% Bars
+2023-10-24 16:35:01,868 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / ARIB 28+i
+2023-10-24 16:35:04,125 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / ARIB 28+i+q
+2023-10-24 16:35:06,369 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / ARIB 28-100
+2023-10-24 16:35:08,892 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / ARIB 28-75
+2023-10-24 16:35:11,299 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / BT.814 Pluge
+2023-10-24 16:35:13,707 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Bowtie
+2023-10-24 16:35:16,155 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Box
+2023-10-24 16:35:18,478 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Circle
+2023-10-24 16:35:20,878 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Colour Grid
+2023-10-24 16:35:23,068 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Component Ramps
+2023-10-24 16:35:25,524 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Field Lineup
+2023-10-24 16:35:27,757 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Grey 10H Step
+2023-10-24 16:35:29,888 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Grey 10V Step
+2023-10-24 16:35:31,987 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Grey 5H Step
+2023-10-24 16:35:34,089 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Grey 5V Step
+2023-10-24 16:35:36,350 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Grey Steps
+2023-10-24 16:35:38,370 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Legal Ramp
+2023-10-24 16:35:40,413 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Luma Pixel Ramp
+2023-10-24 16:35:42,509 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Luma Ramp
+2023-10-24 16:35:44,493 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Luma Ramp Down
+2023-10-24 16:35:46,692 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / MultiBurst
+2023-10-24 16:35:48,788 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Pluge
+2023-10-24 16:35:50,828 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Pluge (subjective)
+2023-10-24 16:35:53,035 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / SMPTE 219 sub super
+2023-10-24 16:35:55,044 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Tartan Bars
+2023-10-24 16:35:57,069 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Valid Ramps
+2023-10-24 16:35:59,619 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p25 / YCbCr:422:10 / 1.5G_Rec.709 / Vertical Luma Ramp
+2023-10-24 16:35:59,702 - MainThread - INFO -: 
 
 -------------------------------------------------------------------------------
-Test name: Signal/test_sdi_io.py::TestSdiInputOutput::test_output_copy
-Ended: 2023-10-13 16:07:09.221706
+Test name: Signal/test_generator_test_patterns.py::test_generator_test_pattern_then_get[1920x1080p25-YCbCr:422:10-1.5G_Rec.709]
+Ended: 2023-10-24 16:35:59.652714
 Test Generator Device: 
   {'Build_number': '745709117',
  'FPGA_version': '4.8.0+7408',
- 'IP': '192.168.0.17',
+ 'IP': '192.168.0.91',
  'Image_version': 'release_v4_3_6',
  'Software_version': '4.8.0',
  'all': {'currentFirmwareMode': 'SDI',
@@ -353,7 +384,7 @@ Test Generator Device:
          'softwareNumber': '745709117',
          'softwareVersion': '4.8.0',
          'status': 200,
-         'timeOnUnit': 'Fri Oct 13 16:07:09 2023',
+         'timeOnUnit': 'Tue Oct 24 16:35:59 2023',
          'toolchainVersion': 'release_v4_3_6'},
  'device': 'Qx',
  'firmware_mode': 'SDI',
@@ -366,7 +397,7 @@ Test Generator Device:
 Test Analyser Device: 
   {'Build_number': '745709117',
  'FPGA_version': '4.8.0+7408',
- 'IP': '192.168.0.17',
+ 'IP': '192.168.0.91',
  'Image_version': 'release_v4_3_6',
  'Software_version': '4.8.0',
  'all': {'currentFirmwareMode': 'SDI',
@@ -416,7 +447,7 @@ Test Analyser Device:
          'softwareNumber': '745709117',
          'softwareVersion': '4.8.0',
          'status': 200,
-         'timeOnUnit': 'Fri Oct 13 16:07:09 2023',
+         'timeOnUnit': 'Tue Oct 24 16:35:59 2023',
          'toolchainVersion': 'release_v4_3_6'},
  'device': 'Qx',
  'firmware_mode': 'SDI',
@@ -427,5 +458,440 @@ Test Analyser Device:
  'software_branch': 'release_staging_4_8_0'}      
 ================================= Test End ====================================
 
-2023-10-13 16:07:09,281 - MainThread - INFO -: FIXTURE: Qx qx-020264 teardown complete
-2023-10-13 16:07:09,294 - MainThread - INFO -: FIXTURE: Qx qx-020264 teardown complete
+2023-10-24 16:35:59,709 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.91 Hostname: qx-020264)
+2023-10-24 16:36:00,158 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.91 Hostname: qx-020264)
+2023-10-24 16:36:00,660 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Signal/test_generator_test_patterns.py::test_generator_test_pattern_then_get[1920x1080p50-YCbCr:422:10-3G_A_Rec.709]
+Started: 2023-10-24 16:36:00.604307
+Test Generator Device: 
+  {'Build_number': '745709117',
+ 'FPGA_version': '4.8.0+7408',
+ 'IP': '192.168.0.91',
+ 'Image_version': 'release_v4_3_6',
+ 'Software_version': '4.8.0',
+ 'all': {'currentFirmwareMode': 'SDI',
+         'currentSystemMode': 'SDI',
+         'device': 'Qx',
+         'driver': {'A': {'gain_1.5G': -1,
+                          'gain_12G': -5,
+                          'gain_3G': -1,
+                          'gain_6G': -2},
+                    'B': {'gain_1.5G': -2,
+                          'gain_12G': -7,
+                          'gain_3G': -2,
+                          'gain_6G': -3},
+                    'C': {'gain_1.5G': -1,
+                          'gain_12G': -7,
+                          'gain_3G': -2,
+                          'gain_6G': -3},
+                    'D': {'gain_1.5G': -1,
+                          'gain_12G': -4,
+                          'gain_3G': -1,
+                          'gain_6G': -2}},
+         'eye': {'dcGain': 'N/A',
+                 'displayGains': {'gain_1.5G': 'N/A',
+                                  'gain_12G': 'N/A',
+                                  'gain_270M': 'N/A',
+                                  'gain_3G': 'N/A',
+                                  'gain_6G': 'N/A'},
+                 'eyeCalRevision': 1,
+                 'gain': 2432,
+                 'measurementGains': {'gain_1.5G': 'N/A',
+                                      'gain_12G': 'N/A',
+                                      'gain_270M': 'N/A',
+                                      'gain_3G': 'N/A',
+                                      'gain_6G': 'N/A'},
+                 'offset': 362},
+         'fpgaVersion': '4.8.0+7408',
+         'frontPanelRevision': '3',
+         'imageVersion': 'release_v4_3_6',
+         'jitterAdcSpan': '-9 ok',
+         'links': [{'href': 'http://qx-020264:8080/api/v1/system/about',
+                    'rel': 'self'}],
+         'mainBoardRevision': '9',
+         'message': '',
+         'mezzanineBoardRevision': '6',
+         'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
+         'softwareBranch': 'release_staging_4_8_0',
+         'softwareNumber': '745709117',
+         'softwareVersion': '4.8.0',
+         'status': 200,
+         'timeOnUnit': 'Tue Oct 24 16:36:00 2023',
+         'toolchainVersion': 'release_v4_3_6'},
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
+ 'software_branch': 'release_staging_4_8_0'}
+
+Test Analyser Device: 
+  {'Build_number': '745709117',
+ 'FPGA_version': '4.8.0+7408',
+ 'IP': '192.168.0.91',
+ 'Image_version': 'release_v4_3_6',
+ 'Software_version': '4.8.0',
+ 'all': {'currentFirmwareMode': 'SDI',
+         'currentSystemMode': 'SDI',
+         'device': 'Qx',
+         'driver': {'A': {'gain_1.5G': -1,
+                          'gain_12G': -5,
+                          'gain_3G': -1,
+                          'gain_6G': -2},
+                    'B': {'gain_1.5G': -2,
+                          'gain_12G': -7,
+                          'gain_3G': -2,
+                          'gain_6G': -3},
+                    'C': {'gain_1.5G': -1,
+                          'gain_12G': -7,
+                          'gain_3G': -2,
+                          'gain_6G': -3},
+                    'D': {'gain_1.5G': -1,
+                          'gain_12G': -4,
+                          'gain_3G': -1,
+                          'gain_6G': -2}},
+         'eye': {'dcGain': 'N/A',
+                 'displayGains': {'gain_1.5G': 'N/A',
+                                  'gain_12G': 'N/A',
+                                  'gain_270M': 'N/A',
+                                  'gain_3G': 'N/A',
+                                  'gain_6G': 'N/A'},
+                 'eyeCalRevision': 1,
+                 'gain': 2432,
+                 'measurementGains': {'gain_1.5G': 'N/A',
+                                      'gain_12G': 'N/A',
+                                      'gain_270M': 'N/A',
+                                      'gain_3G': 'N/A',
+                                      'gain_6G': 'N/A'},
+                 'offset': 362},
+         'fpgaVersion': '4.8.0+7408',
+         'frontPanelRevision': '3',
+         'imageVersion': 'release_v4_3_6',
+         'jitterAdcSpan': '-9 ok',
+         'links': [{'href': 'http://qx-020264:8080/api/v1/system/about',
+                    'rel': 'self'}],
+         'mainBoardRevision': '9',
+         'message': '',
+         'mezzanineBoardRevision': '6',
+         'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
+         'softwareBranch': 'release_staging_4_8_0',
+         'softwareNumber': '745709117',
+         'softwareVersion': '4.8.0',
+         'status': 200,
+         'timeOnUnit': 'Tue Oct 24 16:36:00 2023',
+         'toolchainVersion': 'release_v4_3_6'},
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
+ 'software_branch': 'release_staging_4_8_0'}      
+-------------------------------------------------------------------------------
+
+2023-10-24 16:36:02,709 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 100% Bars
+2023-10-24 16:36:04,708 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / 75% Bars
+2023-10-24 16:36:06,811 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / ARIB 28+i
+2023-10-24 16:36:08,970 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / ARIB 28+i+q
+2023-10-24 16:36:10,892 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / ARIB 28-100
+2023-10-24 16:36:13,080 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / ARIB 28-75
+2023-10-24 16:36:15,142 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / BT.814 Pluge
+2023-10-24 16:36:17,287 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Bowtie
+2023-10-24 16:36:19,401 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Box
+2023-10-24 16:36:21,461 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Circle
+2023-10-24 16:36:23,663 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Colour Grid
+2023-10-24 16:36:25,701 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Component Ramps
+2023-10-24 16:36:28,182 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Field Lineup
+2023-10-24 16:36:30,250 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Grey 10H Step
+2023-10-24 16:36:32,422 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Grey 10V Step
+2023-10-24 16:36:34,519 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Grey 5H Step
+2023-10-24 16:36:36,516 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Grey 5V Step
+2023-10-24 16:36:38,804 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Grey Steps
+2023-10-24 16:36:40,781 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Legal Ramp
+2023-10-24 16:36:42,945 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Luma Pixel Ramp
+2023-10-24 16:36:44,984 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Luma Ramp
+2023-10-24 16:36:47,041 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Luma Ramp Down
+2023-10-24 16:36:49,204 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / MultiBurst
+2023-10-24 16:36:51,247 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Pluge
+2023-10-24 16:36:53,338 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Pluge (subjective)
+2023-10-24 16:36:55,353 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / SMPTE 219 sub super
+2023-10-24 16:36:57,441 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Tartan Bars
+2023-10-24 16:36:59,633 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Valid Ramps
+2023-10-24 16:37:02,029 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080p50 / YCbCr:422:10 / 3G_A_Rec.709 / Vertical Luma Ramp
+2023-10-24 16:37:02,124 - MainThread - INFO -: 
+
+-------------------------------------------------------------------------------
+Test name: Signal/test_generator_test_patterns.py::test_generator_test_pattern_then_get[1920x1080p50-YCbCr:422:10-3G_A_Rec.709]
+Ended: 2023-10-24 16:37:02.058511
+Test Generator Device: 
+  {'Build_number': '745709117',
+ 'FPGA_version': '4.8.0+7408',
+ 'IP': '192.168.0.91',
+ 'Image_version': 'release_v4_3_6',
+ 'Software_version': '4.8.0',
+ 'all': {'currentFirmwareMode': 'SDI',
+         'currentSystemMode': 'SDI',
+         'device': 'Qx',
+         'driver': {'A': {'gain_1.5G': -1,
+                          'gain_12G': -5,
+                          'gain_3G': -1,
+                          'gain_6G': -2},
+                    'B': {'gain_1.5G': -2,
+                          'gain_12G': -7,
+                          'gain_3G': -2,
+                          'gain_6G': -3},
+                    'C': {'gain_1.5G': -1,
+                          'gain_12G': -7,
+                          'gain_3G': -2,
+                          'gain_6G': -3},
+                    'D': {'gain_1.5G': -1,
+                          'gain_12G': -4,
+                          'gain_3G': -1,
+                          'gain_6G': -2}},
+         'eye': {'dcGain': 'N/A',
+                 'displayGains': {'gain_1.5G': 'N/A',
+                                  'gain_12G': 'N/A',
+                                  'gain_270M': 'N/A',
+                                  'gain_3G': 'N/A',
+                                  'gain_6G': 'N/A'},
+                 'eyeCalRevision': 1,
+                 'gain': 2432,
+                 'measurementGains': {'gain_1.5G': 'N/A',
+                                      'gain_12G': 'N/A',
+                                      'gain_270M': 'N/A',
+                                      'gain_3G': 'N/A',
+                                      'gain_6G': 'N/A'},
+                 'offset': 362},
+         'fpgaVersion': '4.8.0+7408',
+         'frontPanelRevision': '3',
+         'imageVersion': 'release_v4_3_6',
+         'jitterAdcSpan': '-3 ok',
+         'links': [{'href': 'http://qx-020264:8080/api/v1/system/about',
+                    'rel': 'self'}],
+         'mainBoardRevision': '9',
+         'message': '',
+         'mezzanineBoardRevision': '6',
+         'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
+         'softwareBranch': 'release_staging_4_8_0',
+         'softwareNumber': '745709117',
+         'softwareVersion': '4.8.0',
+         'status': 200,
+         'timeOnUnit': 'Tue Oct 24 16:37:02 2023',
+         'toolchainVersion': 'release_v4_3_6'},
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
+ 'software_branch': 'release_staging_4_8_0'}
+
+Test Analyser Device: 
+  {'Build_number': '745709117',
+ 'FPGA_version': '4.8.0+7408',
+ 'IP': '192.168.0.91',
+ 'Image_version': 'release_v4_3_6',
+ 'Software_version': '4.8.0',
+ 'all': {'currentFirmwareMode': 'SDI',
+         'currentSystemMode': 'SDI',
+         'device': 'Qx',
+         'driver': {'A': {'gain_1.5G': -1,
+                          'gain_12G': -5,
+                          'gain_3G': -1,
+                          'gain_6G': -2},
+                    'B': {'gain_1.5G': -2,
+                          'gain_12G': -7,
+                          'gain_3G': -2,
+                          'gain_6G': -3},
+                    'C': {'gain_1.5G': -1,
+                          'gain_12G': -7,
+                          'gain_3G': -2,
+                          'gain_6G': -3},
+                    'D': {'gain_1.5G': -1,
+                          'gain_12G': -4,
+                          'gain_3G': -1,
+                          'gain_6G': -2}},
+         'eye': {'dcGain': 'N/A',
+                 'displayGains': {'gain_1.5G': 'N/A',
+                                  'gain_12G': 'N/A',
+                                  'gain_270M': 'N/A',
+                                  'gain_3G': 'N/A',
+                                  'gain_6G': 'N/A'},
+                 'eyeCalRevision': 1,
+                 'gain': 2432,
+                 'measurementGains': {'gain_1.5G': 'N/A',
+                                      'gain_12G': 'N/A',
+                                      'gain_270M': 'N/A',
+                                      'gain_3G': 'N/A',
+                                      'gain_6G': 'N/A'},
+                 'offset': 362},
+         'fpgaVersion': '4.8.0+7408',
+         'frontPanelRevision': '3',
+         'imageVersion': 'release_v4_3_6',
+         'jitterAdcSpan': '-3 ok',
+         'links': [{'href': 'http://qx-020264:8080/api/v1/system/about',
+                    'rel': 'self'}],
+         'mainBoardRevision': '9',
+         'message': '',
+         'mezzanineBoardRevision': '6',
+         'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
+         'softwareBranch': 'release_staging_4_8_0',
+         'softwareNumber': '745709117',
+         'softwareVersion': '4.8.0',
+         'status': 200,
+         'timeOnUnit': 'Tue Oct 24 16:37:02 2023',
+         'toolchainVersion': 'release_v4_3_6'},
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
+ 'software_branch': 'release_staging_4_8_0'}      
+================================= Test End ====================================
+
+2023-10-24 16:37:02,131 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.91 Hostname: qx-020264)
+2023-10-24 16:37:02,630 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.91 Hostname: qx-020264)
+2023-10-24 16:37:03,157 - MainThread - INFO -: 
+
+================================ Test Start ===================================
+Test name: Signal/test_generator_test_patterns.py::test_generator_test_pattern_then_get[1920x1080i50-YCbCr:422:10-1.5G_Rec.709]
+Started: 2023-10-24 16:37:03.100692
+Test Generator Device: 
+  {'Build_number': '745709117',
+ 'FPGA_version': '4.8.0+7408',
+ 'IP': '192.168.0.91',
+ 'Image_version': 'release_v4_3_6',
+ 'Software_version': '4.8.0',
+ 'all': {'currentFirmwareMode': 'SDI',
+         'currentSystemMode': 'SDI',
+         'device': 'Qx',
+         'driver': {'A': {'gain_1.5G': -1,
+                          'gain_12G': -5,
+                          'gain_3G': -1,
+                          'gain_6G': -2},
+                    'B': {'gain_1.5G': -2,
+                          'gain_12G': -7,
+                          'gain_3G': -2,
+                          'gain_6G': -3},
+                    'C': {'gain_1.5G': -1,
+                          'gain_12G': -7,
+                          'gain_3G': -2,
+                          'gain_6G': -3},
+                    'D': {'gain_1.5G': -1,
+                          'gain_12G': -4,
+                          'gain_3G': -1,
+                          'gain_6G': -2}},
+         'eye': {'dcGain': 'N/A',
+                 'displayGains': {'gain_1.5G': 'N/A',
+                                  'gain_12G': 'N/A',
+                                  'gain_270M': 'N/A',
+                                  'gain_3G': 'N/A',
+                                  'gain_6G': 'N/A'},
+                 'eyeCalRevision': 1,
+                 'gain': 2432,
+                 'measurementGains': {'gain_1.5G': 'N/A',
+                                      'gain_12G': 'N/A',
+                                      'gain_270M': 'N/A',
+                                      'gain_3G': 'N/A',
+                                      'gain_6G': 'N/A'},
+                 'offset': 362},
+         'fpgaVersion': '4.8.0+7408',
+         'frontPanelRevision': '3',
+         'imageVersion': 'release_v4_3_6',
+         'jitterAdcSpan': '-3 ok',
+         'links': [{'href': 'http://qx-020264:8080/api/v1/system/about',
+                    'rel': 'self'}],
+         'mainBoardRevision': '9',
+         'message': '',
+         'mezzanineBoardRevision': '6',
+         'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
+         'softwareBranch': 'release_staging_4_8_0',
+         'softwareNumber': '745709117',
+         'softwareVersion': '4.8.0',
+         'status': 200,
+         'timeOnUnit': 'Tue Oct 24 16:37:03 2023',
+         'toolchainVersion': 'release_v4_3_6'},
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
+ 'software_branch': 'release_staging_4_8_0'}
+
+Test Analyser Device: 
+  {'Build_number': '745709117',
+ 'FPGA_version': '4.8.0+7408',
+ 'IP': '192.168.0.91',
+ 'Image_version': 'release_v4_3_6',
+ 'Software_version': '4.8.0',
+ 'all': {'currentFirmwareMode': 'SDI',
+         'currentSystemMode': 'SDI',
+         'device': 'Qx',
+         'driver': {'A': {'gain_1.5G': -1,
+                          'gain_12G': -5,
+                          'gain_3G': -1,
+                          'gain_6G': -2},
+                    'B': {'gain_1.5G': -2,
+                          'gain_12G': -7,
+                          'gain_3G': -2,
+                          'gain_6G': -3},
+                    'C': {'gain_1.5G': -1,
+                          'gain_12G': -7,
+                          'gain_3G': -2,
+                          'gain_6G': -3},
+                    'D': {'gain_1.5G': -1,
+                          'gain_12G': -4,
+                          'gain_3G': -1,
+                          'gain_6G': -2}},
+         'eye': {'dcGain': 'N/A',
+                 'displayGains': {'gain_1.5G': 'N/A',
+                                  'gain_12G': 'N/A',
+                                  'gain_270M': 'N/A',
+                                  'gain_3G': 'N/A',
+                                  'gain_6G': 'N/A'},
+                 'eyeCalRevision': 1,
+                 'gain': 2432,
+                 'measurementGains': {'gain_1.5G': 'N/A',
+                                      'gain_12G': 'N/A',
+                                      'gain_270M': 'N/A',
+                                      'gain_3G': 'N/A',
+                                      'gain_6G': 'N/A'},
+                 'offset': 362},
+         'fpgaVersion': '4.8.0+7408',
+         'frontPanelRevision': '3',
+         'imageVersion': 'release_v4_3_6',
+         'jitterAdcSpan': '-3 ok',
+         'links': [{'href': 'http://qx-020264:8080/api/v1/system/about',
+                    'rel': 'self'}],
+         'mainBoardRevision': '9',
+         'message': '',
+         'mezzanineBoardRevision': '6',
+         'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
+         'softwareBranch': 'release_staging_4_8_0',
+         'softwareNumber': '745709117',
+         'softwareVersion': '4.8.0',
+         'status': 200,
+         'timeOnUnit': 'Tue Oct 24 16:37:03 2023',
+         'toolchainVersion': 'release_v4_3_6'},
+ 'device': 'Qx',
+ 'firmware_mode': 'SDI',
+ 'hostname': 'qx-020264',
+ 'main_pcb_rev': '9',
+ 'mezzanine_rev': '6',
+ 'sha': '33bc7c518699c31416d091d7fba36739d8fa6118',
+ 'software_branch': 'release_staging_4_8_0'}      
+-------------------------------------------------------------------------------
+
+2023-10-24 16:37:16,939 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080i50 / YCbCr:422:10 / 1.5G_Rec.709 / 100% Bars
+2023-10-24 16:37:30,781 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080i50 / YCbCr:422:10 / 1.5G_Rec.709 / 75% Bars
+2023-10-24 16:37:44,726 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080i50 / YCbCr:422:10 / 1.5G_Rec.709 / ARIB 28+i
+2023-10-24 16:37:58,341 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080i50 / YCbCr:422:10 / 1.5G_Rec.709 / ARIB 28+i+q
+2023-10-24 16:38:12,129 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080i50 / YCbCr:422:10 / 1.5G_Rec.709 / ARIB 28-100
+2023-10-24 16:38:25,937 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080i50 / YCbCr:422:10 / 1.5G_Rec.709 / ARIB 28-75
+2023-10-24 16:38:39,823 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080i50 / YCbCr:422:10 / 1.5G_Rec.709 / BT.814 Pluge
+2023-10-24 16:38:53,641 - MainThread - INFO -: qx-020264 - Generator set: 1920x1080i50 / YCbCr:422:10 / 1.5G_Rec.709 / Bowtie

@@ -9,8 +9,9 @@ Tests that validate the AES features of the Qx.
 
 import pytest
 import logging
+from typing import Generator, List, Tuple
 from pprint import pformat
-from autolib.factory import make_qx
+from autolib.factory import make_qx, Qx
 from autolib.logconfig import autolib_log
 from autolib.coreexception import CoreException
 from autolib.testexception import TestException
@@ -20,10 +21,11 @@ from autolib.models.qxseries.operationmode import OperationMode
 log = logging.getLogger(autolib_log)
 
 # Regex to match 400 and 415 status codes
-STATUS_CODE_400_REGEX = r'(?P<precursor>.*)(status code: 400)(?P<endbit>.*)' 
+STATUS_CODE_400_REGEX = r'(?P<precursor>.*)(status code: 400)(?P<endbit>.*)'
 STATUS_CODE_415_REGEX = r'(?P<precursor>.*)(status code: 415)(?P<endbit>.*)'
 
-def _set_get_aes_conf(generator_qx, aes_config):
+
+def _set_get_aes_conf(generator_qx: Qx, aes_config: dict) -> dict:
     """
     Set AES configuration via REST API and then retrieve what configuration has been set.
 
@@ -37,7 +39,7 @@ def _set_get_aes_conf(generator_qx, aes_config):
 
 
 @pytest.fixture(scope="module")
-def generator_qx(test_generator_hostname):
+def generator_qx(test_generator_hostname: str) -> Generator[Qx, None, None]:
     """
     Create generator Qx object. Tears down configuration after test.
 
@@ -57,7 +59,7 @@ def generator_qx(test_generator_hostname):
 
 
 @pytest.fixture(scope="module")
-def analyser_qx(test_analyser_hostname):
+def analyser_qx(test_analyser_hostname: str) -> Generator[Qx, None, None]:
     """
     Create analyser Qx object. Tears down configuration after test.
 
@@ -96,7 +98,7 @@ def generator_aes_2110_formatter(args):
 @pytest.mark.skip('Requires ticket f1991. Currently requires manual configuration.')
 @pytest.mark.ip2110
 @pytest.mark.parametrize("aes_2110_config", generator_aes_2110(), ids=generator_aes_2110_formatter)
-def test_2110_aes_output(aes_2110_config, generator_qx, analyser_qx):
+def test_2110_aes_output(aes_2110_config: list, generator_qx: Qx, analyser_qx: Qx):
     """
     Validates that AES outputs can be selected correctly in 2110 mode.
 
@@ -131,7 +133,7 @@ def test_2110_aes_output(aes_2110_config, generator_qx, analyser_qx):
 @pytest.mark.skip('Requires ticket f1991. Currently requires manual configuration.')
 @pytest.mark.ip2110
 @pytest.mark.parametrize("aes_2110_config", generator_aes_2110(), ids=generator_aes_2110_formatter)
-def test_2110_aud_flow(aes_2110_config, generator_qx, analyser_qx):
+def test_2110_aud_flow(aes_2110_config: list, generator_qx: Qx, analyser_qx: Qx):
     """
     Validates that AUD audio flows can be selected correctly in 2110 mode.
 
@@ -166,7 +168,7 @@ def test_2110_aud_flow(aes_2110_config, generator_qx, analyser_qx):
 @pytest.mark.skip('Requires ticket f1991. Currently requires manual configuration.')
 @pytest.mark.ip2110
 @pytest.mark.parametrize("aes_2110_config", generator_aes_2110(), ids=generator_aes_2110_formatter)
-def test_2110_channels(aes_2110_config, generator_qx, analyser_qx):
+def test_2110_channels(aes_2110_config: list, generator_qx: Qx, analyser_qx: Qx):
     """
     Validates that correct pairs of channels can be selected in 2110 mode.
 
@@ -223,7 +225,7 @@ def _generator_aes_formatter(args):
 
 @pytest.mark.sdi
 @pytest.mark.parametrize("aes_config", _generator_aes(), ids=_generator_aes_formatter)
-def test_aes_sdi(aes_config, generator_qx):
+def test_aes_sdi(aes_config: dict, generator_qx: Qx):
     """
     [Happy] Tests AES channel, pairs and groups are set correctly in SDI mode.
 
@@ -237,7 +239,7 @@ def test_aes_sdi(aes_config, generator_qx):
 
 @pytest.mark.ip2022_6
 @pytest.mark.parametrize("aes_config", _generator_aes(), ids=_generator_aes_formatter)
-def test_aes_2022_6(aes_config, generator_qx):
+def test_aes_2022_6(aes_config: dict, generator_qx: Qx):
     """
     [Happy] Tests AES channel, pairs and groups are set correctly in 2022-6 mode.
 
@@ -249,21 +251,11 @@ def test_aes_2022_6(aes_config, generator_qx):
     _test_aes(aes_config, generator_qx)
 
 
-def _sad_aes_generator():
-    sad_aes = [0, 5, -1]
-    pairs = list(range(1, 3))
-    groups = list(range(1, 9))
-
-    for aes in sad_aes:
-        for pair in pairs:
-            for group in groups:
-                yield pair, aes, group
-
-
+def _sad_aes_generator() -> Generator[Tuple[int, int, int], None, None]:
     """
     [Sad] Yield all combinations of aes output, groups and pairs for aes. Includes invalid settings.
 
-    returns: aes_config list
+    returns: aes_config tuple
     """
     sad_aes = [0, 5, -1]
     pairs = list(range(1, 3))
@@ -275,11 +267,11 @@ def _sad_aes_generator():
                 yield pair, aes, group
 
 
-def _bad_aes_generator():
+def _bad_aes_generator() -> Generator[Tuple[int, int, int], None, None]:
     """
     [Bad] Yield all combinations of aes output, groups and pairs for aes. Includes invalid settings.
 
-    returns: aes_config list
+    returns: aes_config tuple
     """
     # Tuples of (pair, aes, group) inputs with invalid settings
     tests = (
@@ -301,7 +293,7 @@ def _bad_aes_generator():
 
 @pytest.mark.sdi
 @pytest.mark.parametrize("aes_config", _sad_aes_generator(), ids=_generator_aes_formatter)
-def test_aes_sdi_sad_inputs(aes_config, generator_qx):
+def test_aes_sdi_sad_inputs(aes_config: dict, generator_qx: Qx):
     """
     [Sad] Tests AES channel, pairs and groups are set correctly in SDI mode.
 
@@ -316,7 +308,7 @@ def test_aes_sdi_sad_inputs(aes_config, generator_qx):
 
 @pytest.mark.ip2022_6
 @pytest.mark.parametrize("aes_config", _sad_aes_generator(), ids=_generator_aes_formatter)
-def test_aes_2022_6_sad_inputs(aes_config, generator_qx):
+def test_aes_2022_6_sad_inputs(aes_config: dict, generator_qx: Qx):
     """
     [Sad] Tests AES channel, pairs and groups are set correctly in 2022-6 mode. w
 
@@ -329,7 +321,7 @@ def test_aes_2022_6_sad_inputs(aes_config, generator_qx):
         _test_aes(aes_config, generator_qx)
 
 
-def _test_aes(aes_config, generator_qx):
+def _test_aes(aes_config: dict, generator_qx: Qx):
     """
     Perform the work for the tests for AES in SDI and 2022-06 modes.
 
@@ -356,7 +348,7 @@ def _test_aes(aes_config, generator_qx):
 
 
 @pytest.mark.sdi
-def test_aes_sdi_bad_format(generator_qx):
+def test_aes_sdi_bad_format(generator_qx: Qx):
     """
     [Bad] Tests AES channel, pairs and groups are set correctly in SDI mode.
 
@@ -369,7 +361,7 @@ def test_aes_sdi_bad_format(generator_qx):
 
 @pytest.mark.sdi
 @pytest.mark.parametrize("bad_aes_config", _bad_aes_generator(), ids=_generator_aes_formatter)
-def test_aes_sdi_bad_inputs(generator_qx, bad_aes_config):
+def test_aes_sdi_bad_inputs(generator_qx: Qx, bad_aes_config: dict):
     """
     [Bad] Tests AES channel, pairs and groups are set correctly in SDI mode.
 
@@ -384,7 +376,7 @@ def test_aes_sdi_bad_inputs(generator_qx, bad_aes_config):
 
 @pytest.mark.ip2022_6
 @pytest.mark.parametrize("bad_aes_config", _bad_aes_generator(), ids=_generator_aes_formatter)
-def test_aes_2022_6_bad_inputs(generator_qx, bad_aes_config):
+def test_aes_2022_6_bad_inputs(generator_qx: Qx, bad_aes_config: dict):
     """
     [Bad] Tests AES channel, pairs and groups are set correctly in 2022-6 mode.
 
@@ -398,7 +390,7 @@ def test_aes_2022_6_bad_inputs(generator_qx, bad_aes_config):
 
 
 @pytest.mark.ip2022_6
-def test_aes_2022_6_bad_format(generator_qx):
+def test_aes_2022_6_bad_format(generator_qx: Qx):
     """
     [Bad] Tests AES channel, pairs and groups are set correctly in 2022-6 mode.
 
@@ -409,7 +401,7 @@ def test_aes_2022_6_bad_format(generator_qx):
     _test_aes_bad(generator_qx)
 
 
-def _test_aes_bad(generator_qx):
+def _test_aes_bad(generator_qx: Qx):
     """
     [Bad] Generates bad data to be sent for bad input tests.
 
@@ -446,7 +438,7 @@ def _test_aes_bad(generator_qx):
         assert response is not None
         assert response.status_code == 415  # Should return Unsupported Media Type client error status
 
-        generator_qx.aesio.aes_io.config = {
+        generator_qx.aesio.aes_io_config = {
            b"VGhpcyBpcyBhIHJlYWxseSBsb25nIHN0cmluZyBvZiBhYnNvbHV0ZSBnYXJiYWdlIG1hc3F1ZXJhZGluZyBhcyBKU09OIGluIGEgYm"\
            b"FkIGh0dHAgUFVUIHJlcXVlc3QuIFRoaXMgc2hvdWxkIGJlIHJlamVjdGVkIHdpdGhvdXQgbGVhdmluZyB0aGUgdW5pdCBpbiBhIGJh"\
            b"ZCBzdGF0ZS4gSXQgc2hvdWxkIGNlcnRhaW5seSBub3QgbGVhdmUgdGhlIHVuaXQgaW4gYW4gdW5yZWNvdmVyYWJsZSBzdGF0ZS4gSS"\

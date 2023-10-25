@@ -38,8 +38,7 @@ def generator_qx(test_generator_hostname):
     generator_qx.request_capability(OperationMode.SDI)
     generator_qx.generator.bouncing_box = False
     generator_qx.generator.output_copy = False
-    generator_qx.io.set_sdi_output_source(
-        str(SDIIOType.BNC).lower(), (SDIOutputSource.GENERATOR, ) * 4)
+    generator_qx.io.set_sdi_output_source = SDIIOType.BNC, (SDIOutputSource.GENERATOR, ) * 4
     log.info(f'FIXTURE: Generator Qx {generator_qx.hostname} setup complete.')
     yield generator_qx
     log.info(f'FIXTURE: Generator Qx {generator_qx.hostname} teardown complete.')

@@ -66,8 +66,7 @@ def generator_qx(test_generator_hostname: str) -> Generator[Qx, None, None]:
     * Sets the SDI outputs to be the generators.
     """
     generator_qx = make_sdi_unit(test_generator_hostname)
-    generator_qx.io.set_sdi_output_source(
-        str(SDIIOType.BNC).lower(), (SDIOutputSource.GENERATOR, ) * 4)
+    generator_qx.io.set_sdi_output_source = SDIIOType.BNC, (SDIOutputSource.GENERATOR, ) * 4
     pre_test_setting = generator_qx.generator.audio_group
     generator_qx.generator.audio_group = generate_command_data()
     log.info(f'FIXTURE: Qx {generator_qx.hostname} setup complete.')

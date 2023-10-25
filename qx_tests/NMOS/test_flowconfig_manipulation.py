@@ -72,7 +72,7 @@ class ConnectionMaker:
 
 
 @pytest.fixture(scope='module')
-def qx(test_qx_hostname):
+def qx(test_qx_hostname: str):
     """
     Pytest fixture that will create a Qx object using the test_qx_hostname global fixture.
     """
@@ -135,7 +135,7 @@ def _add_50_manual_flow_configs(*args, **kwargs) -> dict:
     return json_data
 
 
-def reset_test_unit(qx, dual_interface):
+def reset_test_unit(qx: Qx, dual_interface: bool):
     """\
     Restore defaults and configure NMOS
     """

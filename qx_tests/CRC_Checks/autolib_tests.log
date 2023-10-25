@@ -1,4 +1,4 @@
-2023-10-12 16:21:16,680 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.17 Hostname: qx-020264)
-2023-10-12 16:21:17,599 - MainThread - INFO -: FPGA design from fpgaver is 1
-2023-10-12 16:21:17,605 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.17 Hostname: qx-020264)
-2023-10-12 16:21:18,480 - MainThread - INFO -: FPGA design from fpgaver is 1
+2023-10-24 13:15:41,534 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.91 Hostname: qx-020264)
+2023-10-24 13:15:42,467 - MainThread - INFO -: FPGA design from fpgaver is 1
+2023-10-24 13:15:42,472 - MainThread - INFO -: Created instance of Qx (Ip: 192.168.0.91 Hostname: qx-020264)
+2023-10-24 13:15:43,386 - MainThread - INFO -: FPGA design from fpgaver is 1
